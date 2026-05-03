@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="team-id" content="strategy-research">
+  <title>Strategy &amp; Research | Cagamas Prompt-a-thon 12 May 2026</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<div id="wrong-team-msg" style="display:none;position:fixed;inset:0;background:#0a1628;z-index:9999;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px;">
+  <div style="font-size:3rem;margin-bottom:16px;">🚫</div>
+  <h2>Wrong Team Pack</h2>
+  <p>You've already unlocked a different team's pack in this session.<br>Please use the device assigned to your team.</p>
+  <a href="../index.html">← Back to Team Packs</a>
+</div>
+
+<header class="site-header">
+  <div class="logo-badge">CG</div>
+  <div class="header-title">
+    <h1>Cagamas Berhad</h1>
+    <p>Prompt-a-thon · 12 May 2026</p>
+  </div>
+  <span class="header-badge">🔐 TEAM PACK</span>
+</header>
+
+<div id="lock-gate" class="lock-gate">
+  <div class="lock-box">
+    <span class="lock-icon">🔭</span>
+    <h2>Strategy &amp; Research</h2>
+    <p>Enter your team code to unlock the Strategy &amp; Research pack.</p>
+    <form id="team-lock-form" autocomplete="off">
+      <input id="team-code-input" class="lock-input" type="password" placeholder="Team code" required>
+      <button type="submit" class="btn btn-primary" style="margin-top:12px;">🔓 Unlock My Pack →</button>
+      <div class="error-msg" id="lock-error"></div>
+    </form>
+    <div style="margin-top:20px;"><a href="../index.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;text-decoration:none;">← Back to Team Select</a></div>
+  </div>
+</div>
+
+<div id="team-content" style="display:none;">
+
+  <div class="team-hero" style="background:linear-gradient(135deg,#0F766E 0%,#115E59 100%);">
+    <div class="team-label">Team 8 · Strategy &amp; Research</div>
+    <h1>Strategy &amp; Research Pack</h1>
+    <div class="challenge-name">⚡ Challenge: "The Insight Time Lag"</div>
+  </div>
+
+  <div style="max-width:860px;margin:0 auto;padding:32px 20px;">
+
+    <div class="content-section">
+      <h3>🏢 About Your Division</h3>
+      <p>HHFC's Strategy &amp; Research division drives the corporation's strategic planning cycle, produces quarterly housing market research reports, manages ESG strategy and reporting, and provides the analytical foundation for major Board decisions. The team of 8 analysts and strategists is small relative to the scope of the work.</p>
+    </div>
+
+    <div class="content-section">
+      <h3>⚠️ The Business Pain Point</h3>
+      <div class="pain-box">
+        <strong>Core Problem:</strong> HHFC's flagship Quarterly Housing Market Outlook report — 60–80 pages — takes <strong>3 weeks to produce</strong>. By the time it reaches the Board, market conditions have frequently moved. In Q1 2025, BNM announced an OPR change 2 weeks after the report was submitted for approval — a change the report had not considered. The CSO has committed to producing <em>monthly</em> briefs by Q4 2025.
+      </div>
+      <p>Data is sourced manually from NAPIC, BNM, DOSM, and other government portals — downloaded, cleaned, and merged in Excel. Compilation involves 4–5 revision rounds. The CSO's commitment to monthly briefs would require producing credible content in 5–7 working days, down from the current 21 days.</p>
+      <div class="stat-grid">
+        <div class="stat-item"><span class="stat-num">21</span><span class="stat-lbl">Days to produce quarterly report</span></div>
+        <div class="stat-item"><span class="stat-num">7</span><span class="stat-lbl">Data sources per report</span></div>
+        <div class="stat-item"><span class="stat-num">5</span><span class="stat-lbl">Avg revision rounds</span></div>
+        <div class="stat-item"><span class="stat-num">5–7</span><span class="stat-lbl">Days target for monthly brief</span></div>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h3>📋 Research Production Log</h3>
+      <div class="table-wrapper">
+        <table class="data-table">
+          <thead>
+            <tr><th>Report</th><th>Quarter</th><th>Data Sources</th><th>Pages</th><th>Production Days</th><th>Revision Rounds</th><th>Publication Delay</th><th>Board Presentation</th><th>Obsolescence Risk</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Housing Market Outlook Q1 2025</td><td>Q1 2025</td><td>7</td><td>74</td><td>21</td><td>5</td><td>3 days</td><td>4 wks post-period</td><td>High (OPR change)</td></tr>
+            <tr><td>Housing Market Outlook Q4 2024</td><td>Q4 2024</td><td>6</td><td>68</td><td>19</td><td>4</td><td>1 day</td><td>5 wks post-period</td><td>Medium</td></tr>
+            <tr><td>Affordable Housing Brief</td><td>Ad hoc</td><td>4</td><td>34</td><td>14</td><td>3</td><td>On time</td><td>N/A</td><td>Low</td></tr>
+            <tr><td>ESG Housing Finance Report</td><td>Annual</td><td>9</td><td>88</td><td>28</td><td>6</td><td>5 days</td><td>6 wks post-period</td><td>High</td></tr>
+            <tr><td>Housing Market Outlook Q3 2024</td><td>Q3 2024</td><td>5</td><td>71</td><td>22</td><td>5</td><td>2 days</td><td>4 wks post-period</td><td>Medium</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h3>📧 CSO Email</h3>
+      <div class="email-thread">From: Nurul Ain Razali (Chief Strategy Officer)
+To: Head of Research; Strategy Team
+Subject: Monthly Briefs — The Commitment Is Made
+
+I committed to the Board last month that we would move to monthly research briefs by Q4 2025. I made that commitment because I believe it is the right thing for HHFC strategically. I also know that at our current pace, we cannot do it.
+
+Three weeks for a quarterly report means we would need to produce something credible in 5–7 working days for a monthly brief. That requires us to work fundamentally differently — not just faster. I need ideas on how we get there. What data pipelines can we establish? What can AI tools do to accelerate our synthesis and drafting? What does a 'good enough' monthly brief look like versus our current 80-page quarterly? Let's solve this together.</div>
+    </div>
+
+    <div class="content-section">
+      <h3>🎯 Your Tasks</h3>
+      <ol class="challenge-steps">
+        <li><strong>Analyse the research production log</strong> and identify the specific stages where time is being lost — distinguish between data collection, analysis, writing, and review phases.</li>
+        <li><strong>Redesign HHFC's research production process</strong> to meet the CSO's commitment: a credible monthly housing market brief produced in 5–7 days. Describe what changes structurally and how Copilot supports each phase.</li>
+        <li><strong>Draft a concise 2-page "Monthly Housing Market Flash Brief"</strong> for Q2 2025, using available knowledge of the Malaysian housing market to make it realistic — demonstrate what the new format should look like.</li>
+      </ol>
+    </div>
+
+    <div class="content-section">
+      <h3>📝 Your Working File</h3>
+      <p>Your working folder contains <strong>2 files</strong> for your team:</p>
+      <ul style="font-size:0.9rem;line-height:1.8;">
+        <li>📊 <strong>BLANK – Prompt-a-thon Team Pack</strong>: your main working file.</li>
+        <li>⚖️ <strong>Peer Judging Sheet</strong>: used during presentations.</li>
+      </ul>
+      <p style="margin-top:12px;background:#FFF7EC;border:1px solid #FDDCCA;border-left:4px solid var(--cag-gold);border-radius:8px;padding:14px;font-size:0.87rem;">
+        🕵️ <strong>Important:</strong> Open the working file in an <strong>Incognito</strong> (Chrome) or <strong>InPrivate</strong> (Edge) window to ensure you are signed in with the correct shared account.
+      </p>
+      <a href="PLACEHOLDER_SR" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:16px;background:var(--cag-green);color:white;padding:12px 24px;border-radius:8px;font-weight:700;font-size:0.9rem;text-decoration:none;">📂 Open Working File →</a>
+    </div>
+
+    <div id="powerup-gate">
+      <div class="powerup-locked-icons">⚡🔒⚡</div>
+      <h3>Power Ups: Locked</h3>
+      <p>Power Ups are special Copilot prompts that can supercharge your output. Complete your challenge tasks first, then unlock them here.</p>
+      <button id="reveal-powerups-btn" class="btn btn-orange" style="max-width:280px;margin:0 auto;">⚡ Reveal Power Ups</button>
+    </div>
+    <div id="revealed-banner" style="display:none;" class="revealed-banner">✅ Power Ups Unlocked! Use them to supercharge your final output.</div>
+    <div id="powerups-section">
+      <div class="powerup-card">
+        <div class="pu-header"><div class="pu-num">⚡</div><div class="pu-title">Power Up: Strategic Implications Brief for the Board</div></div>
+        <div class="pu-prompt">"You are HHFC's Chief Strategy Officer and you have just received the Q2 housing market data. Using your knowledge of the Malaysian housing market context, write a 'Strategic Implications Brief' for the Board — not a data summary, but a genuine strategic interpretation. Answer three questions: (1) What does the current housing market data tell us about HHFC's portfolio risk exposure? (2) What single strategic move should HHFC consider in the next 6 months based on current market conditions? (3) What early warning indicators should HHFC's management team be watching now? Write in the voice of a strategic advisor who is paid to be right, not comfortable."</div>
+        <div class="pu-how">💡 Use this to demonstrate the difference between research reporting and genuine strategic intelligence.</div>
+      </div>
+    </div>
+
+  </div>
+  <footer class="site-footer">Cagamas Prompt-a-thon · 12 May 2026 · Powered by Microsoft 365 Copilot · Organised by Microsoft Malaysia</footer>
+</div>
+
+<script src="../assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="team-id" content="islamic-business">
+  <title>Islamic Finance | Cagamas Agent-a-thon 13 May 2026</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<div id="wrong-team-msg" style="display:none;position:fixed;inset:0;background:#0d0120;z-index:9999;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px;">
+  <div style="font-size:3rem;margin-bottom:16px;">🚫</div>
+  <h2>Wrong Team Pack</h2>
+  <p>You've already unlocked a different team's pack in this session.<br>Please use the device assigned to your team.</p>
+  <a href="../index.html">← Back to Build Packs</a>
+</div>
+
+<header class="site-header">
+  <div class="logo-badge">CG</div>
+  <div class="header-title">
+    <h1>Cagamas Berhad</h1>
+    <p>Agent-a-thon · 13 May 2026</p>
+  </div>
+  <span class="header-badge">🤖 BUILD PACK</span>
+</header>
+
+<div id="lock-gate" class="lock-gate">
+  <div class="lock-box">
+    <span class="lock-icon">☪️</span>
+    <h2>Islamic Finance</h2>
+    <p>Enter your team code to unlock the Agent Build Pack.</p>
+    <form id="team-lock-form" autocomplete="off">
+      <input id="team-code-input" class="lock-input" type="password" placeholder="Team code" required>
+      <button type="submit" class="btn btn-primary" style="margin-top:12px;">🔓 Unlock My Pack →</button>
+      <div class="error-msg" id="lock-error"></div>
+    </form>
+    <div style="margin-top:20px;"><a href="../index.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;text-decoration:none;">← Back to Team Select</a></div>
+  </div>
+</div>
+
+<div id="team-content" style="display:none;">
+
+  <div class="team-hero" style="background:linear-gradient(135deg,#0891B2 0%,#0E7490 100%);">
+    <div class="team-label">Team 2 · Islamic Finance</div>
+    <h1>Islamic Finance Build Pack</h1>
+    <div class="challenge-name">🤖 Agent: "HHFC Shariah Guide"</div>
+  </div>
+
+  <div style="max-width:860px;margin:0 auto;padding:32px 20px;">
+
+    <div class="content-section">
+      <h3>🏢 About Your Division</h3>
+      <p>HHFC's Islamic Finance division manages Islamic mortgage asset purchases, sukuk issuances, and the Islamic Mortgage Guarantee Programme (MGP-i). The division works closely with the Shariah Advisory Committee. The team spends significant time on manual compliance lookups before each issuance — time that a well-built knowledge agent could dramatically reduce.</p>
+    </div>
+
+    <div class="content-section">
+      <h3>🤖 Agent Brief: HHFC Shariah Guide</h3>
+      <p><strong>Purpose:</strong> Support HHFC's Islamic Finance team's internal workflow by providing quick answers on Shariah compliance requirements, sukuk product structures, and common AAOIFI standards — reducing the manual lookup burden before each issuance.</p>
+      <p><strong>Primary Users:</strong> Islamic Finance team members preparing sukuk issuance documentation, Shariah compliance officers, and internal teams seeking Islamic finance guidance.</p>
+      <p><strong>Core Problem it Solves:</strong> The team spends 12–15 hours per issuance on manual Shariah compliance preparation. An agent that serves as an always-available Shariah reference and checklist generator could reduce preparation time by 40–60%.</p>
+    </div>
+
+    <div class="content-section">
+      <h3>💬 Sample Conversations</h3>
+
+      <div class="chat-window">
+        <span class="chat-scenario-label">Scenario 1 — Murabahah Sukuk Requirements</span>
+        <div class="chat-bubble user">What are the key Shariah requirements for a Murabahah-based sukuk?</div>
+        <div class="chat-bubble agent">
+          <span class="agent-label">🤖 HHFC Shariah Guide</span>
+          For a Murabahah-based sukuk, the key Shariah requirements are: (1) <strong>Valid Underlying Asset</strong> — a real, tangible asset must be identified and purchased; (2) <strong>Valid Aqad</strong> — the offer and acceptance (Ijab and Qabul) must be properly documented; (3) <strong>No Guaranteed Return</strong> — profit must be tied to the sale transaction, not guaranteed independently; (4) <strong>Shariah Advisory Committee approval</strong> before issuance; (5) Full disclosure in offering documents. Note: I recommend verifying the final checklist with your Shariah Advisor before submission to the SAC.
+        </div>
+      </div>
+
+      <div class="chat-window">
+        <span class="chat-scenario-label">Scenario 2 — AAOIFI Standards</span>
+        <div class="chat-bubble user">Is a floating profit rate permissible under AAOIFI standards for our Musharakah sukuk?</div>
+        <div class="chat-bubble agent">
+          <span class="agent-label">🤖 HHFC Shariah Guide</span>
+          Under AAOIFI standards, floating profit rates in Musharakah structures are permissible under certain conditions: the rate must be linked to a permissible benchmark (e.g., KLIBOR or SOFR-equivalent, not a guaranteed fixed return), and the rate mechanism must not create a guaranteed return that converts the Musharakah into a loan arrangement. Key condition: the floating rate must be applied to the profit distribution, not to the capital. I strongly recommend your Shariah Advisor reviews the specific rate mechanism before finalising documentation, as AAOIFI Standard 12 provides the definitive guidance.
+        </div>
+      </div>
+
+      <div class="chat-window">
+        <span class="chat-scenario-label">Scenario 3 — Compliance Checklist</span>
+        <div class="chat-bubble user">What items should be in the Shariah compliance checklist for our next issuance?</div>
+        <div class="chat-bubble agent">
+          <span class="agent-label">🤖 HHFC Shariah Guide</span>
+          Here is a standard 10-item Shariah compliance checklist for an HHFC sukuk issuance:<br>
+          1. Underlying asset Shariah screening completed ✓<br>
+          2. Aqad (offer &amp; acceptance) language verified ✓<br>
+          3. Profit rate structure reviewed against relevant fatwas ✓<br>
+          4. English prospectus vs Arabic fatwa alignment confirmed ✓<br>
+          5. Wakalah appointment letter language reviewed ✓<br>
+          6. SAC meeting minutes referenced in documentation ✓<br>
+          7. Portfolio concentration limits verified ✓<br>
+          8. Investor disclosure on Islamic risk factors included ✓<br>
+          9. Dissolution event clauses reviewed ✓<br>
+          10. Prior SAC resolutions cross-referenced ✓<br>
+          Would you like me to generate this as a working document template?
+        </div>
+      </div>
+
+      <div class="chat-window">
+        <span class="chat-scenario-label">Scenario 4 — Dissolution Clause Issue</span>
+        <div class="chat-bubble user">Our Shariah advisor flagged an issue with the dissolution clause. What should we check?</div>
+        <div class="chat-bubble agent">
+          <span class="agent-label">🤖 HHFC Shariah Guide</span>
+          Dissolution clause issues in sukuk are typically flagged for one of three reasons: (1) the clause creates a guaranteed purchase obligation that converts the structure into a loan; (2) the dissolution trigger events are not aligned with Shariah principles; or (3) the purchase price at dissolution creates a guaranteed return. Could you share the specific clause text? I can help you identify which of these issues applies and suggest standard language that SACs have previously accepted. This review should still be confirmed by your qualified Shariah Advisor before resubmission.
+        </div>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h3>🔧 Build Tasks</h3>
+      <ol class="challenge-steps">
+        <li><strong>Define your agent's persona</strong> — it should feel knowledgeable, precise, and always flag where a human Shariah expert should be consulted for final decisions. This is critical: the agent assists, it does not replace Shariah governance.</li>
+        <li><strong>Build topics for:</strong> (a) Sukuk Structures FAQ, (b) Shariah Compliance Checklist Generator, (c) Common AAOIFI Standards Reference, (d) Escalation to Human Shariah Advisor. Write triggers and responses for each.</li>
+        <li><strong>Test all 4 sample conversations.</strong> Show what happens when a user asks something the agent cannot answer — does it handle it gracefully and escalate appropriately?</li>
+      </ol>
+    </div>
+
+    <div class="content-section">
+      <h3>📝 Your Working File</h3>
+      <p>Your working folder contains <strong>2 files</strong> for your team:</p>
+      <ul style="font-size:0.9rem;line-height:1.8;">
+        <li>📊 <strong>BLANK – Agent-a-thon Team Pack</strong>: your main working file.</li>
+        <li>⚖️ <strong>Peer Judging Sheet</strong>: used during presentations.</li>
+      </ul>
+      <p style="margin-top:12px;background:#FFF7EC;border:1px solid #FDDCCA;border-left:4px solid var(--cag-gold);border-radius:8px;padding:14px;font-size:0.87rem;">
+        🕵️ <strong>Important:</strong> Open the working file in an <strong>Incognito</strong> (Chrome) or <strong>InPrivate</strong> (Edge) window to ensure you are signed in with the correct shared account.
+      </p>
+      <a href="PLACEHOLDER_AIL" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:16px;background:var(--cag-accent);color:white;padding:12px 24px;border-radius:8px;font-weight:700;font-size:0.9rem;text-decoration:none;">📂 Open Working File →</a>
+    </div>
+
+    <div id="powerup-gate">
+      <div class="powerup-locked-icons">⚡🔒⚡</div>
+      <h3>Power Ups: Locked</h3>
+      <p>Power Ups unlock advanced agent capabilities. Get your core agent working first, then reveal your Power Up.</p>
+      <button id="reveal-powerups-btn" class="btn btn-orange" style="max-width:280px;margin:0 auto;">⚡ Reveal Power Ups</button>
+    </div>
+    <div id="revealed-banner" style="display:none;" class="revealed-banner">✅ Power Ups Unlocked! Add this capability to your agent before presenting.</div>
+    <div id="powerups-section">
+      <div class="powerup-card">
+        <div class="pu-header"><div class="pu-num">⚡</div><div class="pu-title">Power Up: Pre-Issuance Health Check Topic</div></div>
+        <div class="pu-prompt">Add a "Pre-Issuance Health Check" topic where the user describes an upcoming sukuk structure (product type, tenor, profit rate mechanism, asset type) and the agent generates a preliminary Shariah risk flag list — identifying the top 3–5 potential compliance issues that the Shariah Advisory Committee is likely to scrutinise, before the formal SAC meeting. Each flag should include a brief explanation and a suggested mitigation.</div>
+        <div class="pu-how">💡 This Power Up makes the agent proactively valuable — instead of answering questions, it anticipates problems before they occur, which is exactly what SAC efficiency requires.</div>
+      </div>
+    </div>
+
+  </div>
+  <footer class="site-footer">Cagamas Agent-a-thon · 13 May 2026 · Powered by Microsoft Copilot Studio · Organised by Microsoft Malaysia</footer>
+</div>
+
+<script src="../assets/script.js"></script>
+</body>
+</html>

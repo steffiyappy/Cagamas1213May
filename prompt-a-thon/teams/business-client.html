@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="team-id" content="business-client">
+  <title>Business &amp; Client Coverage | Cagamas Prompt-a-thon 12 May 2026</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<!-- Wrong Team Block -->
+<div id="wrong-team-msg" style="display:none;position:fixed;inset:0;background:#0a1628;z-index:9999;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px;">
+  <div style="font-size:3rem;margin-bottom:16px;">🚫</div>
+  <h2>Wrong Team Pack</h2>
+  <p>You've already unlocked a different team's pack in this session.<br>Please use the device assigned to your team.</p>
+  <a href="../index.html">← Back to Team Packs</a>
+</div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="logo-badge">CG</div>
+  <div class="header-title">
+    <h1>Cagamas Berhad</h1>
+    <p>Prompt-a-thon · 12 May 2026</p>
+  </div>
+  <span class="header-badge">🔐 TEAM PACK</span>
+</header>
+
+<!-- Lock Gate -->
+<div id="lock-gate" class="lock-gate">
+  <div class="lock-box">
+    <span class="lock-icon">🏘️</span>
+    <h2>Business &amp; Client Coverage</h2>
+    <p>Enter your team code to unlock the Business &amp; Client Coverage pack.</p>
+    <form id="team-lock-form" autocomplete="off">
+      <input id="team-code-input" class="lock-input" type="password" placeholder="Team code" required>
+      <button type="submit" class="btn btn-primary" style="margin-top:12px;">🔓 Unlock My Pack →</button>
+      <div class="error-msg" id="lock-error"></div>
+    </form>
+    <div style="margin-top:20px;">
+      <a href="../index.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;text-decoration:none;">← Back to Team Select</a>
+    </div>
+  </div>
+</div>
+
+<!-- Team Content -->
+<div id="team-content" style="display:none;">
+
+  <!-- Hero -->
+  <div class="team-hero" style="background:linear-gradient(135deg,#006B3F 0%,#004D2C 100%);">
+    <div class="team-label">Team 1 · Business &amp; Client Coverage</div>
+    <h1>Business &amp; Client Coverage Pack</h1>
+    <div class="challenge-name">⚡ Challenge: "The Lender Labyrinth"</div>
+  </div>
+
+  <div style="max-width:860px;margin:0 auto;padding:32px 20px;">
+
+    <!-- About HHFC -->
+    <div class="content-section">
+      <h3>🏢 About Your Division</h3>
+      <p>HHFC's Business &amp; Client Coverage division manages the corporation's relationships with 60+ financial institution partners (banks, development financial institutions, cooperatives). The team handles lender onboarding, portfolio purchase processing, and ongoing client servicing — the lifeblood of HHFC's mortgage purchase operations.</p>
+    </div>
+
+    <!-- Business Pain Point -->
+    <div class="content-section">
+      <h3>⚠️ The Business Pain Point</h3>
+      <div class="pain-box">
+        <strong>Core Problem:</strong> HHFC's lender onboarding process involves 12 manual touchpoints averaging 18 days per transaction — well above the industry norm of 5 days. Two mid-sized banks have begun shifting mortgage portfolio sales to a competitor. HHFC's volume from these institutions fell <strong>23% in H1</strong>.
+      </div>
+      <p>Client history, correspondence, and portfolio preferences are spread across individual email inboxes, shared drives with no consistent naming convention, and personal notebooks. When a key relationship manager resigned in Q3, HHFC's largest new lender account sat unserviced for 11 days while a replacement was briefed from scratch.</p>
+      <div class="stat-grid">
+        <div class="stat-item"><span class="stat-num">12</span><span class="stat-lbl">Manual touchpoints per onboarding</span></div>
+        <div class="stat-item"><span class="stat-num">18</span><span class="stat-lbl">Days average onboarding cycle</span></div>
+        <div class="stat-item"><span class="stat-num">23%</span><span class="stat-lbl">Volume drop from key lenders H1</span></div>
+        <div class="stat-item"><span class="stat-num">11</span><span class="stat-lbl">Days account sat unserviced</span></div>
+      </div>
+    </div>
+
+    <!-- Data Table -->
+    <div class="content-section">
+      <h3>📋 Lender Interaction Log</h3>
+      <div class="table-wrapper">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>ID</th><th>Relationship Manager</th><th>Lender</th><th>Query Type</th><th>Channel</th><th>Time Spent (hrs)</th><th>Resolved?</th><th>Escalated?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>INT-001</td><td>Hazwani M.</td><td>Bank Setia</td><td>New portfolio submission</td><td>Email</td><td>3.5</td><td>Yes</td><td>No</td></tr>
+            <tr><td>INT-002</td><td>Kevin T.</td><td>Koperasi Maju</td><td>Onboarding documents</td><td>Phone</td><td>2.0</td><td>Partial</td><td>Yes</td></tr>
+            <tr><td>INT-003</td><td>Hazwani M.</td><td>Bank Setia</td><td>Purchase price query</td><td>Teams</td><td>1.5</td><td>Yes</td><td>No</td></tr>
+            <tr><td>INT-004</td><td>Syafiq A.</td><td>Bank Harmoni</td><td>Eligibility criteria</td><td>Walk-in</td><td>4.0</td><td>Yes</td><td>No</td></tr>
+            <tr><td>INT-005</td><td>Kevin T.</td><td>DFI Partners</td><td>MGP application</td><td>Email</td><td>5.0</td><td>No</td><td>Yes</td></tr>
+            <tr><td>INT-006</td><td>Hazwani M.</td><td>Credit Union X</td><td>Portfolio valuation</td><td>Call</td><td>2.5</td><td>Yes</td><td>No</td></tr>
+            <tr><td>INT-007</td><td>Syafiq A.</td><td>Bank Harmoni</td><td>Rate negotiation</td><td>Email</td><td>6.0</td><td>Partial</td><td>No</td></tr>
+            <tr><td>INT-008</td><td>Kevin T.</td><td>Koperasi Maju</td><td>Document re-submission</td><td>Email</td><td>1.5</td><td>Yes</td><td>No</td></tr>
+            <tr><td>INT-009</td><td>Azlina R.</td><td>FinBank</td><td>New lender enquiry</td><td>Walk-in</td><td>3.0</td><td>Yes</td><td>No</td></tr>
+            <tr><td>INT-010</td><td>Syafiq A.</td><td>AmFinance</td><td>Eligibility review</td><td>Teams</td><td>2.0</td><td>Yes</td><td>No</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Email Thread -->
+    <div class="content-section">
+      <h3>📧 CEO Email</h3>
+      <div class="email-thread">From: Khairul Anwar Mohd Zain (President/CEO)
+To: Head of Business &amp; Client Coverage
+Subject: Lender Volume Drop — Urgent Action Needed
+
+I've reviewed the H1 numbers. The 23% volume drop from Bank Setia and Bank Harmoni is not a blip — it is a signal. Both institutions cited our onboarding process as a factor in their decision to diversify their portfolio sales to Meridian Credit. We cannot compete on interest rates alone. Lenders expect a responsive, frictionless experience. I need a concrete action plan on my desk by end of week showing how we will modernise this process.</div>
+    </div>
+
+    <!-- Teams Chat -->
+    <div class="content-section">
+      <h3>💬 Teams Chat Extract</h3>
+      <div class="chat-window">
+        <span class="chat-label">Business &amp; Client Coverage Team Channel</span>
+        <div class="chat-line"><span class="chat-who">Hazwani M.</span><span class="chat-time">09:15</span><span class="chat-msg">I spent 3.5 hours on one portfolio submission yesterday just formatting their documents to our template.</span></div>
+        <div class="chat-line"><span class="chat-who">Syafiq A.</span><span class="chat-time">09:18</span><span class="chat-msg">Same. Bank Harmoni sent me 6 versions of the same form before we could process it.</span></div>
+        <div class="chat-line"><span class="chat-who">Kevin T.</span><span class="chat-time">09:22</span><span class="chat-msg">We need a smarter intake process. This is not sustainable.</span></div>
+        <div class="chat-line"><span class="chat-who">Hazwani M.</span><span class="chat-time">09:25</span><span class="chat-msg">And when I was on leave, the DFI Partners submission sat for 4 days because nobody knew where we were in the process.</span></div>
+        <div class="chat-line"><span class="chat-who">Azlina R.</span><span class="chat-time">09:28</span><span class="chat-msg">We need a proper system. Not just shared folders and email.</span></div>
+      </div>
+    </div>
+
+    <!-- Tasks -->
+    <div class="content-section">
+      <h3>🎯 Your Tasks</h3>
+      <ol class="challenge-steps">
+        <li><strong>Analyse the interaction log</strong> to identify where the most time is being lost in the lender servicing process, and assess whether HHFC's current onboarding approach is fit for the volume it is trying to handle.</li>
+        <li><strong>Design an ideal lender onboarding and servicing experience</strong> — one that reduces friction, gives lenders real-time visibility, and ensures HHFC's relationship managers spend their time on value-added activities.</li>
+        <li><strong>Draft a concise action plan</strong> that the Business division head can present to EXCO, outlining the three most impactful changes HHFC should make to recover the lost volume.</li>
+      </ol>
+    </div>
+
+    <!-- Working File -->
+    <div class="content-section">
+      <h3>📝 Your Working File</h3>
+      <p>Your working folder contains <strong>2 files</strong> for your team:</p>
+      <ul style="font-size:0.9rem;line-height:1.8;">
+        <li>📊 <strong>BLANK – Prompt-a-thon Team Pack</strong>: your main working file.</li>
+        <li>⚖️ <strong>Peer Judging Sheet</strong>: used during presentations.</li>
+      </ul>
+      <p style="margin-top:12px;background:#FFF7EC;border:1px solid #FDDCCA;border-left:4px solid var(--cag-gold);border-radius:8px;padding:14px;font-size:0.87rem;">
+        🕵️ <strong>Important:</strong> Open the working file in an <strong>Incognito</strong> (Chrome) or <strong>InPrivate</strong> (Edge) window to ensure you are signed in with the correct shared account.
+      </p>
+      <a href="PLACEHOLDER_BC" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:16px;background:var(--cag-green);color:white;padding:12px 24px;border-radius:8px;font-weight:700;font-size:0.9rem;text-decoration:none;">📂 Open Working File →</a>
+    </div>
+
+    <!-- Power Up Gate -->
+    <div id="powerup-gate">
+      <div class="powerup-locked-icons">⚡🔒⚡</div>
+      <h3>Power Ups: Locked</h3>
+      <p>Power Ups are special Copilot prompts that can supercharge your output. Complete your challenge tasks first, then unlock them here.</p>
+      <button id="reveal-powerups-btn" class="btn btn-orange" style="max-width:280px;margin:0 auto;">⚡ Reveal Power Ups</button>
+    </div>
+
+    <div id="revealed-banner" style="display:none;" class="revealed-banner">✅ Power Ups Unlocked! Use them to supercharge your final output.</div>
+
+    <div id="powerups-section">
+      <div class="powerup-card">
+        <div class="pu-header">
+          <div class="pu-num">⚡</div>
+          <div class="pu-title">Power Up: Executive State of Lender Experience Brief</div>
+        </div>
+        <div class="pu-prompt">"You are a strategic advisor to Harmoni Housing Finance Corporation. Using the interaction log and the CEO's email as your context, write an executive-ready 'State of Lender Experience' brief. Include: (1) a one-paragraph situation assessment, (2) the top 3 root causes of volume loss, and (3) three specific actions with expected outcomes. Format it for a 5-minute EXCO briefing."</div>
+        <div class="pu-how">💡 Use this to transform your analysis into an executive-ready document that leadership can act on immediately.</div>
+      </div>
+    </div>
+
+  </div><!-- /content wrapper -->
+
+  <footer class="site-footer">
+    Cagamas Prompt-a-thon · 12 May 2026 · Powered by Microsoft 365 Copilot · Organised by Microsoft Malaysia
+  </footer>
+
+</div><!-- /team-content -->
+
+<script src="../assets/script.js"></script>
+</body>
+</html>

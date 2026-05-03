@@ -1,0 +1,35 @@
+CAGAMAS EVENT FACILITATOR REFERENCE
+=====================================
+
+== 12 MAY 2026 — PROMPT-A-THON ==
+Main Event Password:   Cagamas12May
+Facilitator URL Param: ?facilitator  (appends to index.html URL)
+
+Team Code Reference:
+  Team 1 — Business & Client Coverage:   BCTEAM
+  Team 2 — Islamic Finance:              ISLTEAM
+  Team 3 — Treasury & Capital Markets:   TRSTEAM
+  Team 4 — Finance & Reporting:          FINTEAM
+  Team 5 — Technology & Operations:      TECTEAM
+  Team 6 — Human Capital:               HCMTEAM
+  Team 7 — Risk & Compliance:            RSKTEAM
+  Team 8 — Strategy & Research:          STRTEAM
+
+== 13 MAY 2026 — AGENT-A-THON ==
+Main Event Password:   Cagamas13May
+Facilitator URL Param: ?facilitator  (appends to index.html URL)
+
+Team Code Reference:
+  Team 1 — Business & Client Coverage:   ABCTEAM
+  Team 2 — Islamic Finance:              AISLTEAM
+  Team 3 — Treasury & Capital Markets:   ATRSTEAM
+  Team 4 — Finance & Reporting:          AFINTEAM
+  Team 5 — Technology & Operations:      ATECTEAM
+  Team 6 — Human Capital:               AHCMTEAM
+  Team 7 — Risk & Compliance:            ARSKTEAM
+  Team 8 — Strategy & Research:          ASTRTEAM
+
+NOTES:
+- Team codes are case-insensitive (converted to uppercase before hashing)
+- The ?facilitator URL parameter bypasses all lock gates for facilitator access
+- Working file links marked PLACEHOLDER_XX need to be updated with actual OneDrive URLs

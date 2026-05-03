@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cagamas × Microsoft Copilot Events | 12–13 May 2026</title>
+  <style>
+    :root {
+      --navy: #003366;
+      --green: #006B3F;
+      --emerald: #00A86B;
+      --purple: #5B21B6;
+      --gold: #C8A84B;
+      --light: #F0F7F4;
+      --border: #C8D8CC;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--light);
+      min-height: 100vh;
+      display: flex; flex-direction: column; align-items: center;
+      justify-content: center; padding: 2rem;
+    }
+    .hero {
+      background: linear-gradient(135deg, var(--navy) 0%, #004D2C 60%, var(--emerald) 100%);
+      color: white; text-align: center;
+      padding: 56px 40px 48px; border-radius: 20px;
+      max-width: 780px; width: 100%;
+      box-shadow: 0 20px 60px rgba(0,51,102,0.25);
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 70% 40%, rgba(0,168,107,0.2) 0%, transparent 65%);
+    }
+    .logo-row {
+      display: flex; align-items: center; justify-content: center;
+      gap: 14px; margin-bottom: 28px; position: relative;
+    }
+    .logo-badge {
+      width: 48px; height: 48px; background: var(--gold);
+      border-radius: 12px; display: flex; align-items: center; justify-content: center;
+      font-weight: 900; font-size: 1.2rem; color: white; letter-spacing: -1px;
+    }
+    .org-name { font-size: 1.1rem; font-weight: 700; text-align: left; line-height: 1.3; }
+    .org-sub { font-size: 0.78rem; opacity: 0.75; }
+    .event-tag {
+      display: inline-block; background: rgba(255,255,255,0.18);
+      padding: 4px 16px; border-radius: 20px;
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; margin-bottom: 16px; position: relative;
+    }
+    .hero h1 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 800;
+      line-height: 1.2; margin-bottom: 12px; position: relative;
+    }
+    .hero p {
+      font-size: 0.98rem; opacity: 0.85; max-width: 520px;
+      margin: 0 auto 36px; line-height: 1.65; position: relative;
+    }
+    .day-cards {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 16px; position: relative;
+    }
+    @media (max-width: 560px) { .day-cards { grid-template-columns: 1fr; } }
+    .day-card {
+      background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 14px; padding: 24px 20px;
+      text-decoration: none; color: white;
+      transition: background 0.2s, transform 0.15s;
+      display: flex; flex-direction: column; align-items: flex-start; gap: 8px;
+    }
+    .day-card:hover { background: rgba(255,255,255,0.2); transform: translateY(-2px); }
+    .day-card .day-emoji { font-size: 2rem; }
+    .day-card .day-date { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.7; }
+    .day-card h2 { font-size: 1.1rem; font-weight: 800; }
+    .day-card p { font-size: 0.82rem; opacity: 0.8; line-height: 1.5; }
+    .day-card .go { margin-top: 8px; font-size: 0.82rem; font-weight: 700; opacity: 0.9; }
+    .day-card.prompt { border-top: 3px solid var(--emerald); }
+    .day-card.agent  { border-top: 3px solid #A78BFA; }
+    .footer-note {
+      margin-top: 20px; font-size: 0.75rem; opacity: 0.6; text-align: center; position: relative;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="logo-row">
+      <div class="logo-badge">CG</div>
+      <div>
+        <div class="org-name">Cagamas Berhad</div>
+        <div class="org-sub">× Microsoft Copilot Events · May 2026</div>
+      </div>
+    </div>
+    <div class="event-tag">🚀 Two Days · Two Challenges</div>
+    <h1>Cagamas AI Challenge Week</h1>
+    <p>Two days of hands-on AI challenges powered by Microsoft Copilot. Select your day below to enter your event.</p>
+    <div class="day-cards">
+      <a href="prompt-a-thon/index.html" class="day-card prompt">
+        <div class="day-emoji">⚡</div>
+        <div class="day-date">12 May 2026</div>
+        <h2>Prompt-a-thon</h2>
+        <p>Use Microsoft 365 Copilot to tackle a real business challenge inside Harmoni Housing Finance Corporation.</p>
+        <div class="go">Enter Challenge →</div>
+      </a>
+      <a href="agent-a-thon/index.html" class="day-card agent">
+        <div class="day-emoji">🤖</div>
+        <div class="day-date">13 May 2026</div>
+        <h2>Agent-a-thon</h2>
+        <p>Build a Microsoft Copilot Studio agent to solve a real operational problem inside HHFC.</p>
+        <div class="go">Enter Challenge →</div>
+      </a>
+    </div>
+    <div class="footer-note">Powered by Microsoft 365 Copilot &amp; Copilot Studio · Organised by Microsoft Malaysia</div>
+  </div>
+</body>
+</html>

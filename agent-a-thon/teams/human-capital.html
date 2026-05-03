@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="team-id" content="human-capital">
+  <title>Human Capital | Cagamas Agent-a-thon 13 May 2026</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<div id="wrong-team-msg" style="display:none;position:fixed;inset:0;background:#0d0120;z-index:9999;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px;">
+  <div style="font-size:3rem;margin-bottom:16px;">🚫</div>
+  <h2>Wrong Team Pack</h2>
+  <p>You've already unlocked a different team's pack in this session.<br>Please use the device assigned to your team.</p>
+  <a href="../index.html">← Back to Build Packs</a>
+</div>
+
+<header class="site-header">
+  <div class="logo-badge">CG</div>
+  <div class="header-title">
+    <h1>Cagamas Berhad</h1>
+    <p>Agent-a-thon · 13 May 2026</p>
+  </div>
+  <span class="header-badge">🤖 BUILD PACK</span>
+</header>
+
+<div id="lock-gate" class="lock-gate">
+  <div class="lock-box">
+    <span class="lock-icon">👥</span>
+    <h2>Human Capital</h2>
+    <p>Enter your team code to unlock the Agent Build Pack.</p>
+    <form id="team-lock-form" autocomplete="off">
+      <input id="team-code-input" class="lock-input" type="password" placeholder="Team code" required>
+      <button type="submit" class="btn btn-primary" style="margin-top:12px;">🔓 Unlock My Pack →</button>
+      <div class="error-msg" id="lock-error"></div>
+    </form>
+    <div style="margin-top:20px;"><a href="../index.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;text-decoration:none;">← Back to Team Select</a></div>
+  </div>
+</div>
+
+<div id="team-content" style="display:none;">
+
+  <div class="team-hero" style="background:linear-gradient(135deg,#16A34A 0%,#15803D 100%);">
+    <div class="team-label">Team 6 · Human Capital</div>
+    <h1>Human Capital Build Pack</h1>
+    <div class="challenge-name">🤖 Agent: "HHFC People Connect"</div>
+  </div>
+
+  <div style="max-width:860px;margin:0 auto;padding:32px 20px;">
+
+    <div class="content-section">
+      <h3>🏢 About Your Division</h3>
+      <p>HHFC's Human Capital division manages talent, L&amp;D, and HR policy for 350 staff. The team receives 23 policy queries per week and spends 8 hours answering repeat questions. Training completion sits at 41%. Three high-potential staff left in H1. A well-designed HR self-service agent could handle the routine load and free HR Business Partners for strategic work.</p>
+    </div>
+
+    <div class="content-section">
+      <h3>🤖 Agent Brief: HHFC People Connect</h3>
+      <p><strong>Purpose:</strong> Serve as HHFC's HR self-service assistant — answering policy questions, guiding staff to learning resources, and helping managers navigate HR processes — reducing the 23 weekly policy queries and freeing HR to focus on strategic talent work.</p>
+      <p><strong>Primary Users:</strong> All HHFC staff for HR policy questions; managers for performance management and development guidance; L&amp;D team for training enquiries.</p>
+      <p><strong>Core Problem it Solves:</strong> 8 hours per week spent answering repeat questions that haven't changed in months. An agent with the Policy Manual as its knowledge base could answer the majority of these instantly, while routing sensitive matters to HR Business Partners.</p>
+    </div>
+
+    <div class="content-section">
+      <h3>💬 Sample Conversations</h3>
+
+      <div class="chat-window">
+        <span class="chat-scenario-label">Scenario 1 — Leave Entitlement</span>
+        <div class="chat-bubble user">How many days of annual leave am I entitled to after 5 years of service?</div>
+        <div class="chat-bubble agent">
+          <span class="agent-label">🤖 HHFC People Connect</span>
+          At 5 years of continuous service with HHFC, you are entitled to <strong>18 days of annual leave</strong> per year (as per Section 4.2 of the HHFC HR Policy Manual). A few important notes: (1) Leave entitlement increases to 20 days at 10 years of service; (2) Up to 10 days may be carried forward to the following calendar year with your Head of Department's approval; (3) Unconsumed leave beyond the carry-forward limit will be forfeited on 31 January. Would you like information on how to apply for leave, or do you have questions about medical leave entitlement?
+        </div>
+      </div>
+
+      <div class="chat-window">
+        <span class="chat-scenario-label">Scenario 2 — Programme Nomination</span>
+        <div class="chat-bubble user">I want to nominate someone for the Leadership Development Programme. What's the process?</div>
+        <div class="chat-bubble agent">
+          <span class="agent-label">🤖 HHFC People Connect</span>
+          To nominate someone for the Leadership Development Programme, follow these steps:<br><br>
+          1. <strong>Manager Nomination Form</strong> — Complete the LDP Nomination Form (available on the HR portal) and get your own Head of Department's signature.<br>
+          2. <strong>HR Business Partner Endorsement</strong> — Submit the form to your HR Business Partner, who will assess the nominee against the LDP eligibility criteria (minimum Band 4, performance rating "Meets Expectations" or above for 2 consecutive years).<br>
+          3. <strong>Submission Deadline</strong> — Nominations for the next cohort close on the last Friday of each quarter.<br><br>
+          Is the person you want to nominate currently in your direct reporting line?
+        </div>
+      </div>
+
+      <div class="chat-window">
+        <span class="chat-scenario-label">Scenario 3 — Performance Management</span>
+        <div class="chat-bubble user">I'm managing someone who is underperforming. What are the steps I should follow?</div>
+        <div class="chat-bubble agent">
+          <span class="agent-label">🤖 HHFC People Connect</span>
+          I understand this can be a sensitive situation. Here is HHFC's recommended approach:<br><br>
+          <strong>Step 1 — Informal Coaching</strong>: Have a documented 1:1 conversation clearly outlining the performance concern and expected improvement. Document this conversation in writing.<br>
+          <strong>Step 2 — Performance Improvement Plan (PIP)</strong>: If informal coaching does not produce improvement within 30 days, discuss with your HR Business Partner about initiating a formal PIP. The PIP typically runs 60–90 days.<br>
+          <strong>Step 3 — HR involvement</strong>: Your HR Business Partner should be involved from Step 2 onwards. Please contact them before taking any formal action.<br><br>
+          ⚠️ For all formal performance management steps, please consult your HR Business Partner directly. I can provide guidance, but HR must be involved in formal processes.
+        </div>
+      </div>
+
+      <div class="chat-window">
+        <span class="chat-scenario-label">Scenario 4 — Learning Catalogue</span>
+        <div class="chat-bubble user">What learning courses are available for AI and digital skills?</div>
+        <div class="chat-bubble agent">
+          <span class="agent-label">🤖 HHFC People Connect</span>
+          HHFC currently offers the following AI and digital skills programmes:<br><br>
+          📚 <strong>AI Literacy Fundamentals</strong> — All departments | Deadline: Dec 2025 | Enrol via the L&amp;D portal<br>
+          📚 <strong>Microsoft 365 Copilot Basics</strong> — Operations (open to all) | Deadline: Nov 2025 | External facilitator<br>
+          📚 <strong>Data Analysis with Excel</strong> — Finance (open by request) | Deadline: Oct 2025 | Internal<br><br>
+          To enrol, log in to the HHFC Learning Portal at intranet.hhfc/learning and search by programme name. If a programme is full, the L&amp;D team can add you to the waitlist. Would you like help navigating the enrolment process?
+        </div>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h3>🔧 Build Tasks</h3>
+      <ol class="challenge-steps">
+        <li><strong>Configure People Connect as a trusted, empathetic HR assistant.</strong> It should use a warm, supportive tone and always recommend consulting an HR Business Partner for sensitive employee relations matters. It must never give legal employment advice.</li>
+        <li><strong>Build topics for:</strong> (a) Leave &amp; Benefits FAQ, (b) Learning &amp; Development Catalogue, (c) Performance Management Process Guide, (d) HR Policy Search. Write triggers and responses for each.</li>
+        <li><strong>Test all 4 conversations.</strong> Demonstrate that for sensitive topics (performance management, disciplinary), the agent always flags the need for HR involvement while still being genuinely helpful.</li>
+      </ol>
+    </div>
+
+    <div class="content-section">
+      <h3>📝 Your Working File</h3>
+      <p>Your working folder contains <strong>2 files</strong> for your team:</p>
+      <ul style="font-size:0.9rem;line-height:1.8;">
+        <li>📊 <strong>BLANK – Agent-a-thon Team Pack</strong>: your main working file.</li>
+        <li>⚖️ <strong>Peer Judging Sheet</strong>: used during presentations.</li>
+      </ul>
+      <p style="margin-top:12px;background:#FFF7EC;border:1px solid #FDDCCA;border-left:4px solid var(--cag-gold);border-radius:8px;padding:14px;font-size:0.87rem;">
+        🕵️ <strong>Important:</strong> Open the working file in an <strong>Incognito</strong> (Chrome) or <strong>InPrivate</strong> (Edge) window to ensure you are signed in with the correct shared account.
+      </p>
+      <a href="PLACEHOLDER_AHC" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:16px;background:var(--cag-accent);color:white;padding:12px 24px;border-radius:8px;font-weight:700;font-size:0.9rem;text-decoration:none;">📂 Open Working File →</a>
+    </div>
+
+    <div id="powerup-gate">
+      <div class="powerup-locked-icons">⚡🔒⚡</div>
+      <h3>Power Ups: Locked</h3>
+      <p>Power Ups unlock advanced agent capabilities. Get your core agent working first, then reveal your Power Up.</p>
+      <button id="reveal-powerups-btn" class="btn btn-orange" style="max-width:280px;margin:0 auto;">⚡ Reveal Power Ups</button>
+    </div>
+    <div id="revealed-banner" style="display:none;" class="revealed-banner">✅ Power Ups Unlocked! Add this capability to your agent before presenting.</div>
+    <div id="powerups-section">
+      <div class="powerup-card">
+        <div class="pu-header"><div class="pu-num">⚡</div><div class="pu-title">Power Up: Career Compass Topic</div></div>
+        <div class="pu-prompt">Add a "Career Compass" topic where a staff member describes their current role, years of service, and career aspirations within HHFC. The agent should: (1) map out 2–3 potential career paths within HHFC that align with their goals; (2) recommend specific learning programmes from the HHFC catalogue that would support each path; (3) suggest 1–2 internal mentors or functions they should explore; and (4) offer to book a career development conversation with their HR Business Partner. The agent should feel like a genuinely invested career advisor, not a FAQ bot.</div>
+        <div class="pu-how">💡 This Power Up directly addresses the root cause of HHFC's high-potential attrition — "unclear career path." A well-designed Career Compass could make the difference between keeping a great employee and losing them to a competitor.</div>
+      </div>
+    </div>
+
+  </div>
+  <footer class="site-footer">Cagamas Agent-a-thon · 13 May 2026 · Powered by Microsoft Copilot Studio · Organised by Microsoft Malaysia</footer>
+</div>
+
+<script src="../assets/script.js"></script>
+</body>
+</html>

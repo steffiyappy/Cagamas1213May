@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cagamas Prompt-a-thon · 12 May 2026</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    #main-site { display: none; }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════
+     MAIN LOCK GATE
+══════════════════════════════════════════════ -->
+<div id="main-lock" class="lock-gate">
+  <div class="lock-box">
+    <span class="lock-icon">🏛️</span>
+    <h2>Cagamas Prompt-a-thon 12 May</h2>
+    <p>Enter the event password to access the game.</p>
+    <form id="main-lock-form" autocomplete="off">
+      <input id="main-pw-input" class="lock-input" type="password" placeholder="Event password" required>
+      <button type="button" class="show-pw-btn" id="show-pw-btn">👁 Show password</button>
+      <button type="submit" class="btn btn-primary" style="margin-top:14px;">🔓 Unlock Event →</button>
+      <div class="error-msg" id="main-error">❌ Incorrect password. Please try again.</div>
+    </form>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     MAIN SITE (shown after unlock)
+══════════════════════════════════════════════ -->
+<div id="main-site">
+
+  <header class="site-header">
+    <div class="logo-badge">CG</div>
+    <div class="header-title">
+      <h1>Cagamas Berhad</h1>
+      <p>Prompt-a-thon · 12 May 2026</p>
+    </div>
+    <span class="header-badge">⚡ GAME ON</span>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-tag">⚡ Cagamas Prompt-a-thon · 12 May 2026</div>
+    <h2>Welcome to the
+Harmoni Housing Finance Copilot Challenge</h2>
+    <p>Your team has been handed a real business challenge from inside Harmoni Housing Finance Corporation. Use <strong>Microsoft 365 Copilot</strong> to solve it, present your approach, and compete for the title of <strong>Copilot Champions</strong>.</p>
+    <a href="#teams" class="hero-cta">📂 Find Your Team Pack ↓</a>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section" style="background:white;">
+    <div class="container">
+      <h2 class="section-title">🎮 How It Works</h2>
+      <p class="section-sub">Four steps from zero to Copilot Champions.</p>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <h4>Find Your Pack 🔐</h4>
+          <p>Enter your team code to unlock your department's game pack.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <h4>Read the Brief 📋</h4>
+          <p>Understand HHFC's real business pain point for your department.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <h4>Hack with Copilot 💡</h4>
+          <p>Use Microsoft 365 Copilot to build your solution. Document your prompts in your team's working file.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">4</div>
+          <h4>Unlock Power Ups ⚡</h4>
+          <p>Once you've completed your tasks, reveal hidden Power Ups to supercharge your output.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Company Brief Alert -->
+  <section class="section" style="background:var(--cag-light);">
+    <div class="container" style="max-width:700px;">
+      <div class="alert-box">
+        📖 <strong>Before you start:</strong> Read the HHFC Company Background &amp; Challenge Brief first to understand the corporation and its transformation programme.
+      </div>
+      <a href="company.html" class="btn btn-primary" style="display:inline-block;width:auto;padding:13px 28px;text-decoration:none;">🏢 Read HHFC Company Brief →</a>
+    </div>
+  </section>
+
+  <!-- Teams -->
+  <section class="section" id="teams">
+    <div class="container">
+      <h2 class="section-title">🏢 Your Team Packs</h2>
+      <p class="section-sub">Select your department below. Each pack is locked — your facilitator will give you your team code.</p>
+      <div class="cards-grid">
+
+        <div class="card">
+          <div class="card-icon">🏘️</div>
+          <h3>Business &amp; Client Coverage</h3>
+          <p>Mortgage origination, lender relationships, portfolio management, and client onboarding.</p>
+          <a href="teams/business-client.html" class="card-link" style="background:#006B3F;">🔐 Enter Pack →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">☪️</div>
+          <h3>Islamic Finance</h3>
+          <p>Shariah-compliant products, sukuk issuance, Islamic mortgage purchase, and Shariah governance.</p>
+          <a href="teams/islamic-business.html" class="card-link" style="background:#0891B2;">🔐 Enter Pack →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">💰</div>
+          <h3>Treasury &amp; Capital Markets</h3>
+          <p>Funding strategy, bond and sukuk issuance, ALM, and investor relations.</p>
+          <a href="teams/treasury-dcm.html" class="card-link" style="background:#B45309;">🔐 Enter Pack →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">📊</div>
+          <h3>Finance &amp; Reporting</h3>
+          <p>Management reporting, Board pack preparation, variance analysis, and financial planning.</p>
+          <a href="teams/finance-reporting.html" class="card-link" style="background:#7C3AED;">🔐 Enter Pack →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">💻</div>
+          <h3>Technology &amp; Operations</h3>
+          <p>Core systems, digital transformation, change management, and operational automation.</p>
+          <a href="teams/technology-operations.html" class="card-link" style="background:#0891B2;">🔐 Enter Pack →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">👥</div>
+          <h3>Human Capital</h3>
+          <p>Talent development, L&amp;D tracking, HR policy management, and workforce planning.</p>
+          <a href="teams/human-capital.html" class="card-link" style="background:#16A34A;">🔐 Enter Pack →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🛡️</div>
+          <h3>Risk &amp; Compliance</h3>
+          <p>Regulatory compliance, risk frameworks, BNM reporting, and audit management.</p>
+          <a href="teams/risk-compliance.html" class="card-link" style="background:#DC2626;">🔐 Enter Pack →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🔭</div>
+          <h3>Strategy &amp; Research</h3>
+          <p>Strategic planning, housing market research, ESG strategy, and Board reporting.</p>
+          <a href="teams/strategy-research.html" class="card-link" style="background:#0F766E;">🔐 Enter Pack →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    Cagamas Prompt-a-thon · 12 May 2026 · Powered by Microsoft 365 Copilot · Organised by Microsoft Malaysia
+  </footer>
+
+</div><!-- /main-site -->
+
+<script>
+(async () => {
+  const HASH_12MAY = '1ab218fe75f1a91f270c21776f12320c38abd6fbfdb89fc9edc3236f16190446';
+  const KEY        = 'cag_unlocked_12may';
+
+  async function sha256(msg) {
+    const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(msg));
+    return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
+  }
+
+  function unlock() {
+    document.getElementById('main-lock').style.display  = 'none';
+    document.getElementById('main-site').style.display  = 'block';
+    localStorage.setItem(KEY, '1');
+  }
+
+  /* Facilitator bypass */
+  if (new URLSearchParams(location.search).has('facilitator')) { unlock(); return; }
+
+  /* Already unlocked */
+  if (localStorage.getItem(KEY) === '1') { unlock(); return; }
+
+  /* Already assigned to a team — redirect */
+  const team = sessionStorage.getItem('cag_team');
+  if (team) { unlock(); return; }
+
+  /* Show/hide toggle */
+  const pwInput = document.getElementById('main-pw-input');
+  document.getElementById('show-pw-btn').addEventListener('click', () => {
+    pwInput.type = pwInput.type === 'password' ? 'text' : 'password';
+  });
+
+  /* Form submit */
+  document.getElementById('main-lock-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const h = await sha256(pwInput.value.trim());
+    if (h === HASH_12MAY) {
+      unlock();
+    } else {
+      document.getElementById('main-error').style.display = 'block';
+      pwInput.value = '';
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="team-id" content="finance-reporting">
+  <title>Finance &amp; Reporting | Cagamas Prompt-a-thon 12 May 2026</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<div id="wrong-team-msg" style="display:none;position:fixed;inset:0;background:#0a1628;z-index:9999;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px;">
+  <div style="font-size:3rem;margin-bottom:16px;">🚫</div>
+  <h2>Wrong Team Pack</h2>
+  <p>You've already unlocked a different team's pack in this session.<br>Please use the device assigned to your team.</p>
+  <a href="../index.html">← Back to Team Packs</a>
+</div>
+
+<header class="site-header">
+  <div class="logo-badge">CG</div>
+  <div class="header-title">
+    <h1>Cagamas Berhad</h1>
+    <p>Prompt-a-thon · 12 May 2026</p>
+  </div>
+  <span class="header-badge">🔐 TEAM PACK</span>
+</header>
+
+<div id="lock-gate" class="lock-gate">
+  <div class="lock-box">
+    <span class="lock-icon">📊</span>
+    <h2>Finance &amp; Reporting</h2>
+    <p>Enter your team code to unlock the Finance &amp; Reporting pack.</p>
+    <form id="team-lock-form" autocomplete="off">
+      <input id="team-code-input" class="lock-input" type="password" placeholder="Team code" required>
+      <button type="submit" class="btn btn-primary" style="margin-top:12px;">🔓 Unlock My Pack →</button>
+      <div class="error-msg" id="lock-error"></div>
+    </form>
+    <div style="margin-top:20px;"><a href="../index.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;text-decoration:none;">← Back to Team Select</a></div>
+  </div>
+</div>
+
+<div id="team-content" style="display:none;">
+
+  <div class="team-hero" style="background:linear-gradient(135deg,#7C3AED 0%,#5B21B6 100%);">
+    <div class="team-label">Team 4 · Finance &amp; Reporting</div>
+    <h1>Finance &amp; Reporting Pack</h1>
+    <div class="challenge-name">⚡ Challenge: "The Management Pack Marathon"</div>
+  </div>
+
+  <div style="max-width:860px;margin:0 auto;padding:32px 20px;">
+
+    <div class="content-section">
+      <h3>🏢 About Your Division</h3>
+      <p>HHFC's Finance division manages financial planning, Group performance reporting, and Board-level financial communication. Every month, the team produces the Management Accounts Pack — reviewed by EXCO and the Board of Directors. The pack is HHFC's single most important internal document, and the process of producing it is consuming resources that should be spent on analysis and insight.</p>
+    </div>
+
+    <div class="content-section">
+      <h3>⚠️ The Business Pain Point</h3>
+      <div class="pain-box">
+        <strong>Core Problem:</strong> Producing HHFC's monthly Management Accounts Pack takes <strong>6 working days</strong> — nearly a third of the working month. Data from 14 cost centres arrives in different formats. On two occasions, incorrect figures were included in the pack circulated to EXCO. In one case, an EXCO member spotted a discrepancy during the meeting itself.
+      </div>
+      <p>The team spends 80% of their time collecting and reconciling data, leaving only one day to write financial commentary. The CFO has returned packs three times in the past year requesting more substantive analysis, with the message: "This is a process design failure, not an individual performance issue."</p>
+      <div class="stat-grid">
+        <div class="stat-item"><span class="stat-num">6</span><span class="stat-lbl">Working days to produce pack</span></div>
+        <div class="stat-item"><span class="stat-num">14</span><span class="stat-lbl">Cost centres to consolidate</span></div>
+        <div class="stat-item"><span class="stat-num">3×</span><span class="stat-lbl">CFO has returned packs this year</span></div>
+        <div class="stat-item"><span class="stat-num">2</span><span class="stat-lbl">Errors reached EXCO</span></div>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h3>📋 Reporting Adjustment Log</h3>
+      <div class="table-wrapper">
+        <table class="data-table">
+          <thead>
+            <tr><th>Report ID</th><th>Cost Centre</th><th>Metric</th><th>Initial Value</th><th>Final Value</th><th>Reason for Change</th><th>Approval Method</th><th>Documented?</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>RPT-101</td><td>Treasury</td><td>Interest Income</td><td>RM 412.3M</td><td>RM 408.9M</td><td>Coupon accrual timing</td><td>Email</td><td>No</td></tr>
+            <tr><td>RPT-102</td><td>Islamic Finance</td><td>Sukuk Revenue</td><td>RM 188.4M</td><td>RM 191.2M</td><td>Fee income reclass</td><td>Teams chat</td><td>No</td></tr>
+            <tr><td>RPT-103</td><td>Business Dev</td><td>Portfolio Purchase Volume</td><td>RM 2.1B</td><td>RM 1.98B</td><td>Pipeline slip</td><td>Verbal</td><td>No</td></tr>
+            <tr><td>RPT-104</td><td>HR</td><td>Staff Costs</td><td>RM 14.6M</td><td>RM 14.6M</td><td>No change</td><td>N/A</td><td>Yes</td></tr>
+            <tr><td>RPT-105</td><td>IT &amp; Ops</td><td>OPEX</td><td>RM 8.2M</td><td>RM 9.7M</td><td>Licence renewal</td><td>Email</td><td>Partial</td></tr>
+            <tr><td>RPT-106</td><td>Risk &amp; Compliance</td><td>Provision</td><td>RM 6.8M</td><td>RM 8.1M</td><td>Portfolio reclass</td><td>Email</td><td>No</td></tr>
+            <tr><td>RPT-107</td><td>Capital Markets</td><td>Issuance Cost</td><td>RM 4.9M</td><td>RM 5.3M</td><td>Legal fee revision</td><td>Teams chat</td><td>No</td></tr>
+            <tr><td>RPT-108</td><td>Strategy</td><td>Project Cost</td><td>RM 3.1M</td><td>RM 3.1M</td><td>No change</td><td>N/A</td><td>Yes</td></tr>
+            <tr><td>RPT-109</td><td>Islamic Finance</td><td>Zakat</td><td>RM 1.4M</td><td>RM 1.7M</td><td>Rate adjustment</td><td>Email</td><td>No</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h3>📧 CFO Email</h3>
+      <div class="email-thread">From: Mei Lin Chong (CFO)
+To: Head of Finance &amp; Reporting
+Subject: Management Pack Quality — Enough
+
+I need to be direct. The last three packs have had commentary that reads like it was written in 30 minutes. Because it was. This is not an individual performance issue — it is a process design failure. We are spending 80% of our time collecting and reconciling data and 20% on the thing that matters: telling leadership what the numbers mean.
+
+I want a proposal by end of month for how we fundamentally redesign this process. Not incremental improvement. A new model. We have the tools. We need to use them differently.</div>
+    </div>
+
+    <div class="content-section">
+      <h3>🎯 Your Tasks</h3>
+      <ol class="challenge-steps">
+        <li><strong>Review the adjustment log</strong> and identify the root causes of recurring reconciliation failures. Assess whether HHFC's current month-end process is structurally capable of producing timely, accurate financial commentary.</li>
+        <li><strong>Redesign the month-end reporting process</strong> to reduce the data collection and reconciliation phase from 5 days to 2 days — describe exactly what changes and how Copilot supports the new model.</li>
+        <li><strong>Using the adjustment log data and the CFO's directive as context,</strong> draft a sample Management Discussion &amp; Analysis commentary for HHFC's Q2 results — show the Board what good looks like.</li>
+      </ol>
+    </div>
+
+    <div class="content-section">
+      <h3>📝 Your Working File</h3>
+      <p>Your working folder contains <strong>2 files</strong> for your team:</p>
+      <ul style="font-size:0.9rem;line-height:1.8;">
+        <li>📊 <strong>BLANK – Prompt-a-thon Team Pack</strong>: your main working file.</li>
+        <li>⚖️ <strong>Peer Judging Sheet</strong>: used during presentations.</li>
+      </ul>
+      <p style="margin-top:12px;background:#FFF7EC;border:1px solid #FDDCCA;border-left:4px solid var(--cag-gold);border-radius:8px;padding:14px;font-size:0.87rem;">
+        🕵️ <strong>Important:</strong> Open the working file in an <strong>Incognito</strong> (Chrome) or <strong>InPrivate</strong> (Edge) window to ensure you are signed in with the correct shared account.
+      </p>
+      <a href="PLACEHOLDER_FN" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:16px;background:var(--cag-green);color:white;padding:12px 24px;border-radius:8px;font-weight:700;font-size:0.9rem;text-decoration:none;">📂 Open Working File →</a>
+    </div>
+
+    <div id="powerup-gate">
+      <div class="powerup-locked-icons">⚡🔒⚡</div>
+      <h3>Power Ups: Locked</h3>
+      <p>Power Ups are special Copilot prompts that can supercharge your output. Complete your challenge tasks first, then unlock them here.</p>
+      <button id="reveal-powerups-btn" class="btn btn-orange" style="max-width:280px;margin:0 auto;">⚡ Reveal Power Ups</button>
+    </div>
+    <div id="revealed-banner" style="display:none;" class="revealed-banner">✅ Power Ups Unlocked! Use them to supercharge your final output.</div>
+    <div id="powerups-section">
+      <div class="powerup-card">
+        <div class="pu-header"><div class="pu-num">⚡</div><div class="pu-title">Power Up: Board-Ready MD&amp;A Commentary</div></div>
+        <div class="pu-prompt">"You are the CFO of Harmoni Housing Finance Corporation. Using the adjustment log as your data source, write a Board-ready Management Discussion &amp; Analysis section for HHFC's Q2 results. Include: (1) a 2-paragraph executive summary of financial performance, (2) a variance commentary for the 3 most material line items, and (3) a forward-looking statement on H2 outlook. Write in the tone of a CFO who wants the Board to understand both the numbers and the strategic implications."</div>
+        <div class="pu-how">💡 Use this to demonstrate what genuinely insightful Board reporting looks like — and use it as your reference for what good commentary should be.</div>
+      </div>
+    </div>
+
+  </div>
+  <footer class="site-footer">Cagamas Prompt-a-thon · 12 May 2026 · Powered by Microsoft 365 Copilot · Organised by Microsoft Malaysia</footer>
+</div>
+
+<script src="../assets/script.js"></script>
+</body>
+</html>

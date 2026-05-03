@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="team-id" content="finance-reporting">
+  <title>Finance &amp; Reporting | Cagamas Agent-a-thon 13 May 2026</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<div id="wrong-team-msg" style="display:none;position:fixed;inset:0;background:#0d0120;z-index:9999;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px;">
+  <div style="font-size:3rem;margin-bottom:16px;">🚫</div>
+  <h2>Wrong Team Pack</h2>
+  <p>You've already unlocked a different team's pack in this session.<br>Please use the device assigned to your team.</p>
+  <a href="../index.html">← Back to Build Packs</a>
+</div>
+
+<header class="site-header">
+  <div class="logo-badge">CG</div>
+  <div class="header-title">
+    <h1>Cagamas Berhad</h1>
+    <p>Agent-a-thon · 13 May 2026</p>
+  </div>
+  <span class="header-badge">🤖 BUILD PACK</span>
+</header>
+
+<div id="lock-gate" class="lock-gate">
+  <div class="lock-box">
+    <span class="lock-icon">📊</span>
+    <h2>Finance &amp; Reporting</h2>
+    <p>Enter your team code to unlock the Agent Build Pack.</p>
+    <form id="team-lock-form" autocomplete="off">
+      <input id="team-code-input" class="lock-input" type="password" placeholder="Team code" required>
+      <button type="submit" class="btn btn-primary" style="margin-top:12px;">🔓 Unlock My Pack →</button>
+      <div class="error-msg" id="lock-error"></div>
+    </form>
+    <div style="margin-top:20px;"><a href="../index.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;text-decoration:none;">← Back to Team Select</a></div>
+  </div>
+</div>
+
+<div id="team-content" style="display:none;">
+
+  <div class="team-hero" style="background:linear-gradient(135deg,#7C3AED 0%,#5B21B6 100%);">
+    <div class="team-label">Team 4 · Finance &amp; Reporting</div>
+    <h1>Finance &amp; Reporting Build Pack</h1>
+    <div class="challenge-name">🤖 Agent: "HHFC Finance Desk"</div>
+  </div>
+
+  <div style="max-width:860px;margin:0 auto;padding:32px 20px;">
+
+    <div class="content-section">
+      <h3>🏢 About Your Division</h3>
+      <p>HHFC's Finance division manages financial planning and Group performance reporting. Monthly Management Accounts Pack production currently takes 6 days and results in rushed commentary. An agent that helps management teams query financial data and draft variance commentary could fundamentally change the Finance team's capacity for value-add analysis.</p>
+    </div>
+
+    <div class="content-section">
+      <h3>🤖 Agent Brief: HHFC Finance Desk</h3>
+      <p><strong>Purpose:</strong> Help HHFC staff query financial performance data, understand variances, and get guided assistance on budget vs actual — reducing the volume of ad-hoc finance queries hitting the Finance team and giving management faster access to financial context.</p>
+      <p><strong>Primary Users:</strong> Cost centre heads, senior managers, and the Finance team itself during month-end reporting cycles.</p>
+      <p><strong>Core Problem it Solves:</strong> Cost centre heads frequently contact Finance with basic queries that consume team time. An agent that handles routine lookups and helps draft commentary would free Finance to focus on analysis and the CFO's strategic questions.</p>
+    </div>
+
+    <div class="content-section">
+      <h3>💬 Sample Conversations</h3>
+
+      <div class="chat-window">
+        <span class="chat-scenario-label">Scenario 1 — Performance Summary</span>
+        <div class="chat-bubble user">What was HHFC's total interest income in Q1 2025?</div>
+        <div class="chat-bubble agent">
+          <span class="agent-label">🤖 HHFC Finance Desk</span>
+          Based on the Management Accounts data, HHFC's reported interest income for Q1 2025 was approximately <strong>RM 408.9M</strong> (following an accrual timing adjustment from an initial RM 412.3M). The key driver was coupon income from the conventional mortgage portfolio. For a full breakdown by product line, the Management Pack Q1 section provides the detailed schedule. Would you like me to explain the main variance drivers or help you draft commentary for a specific cost centre?
+        </div>
+      </div>
+
+      <div class="chat-window">
+        <span class="chat-scenario-label">Scenario 2 — Variance Explanation</span>
+        <div class="chat-bubble user">Why was the Islamic Finance sukuk revenue higher than budget in Q2?</div>
+        <div class="chat-bubble agent">
+          <span class="agent-label">🤖 HHFC Finance Desk</span>
+          The Islamic Finance sukuk revenue variance in Q2 was driven by a <strong>fee income reclassification</strong> — specifically, certain structuring fees that were initially categorised under advisory income were reclassified to sukuk revenue, resulting in an upward revision from RM 188.4M to RM 191.2M. This is a presentation adjustment rather than an underlying performance change. For future reporting clarity, Finance is standardising the fee income classification treatment across all cost centres. Would you like me to draft the variance commentary paragraph for this line item?
+        </div>
+      </div>
+
+      <div class="chat-window">
+        <span class="chat-scenario-label">Scenario 3 — Commentary Drafting</span>
+        <div class="chat-bubble user">I need to write the variance commentary for the Treasury cost centre. Can you help?</div>
+        <div class="chat-bubble agent">
+          <span class="agent-label">🤖 HHFC Finance Desk</span>
+          Of course. To draft accurate commentary, could you confirm: (1) the actual vs budget variance amount, (2) the primary driver (e.g., issuance timing, rate movement, volume), and (3) whether the variance is expected to reverse in H2? Once you provide those details, I'll generate a commentary paragraph in standard Management Accounts style — concise, factual, and ready for Finance review before inclusion in the pack.
+        </div>
+      </div>
+
+      <div class="chat-window">
+        <span class="chat-scenario-label">Scenario 4 — OPEX Status</span>
+        <div class="chat-bubble user">What is our current year-to-date OPEX versus budget?</div>
+        <div class="chat-bubble agent">
+          <span class="agent-label">🤖 HHFC Finance Desk</span>
+          Based on the latest Management Accounts data, HHFC's YTD OPEX shows the IT &amp; Operations cost centre as the most notable over-budget item (RM 9.7M actual vs RM 8.2M budget — a <strong>+18% variance</strong>) driven by licence renewal costs. The Risk &amp; Compliance provision is also above initial estimates. For the most current YTD position, I recommend confirming with the Finance team as figures may have been updated since the last pack. Would you like me to help format this into a brief OPEX summary for your cost centre review?
+        </div>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h3>🔧 Build Tasks</h3>
+      <ol class="challenge-steps">
+        <li><strong>Configure the Finance Desk agent with appropriate knowledge boundaries</strong> — it can help interpret and summarise financial data, and assist with commentary drafting, but must direct users to Finance for data validation and final approval of any figures.</li>
+        <li><strong>Build topics for:</strong> (a) Performance Summary Q&amp;A, (b) Variance Commentary Drafting Assistant, (c) Budget vs Actual Query, (d) Board Pack Navigation Help. Write triggers and responses for each.</li>
+        <li><strong>Test all 4 conversations.</strong> For the commentary drafting topic, demonstrate that the agent produces commentary in the correct financial reporting style — concise, structured, and variance-focused.</li>
+      </ol>
+    </div>
+
+    <div class="content-section">
+      <h3>📝 Your Working File</h3>
+      <p>Your working folder contains <strong>2 files</strong> for your team:</p>
+      <ul style="font-size:0.9rem;line-height:1.8;">
+        <li>📊 <strong>BLANK – Agent-a-thon Team Pack</strong>: your main working file.</li>
+        <li>⚖️ <strong>Peer Judging Sheet</strong>: used during presentations.</li>
+      </ul>
+      <p style="margin-top:12px;background:#FFF7EC;border:1px solid #FDDCCA;border-left:4px solid var(--cag-gold);border-radius:8px;padding:14px;font-size:0.87rem;">
+        🕵️ <strong>Important:</strong> Open the working file in an <strong>Incognito</strong> (Chrome) or <strong>InPrivate</strong> (Edge) window to ensure you are signed in with the correct shared account.
+      </p>
+      <a href="PLACEHOLDER_AFN" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:16px;background:var(--cag-accent);color:white;padding:12px 24px;border-radius:8px;font-weight:700;font-size:0.9rem;text-decoration:none;">📂 Open Working File →</a>
+    </div>
+
+    <div id="powerup-gate">
+      <div class="powerup-locked-icons">⚡🔒⚡</div>
+      <h3>Power Ups: Locked</h3>
+      <p>Power Ups unlock advanced agent capabilities. Get your core agent working first, then reveal your Power Up.</p>
+      <button id="reveal-powerups-btn" class="btn btn-orange" style="max-width:280px;margin:0 auto;">⚡ Reveal Power Ups</button>
+    </div>
+    <div id="revealed-banner" style="display:none;" class="revealed-banner">✅ Power Ups Unlocked! Add this capability to your agent before presenting.</div>
+    <div id="powerups-section">
+      <div class="powerup-card">
+        <div class="pu-header"><div class="pu-num">⚡</div><div class="pu-title">Power Up: Month-End Data Submission Assistant</div></div>
+        <div class="pu-prompt">Add a "Month-End Assistant" topic that guides a cost centre head through the data submission process step by step: asking for each required field in the HHFC standard template, checking their input against expected ranges, flagging any figures that look unusual (e.g., more than 15% variance from prior month), and generating a submission-ready summary that they can paste into the Finance data collection form. The agent should make the cost centre head feel supported, not interrogated.</div>
+        <div class="pu-how">💡 This Power Up solves the upstream problem — if cost centres submit better data first time, the reconciliation burden on Finance collapses. It's the highest-leverage point in the whole process.</div>
+      </div>
+    </div>
+
+  </div>
+  <footer class="site-footer">Cagamas Agent-a-thon · 13 May 2026 · Powered by Microsoft Copilot Studio · Organised by Microsoft Malaysia</footer>
+</div>
+
+<script src="../assets/script.js"></script>
+</body>
+</html>

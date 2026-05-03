@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="team-id" content="islamic-business">
+  <title>Islamic Finance | Cagamas Prompt-a-thon 12 May 2026</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<div id="wrong-team-msg" style="display:none;position:fixed;inset:0;background:#0a1628;z-index:9999;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px;">
+  <div style="font-size:3rem;margin-bottom:16px;">🚫</div>
+  <h2>Wrong Team Pack</h2>
+  <p>You've already unlocked a different team's pack in this session.<br>Please use the device assigned to your team.</p>
+  <a href="../index.html">← Back to Team Packs</a>
+</div>
+
+<header class="site-header">
+  <div class="logo-badge">CG</div>
+  <div class="header-title">
+    <h1>Cagamas Berhad</h1>
+    <p>Prompt-a-thon · 12 May 2026</p>
+  </div>
+  <span class="header-badge">🔐 TEAM PACK</span>
+</header>
+
+<div id="lock-gate" class="lock-gate">
+  <div class="lock-box">
+    <span class="lock-icon">☪️</span>
+    <h2>Islamic Finance</h2>
+    <p>Enter your team code to unlock the Islamic Finance pack.</p>
+    <form id="team-lock-form" autocomplete="off">
+      <input id="team-code-input" class="lock-input" type="password" placeholder="Team code" required>
+      <button type="submit" class="btn btn-primary" style="margin-top:12px;">🔓 Unlock My Pack →</button>
+      <div class="error-msg" id="lock-error"></div>
+    </form>
+    <div style="margin-top:20px;"><a href="../index.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;text-decoration:none;">← Back to Team Select</a></div>
+  </div>
+</div>
+
+<div id="team-content" style="display:none;">
+
+  <div class="team-hero" style="background:linear-gradient(135deg,#0891B2 0%,#0E7490 100%);">
+    <div class="team-label">Team 2 · Islamic Finance</div>
+    <h1>Islamic Finance Pack</h1>
+    <div class="challenge-name">⚡ Challenge: "The Shariah Submission Bottleneck"</div>
+  </div>
+
+  <div style="max-width:860px;margin:0 auto;padding:32px 20px;">
+
+    <div class="content-section">
+      <h3>🏢 About Your Division</h3>
+      <p>HHFC's Islamic Finance division manages the purchase of Islamic mortgage assets (Islamic PWR and PWOR), the issuance of Shariah-compliant sukuk to fund Islamic operations, and maintains the corporation's Islamic Mortgage Guarantee Programme (MGP-i). The division works closely with the Shariah Advisory Committee to ensure all products and transactions meet Islamic finance principles.</p>
+    </div>
+
+    <div class="content-section">
+      <h3>⚠️ The Business Pain Point</h3>
+      <div class="pain-box">
+        <strong>Core Problem:</strong> Every sukuk issuance requires manually cross-checking <strong>140+ Shariah compliance items</strong> across Arabic-language fatwas, English prospectuses, and prior issuance precedents. In 2 of the last 6 issuances, the Shariah Advisory Committee identified discrepancies — causing 3–5 business day delays and increased legal costs.
+      </div>
+      <p>The process is entirely manual. The Islamic Finance team uses a printed checklist and highlights documents with physical pens. Cross-referencing between Arabic source texts and English translations takes 3–4 working days. As HHFC scales its sukuk programme to four new structures in 2026, this manual process threatens to become the binding constraint.</p>
+      <div class="stat-grid">
+        <div class="stat-item"><span class="stat-num">140+</span><span class="stat-lbl">Compliance items per issuance</span></div>
+        <div class="stat-item"><span class="stat-num">4</span><span class="stat-lbl">Working days for cross-reference</span></div>
+        <div class="stat-item"><span class="stat-num">2/6</span><span class="stat-lbl">Issuances with SAC discrepancies</span></div>
+        <div class="stat-item"><span class="stat-num">3–5</span><span class="stat-lbl">Days delay per correction</span></div>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h3>📋 Shariah Compliance Checklist Log</h3>
+      <div class="table-wrapper">
+        <table class="data-table">
+          <thead>
+            <tr><th>Check ID</th><th>Category</th><th>Item Description</th><th>Status</th><th>Reviewer</th><th>Time Spent (hrs)</th><th>Flagged?</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>SHR-001</td><td>Aqad (Contract)</td><td>Murabahah offer and acceptance language verified</td><td>Completed</td><td>Aida S.</td><td>2.5</td><td>No</td></tr>
+            <tr><td>SHR-002</td><td>Asset</td><td>Underlying mortgage assets Shariah-screened</td><td>Completed</td><td>Farhan I.</td><td>4.0</td><td>Yes</td></tr>
+            <tr><td>SHR-003</td><td>Profit Rate</td><td>Profit rate structure reviewed against fatwas</td><td>Completed</td><td>Aida S.</td><td>3.0</td><td>No</td></tr>
+            <tr><td>SHR-004</td><td>Docs</td><td>English prospectus vs Arabic fatwa alignment</td><td>Pending</td><td>Farhan I.</td><td>—</td><td>—</td></tr>
+            <tr><td>SHR-005</td><td>Docs</td><td>Wakalah appointment letter language</td><td>Completed</td><td>Aida S.</td><td>1.5</td><td>No</td></tr>
+            <tr><td>SHR-006</td><td>Governance</td><td>Shariah SAC meeting minutes referenced</td><td>Pending</td><td>Farhan I.</td><td>—</td><td>—</td></tr>
+            <tr><td>SHR-007</td><td>Asset</td><td>Portfolio concentration limits verified</td><td>In Progress</td><td>Aida S.</td><td>1.0</td><td>No</td></tr>
+            <tr><td>SHR-008</td><td>Docs</td><td>Investor disclosure on Islamic risk factors</td><td>In Progress</td><td>Farhan I.</td><td>2.0</td><td>Yes</td></tr>
+            <tr><td>SHR-009</td><td>Aqad</td><td>Dissolution event clauses reviewed</td><td>Completed</td><td>Aida S.</td><td>3.5</td><td>No</td></tr>
+            <tr><td>SHR-010</td><td>Governance</td><td>Prior SAC resolution cross-referenced</td><td>Pending</td><td>Farhan I.</td><td>—</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h3>📧 Executive Email</h3>
+      <div class="email-thread">From: Farhan Ibrahim (Head of Islamic Finance)
+To: CFO; Chief Strategy Officer
+Subject: Sukuk Issuance Timeline — Shariah Compliance Process Constraint
+
+We have four sukuk issuances scheduled for 2026. At the current pace, preparing the Shariah compliance package for each issuance consumes 12–15 team-hours over 4 working days. The last-minute corrections in February and April cost us approximately 4 days of delay per issuance. The Shariah Advisory Committee has been patient, but they have communicated their expectation that we improve our pre-submission quality controls.
+
+I need us to have a serious conversation about how we approach this process differently. At current volume, we are approaching a point where the Shariah compliance preparation timeline becomes the binding constraint on our entire issuance schedule.</div>
+    </div>
+
+    <div class="content-section">
+      <h3>🎯 Your Tasks</h3>
+      <ol class="challenge-steps">
+        <li><strong>Map the current Shariah compliance preparation process</strong> and identify the specific steps that introduce the most risk of error or delay.</li>
+        <li><strong>Propose how Microsoft 365 Copilot tools</strong> could be used to support the team in preparing, reviewing, and cross-referencing Shariah compliance documentation more efficiently.</li>
+        <li><strong>Draft a one-page process improvement proposal</strong> that the Head of Islamic Finance can present to the Shariah Advisory Committee to demonstrate HHFC's commitment to quality improvement.</li>
+      </ol>
+    </div>
+
+    <div class="content-section">
+      <h3>📝 Your Working File</h3>
+      <p>Your working folder contains <strong>2 files</strong> for your team:</p>
+      <ul style="font-size:0.9rem;line-height:1.8;">
+        <li>📊 <strong>BLANK – Prompt-a-thon Team Pack</strong>: your main working file.</li>
+        <li>⚖️ <strong>Peer Judging Sheet</strong>: used during presentations.</li>
+      </ul>
+      <p style="margin-top:12px;background:#FFF7EC;border:1px solid #FDDCCA;border-left:4px solid var(--cag-gold);border-radius:8px;padding:14px;font-size:0.87rem;">
+        🕵️ <strong>Important:</strong> Open the working file in an <strong>Incognito</strong> (Chrome) or <strong>InPrivate</strong> (Edge) window to ensure you are signed in with the correct shared account.
+      </p>
+      <a href="PLACEHOLDER_IL" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:16px;background:var(--cag-green);color:white;padding:12px 24px;border-radius:8px;font-weight:700;font-size:0.9rem;text-decoration:none;">📂 Open Working File →</a>
+    </div>
+
+    <div id="powerup-gate">
+      <div class="powerup-locked-icons">⚡🔒⚡</div>
+      <h3>Power Ups: Locked</h3>
+      <p>Power Ups are special Copilot prompts that can supercharge your output. Complete your challenge tasks first, then unlock them here.</p>
+      <button id="reveal-powerups-btn" class="btn btn-orange" style="max-width:280px;margin:0 auto;">⚡ Reveal Power Ups</button>
+    </div>
+    <div id="revealed-banner" style="display:none;" class="revealed-banner">✅ Power Ups Unlocked! Use them to supercharge your final output.</div>
+    <div id="powerups-section">
+      <div class="powerup-card">
+        <div class="pu-header"><div class="pu-num">⚡</div><div class="pu-title">Power Up: Process Quality Assurance Brief for SAC</div></div>
+        <div class="pu-prompt">"Acting as a senior Islamic finance professional, draft a Process Quality Assurance brief for HHFC's sukuk issuance compliance workflow. The brief should: (1) summarise the current process and its failure points, (2) propose a structured 3-phase quality gate framework to replace the existing single-review model, and (3) explain how AI tools can support each phase without compromising Shariah governance. Format for presentation to the Shariah Advisory Committee."</div>
+        <div class="pu-how">💡 Use this to elevate your process proposal into a governance-level document that demonstrates strategic thinking.</div>
+      </div>
+    </div>
+
+  </div>
+  <footer class="site-footer">Cagamas Prompt-a-thon · 12 May 2026 · Powered by Microsoft 365 Copilot · Organised by Microsoft Malaysia</footer>
+</div>
+
+<script src="../assets/script.js"></script>
+</body>
+</html>

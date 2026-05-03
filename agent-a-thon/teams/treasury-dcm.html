@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="team-id" content="treasury-dcm">
+  <title>Treasury &amp; Capital Markets | Cagamas Agent-a-thon 13 May 2026</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<div id="wrong-team-msg" style="display:none;position:fixed;inset:0;background:#0d0120;z-index:9999;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px;">
+  <div style="font-size:3rem;margin-bottom:16px;">🚫</div>
+  <h2>Wrong Team Pack</h2>
+  <p>You've already unlocked a different team's pack in this session.<br>Please use the device assigned to your team.</p>
+  <a href="../index.html">← Back to Build Packs</a>
+</div>
+
+<header class="site-header">
+  <div class="logo-badge">CG</div>
+  <div class="header-title">
+    <h1>Cagamas Berhad</h1>
+    <p>Agent-a-thon · 13 May 2026</p>
+  </div>
+  <span class="header-badge">🤖 BUILD PACK</span>
+</header>
+
+<div id="lock-gate" class="lock-gate">
+  <div class="lock-box">
+    <span class="lock-icon">💰</span>
+    <h2>Treasury &amp; Capital Markets</h2>
+    <p>Enter your team code to unlock the Agent Build Pack.</p>
+    <form id="team-lock-form" autocomplete="off">
+      <input id="team-code-input" class="lock-input" type="password" placeholder="Team code" required>
+      <button type="submit" class="btn btn-primary" style="margin-top:12px;">🔓 Unlock My Pack →</button>
+      <div class="error-msg" id="lock-error"></div>
+    </form>
+    <div style="margin-top:20px;"><a href="../index.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;text-decoration:none;">← Back to Team Select</a></div>
+  </div>
+</div>
+
+<div id="team-content" style="display:none;">
+
+  <div class="team-hero" style="background:linear-gradient(135deg,#B45309 0%,#92400E 100%);">
+    <div class="team-label">Team 3 · Treasury &amp; Capital Markets</div>
+    <h1>Treasury &amp; Capital Markets Build Pack</h1>
+    <div class="challenge-name">🤖 Agent: "HHFC Market Desk"</div>
+  </div>
+
+  <div style="max-width:860px;margin:0 auto;padding:32px 20px;">
+
+    <div class="content-section">
+      <h3>🏢 About Your Division</h3>
+      <p>HHFC's Treasury &amp; Capital Markets division raises capital through bond and sukuk issuances and manages investor relations. The team spends 4 days per issuance rebuilding investor documents from scratch, leaving no bandwidth for market monitoring. An investor-facing agent could handle routine queries, freeing the team for higher-value work.</p>
+    </div>
+
+    <div class="content-section">
+      <h3>🤖 Agent Brief: HHFC Market Desk</h3>
+      <p><strong>Purpose:</strong> Support HHFC's Treasury team and external investors by providing quick answers on HHFC's outstanding securities, upcoming issuances, market context, and investor FAQ — reducing the documentation burden on the team during live issuance windows.</p>
+      <p><strong>Primary Users:</strong> Institutional investors, fund managers, and internal Treasury team members seeking quick reference information.</p>
+      <p><strong>Core Problem it Solves:</strong> During each issuance window, the team receives 11–31 investor queries and can answer fewer than 50% on the same day. An agent handling standard queries would dramatically improve investor response times and free the team to monitor markets.</p>
+    </div>
+
+    <div class="content-section">
+      <h3>💬 Sample Conversations</h3>
+
+      <div class="chat-window">
+        <span class="chat-scenario-label">Scenario 1 — Outstanding Securities</span>
+        <div class="chat-bubble user">What bonds does HHFC currently have outstanding?</div>
+        <div class="chat-bubble agent">
+          <span class="agent-label">🤖 HHFC Market Desk</span>
+          HHFC (Harmoni Housing Finance Corporation) currently has the following categories of outstanding securities: Cagamas Notes (conventional), Cagamas Sukuk (Islamic), Green Bonds, and Sustainability Sukuk. For specific current outstanding amounts, maturities, and coupon rates, please refer to the latest investor fact sheet available on the HHFC investor relations portal, or I can connect you with the Treasury team for a current schedule. Is there a specific instrument type you are evaluating?
+        </div>
+      </div>
+
+      <div class="chat-window">
+        <span class="chat-scenario-label">Scenario 2 — Credit Rating</span>
+        <div class="chat-bubble user">What is HHFC's credit rating and what does it mean for investors?</div>
+        <div class="chat-bubble agent">
+          <span class="agent-label">🤖 HHFC Market Desk</span>
+          HHFC carries a <strong>AAA local currency credit rating</strong> — the highest rating available from Malaysian rating agencies. As Malaysia's national housing finance corporation operating under Bank Negara Malaysia's oversight, HHFC carries an implied sovereign backing that underpins this rating. For investors, this means: (1) lowest credit risk in the Malaysian corporate bond market, (2) eligible for LCR Level 2A/2B treatment at most financial institutions, (3) typically priced at a modest spread above Malaysian Government Securities. The AAA rating reflects HHFC's policy mandate, not simply its financial metrics.
+        </div>
+      </div>
+
+      <div class="chat-window">
+        <span class="chat-scenario-label">Scenario 3 — Investment Risks</span>
+        <div class="chat-bubble user">We are considering HHFC's next sukuk. What are the key risks?</div>
+        <div class="chat-bubble agent">
+          <span class="agent-label">🤖 HHFC Market Desk</span>
+          Key risk considerations for HHFC sukuk investors include: (1) <strong>Prepayment Risk</strong> — underlying mortgages may prepay faster than expected, affecting yield duration; (2) <strong>Interest Rate / Profit Rate Risk</strong> — value of fixed-rate securities will vary inversely with OPR movements; (3) <strong>Liquidity Risk</strong> — secondary market for HHFC securities is moderately liquid; (4) <strong>Credit Risk</strong> — minimal given AAA rating, but note HHFC is not explicitly guaranteed by the Malaysian government. Full risk factors are disclosed in the issuance prospectus. Would you like me to help draft a risk question list for your investment committee?
+        </div>
+      </div>
+
+      <div class="chat-window">
+        <span class="chat-scenario-label">Scenario 4 — Investor FAQ Draft</span>
+        <div class="chat-bubble user">Can you draft a brief investor FAQ for our upcoming green bond issuance?</div>
+        <div class="chat-bubble agent">
+          <span class="agent-label">🤖 HHFC Market Desk</span>
+          Here is a draft 5-question investor FAQ for the upcoming HHFC Green Bond issuance:<br><br>
+          <strong>Q1. What is the use of proceeds?</strong> Proceeds will fund the purchase of mortgages secured on green-certified residential properties meeting BCA or GBI standards.<br>
+          <strong>Q2. What is the expected yield range?</strong> Indicative pricing will be announced at launch; historically HHFC green bonds have priced at 15–25bps premium to conventional notes.<br>
+          <strong>Q3. What green certification framework applies?</strong> HHFC's Green Finance Framework is aligned with ICMA Green Bond Principles and externally reviewed.<br>
+          <strong>Q4. What is the expected tenor?</strong> Typically 3–7 years, subject to market conditions.<br>
+          <strong>Q5. What ESG reporting commitments does HHFC make?</strong> Annual green bond impact reports detailing use of proceeds and environmental KPIs.
+        </div>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h3>🔧 Build Tasks</h3>
+      <ol class="challenge-steps">
+        <li><strong>Configure the agent as HHFC's Market Intelligence &amp; Investor Relations assistant.</strong> Define what it knows (product information, general market context, issuance process) and what it must not answer (pricing commitments, non-public information, binding commitments).</li>
+        <li><strong>Build topics for:</strong> (a) Outstanding Securities Reference, (b) Investor FAQ Generator, (c) Green &amp; Sustainability Bond Information, (d) Market Context Q&amp;A. Write triggers and responses for each.</li>
+        <li><strong>Test all 4 conversations and demonstrate</strong> that the agent correctly refuses to provide pricing commitments or non-public information, directing users to the Treasury team instead.</li>
+      </ol>
+    </div>
+
+    <div class="content-section">
+      <h3>📝 Your Working File</h3>
+      <p>Your working folder contains <strong>2 files</strong> for your team:</p>
+      <ul style="font-size:0.9rem;line-height:1.8;">
+        <li>📊 <strong>BLANK – Agent-a-thon Team Pack</strong>: your main working file.</li>
+        <li>⚖️ <strong>Peer Judging Sheet</strong>: used during presentations.</li>
+      </ul>
+      <p style="margin-top:12px;background:#FFF7EC;border:1px solid #FDDCCA;border-left:4px solid var(--cag-gold);border-radius:8px;padding:14px;font-size:0.87rem;">
+        🕵️ <strong>Important:</strong> Open the working file in an <strong>Incognito</strong> (Chrome) or <strong>InPrivate</strong> (Edge) window to ensure you are signed in with the correct shared account.
+      </p>
+      <a href="PLACEHOLDER_ATR" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:16px;background:var(--cag-accent);color:white;padding:12px 24px;border-radius:8px;font-weight:700;font-size:0.9rem;text-decoration:none;">📂 Open Working File →</a>
+    </div>
+
+    <div id="powerup-gate">
+      <div class="powerup-locked-icons">⚡🔒⚡</div>
+      <h3>Power Ups: Locked</h3>
+      <p>Power Ups unlock advanced agent capabilities. Get your core agent working first, then reveal your Power Up.</p>
+      <button id="reveal-powerups-btn" class="btn btn-orange" style="max-width:280px;margin:0 auto;">⚡ Reveal Power Ups</button>
+    </div>
+    <div id="revealed-banner" style="display:none;" class="revealed-banner">✅ Power Ups Unlocked! Add this capability to your agent before presenting.</div>
+    <div id="powerups-section">
+      <div class="powerup-card">
+        <div class="pu-header"><div class="pu-num">⚡</div><div class="pu-title">Power Up: Issuance Prep Mode</div></div>
+        <div class="pu-prompt">Add an "Issuance Prep Mode" topic where the user provides a brief description of an upcoming issuance (type, tenor, use of proceeds), and the agent automatically generates: (1) a first-draft 5-question investor FAQ, and (2) a 3-paragraph investor rationale document explaining why HHFC is coming to market and why now is an attractive entry point. The output should be ready for Treasury team review before investor outreach begins.</div>
+        <div class="pu-how">💡 This Power Up transforms the agent from a reference tool into a content production assistant — cutting the 4-day documentation cycle to hours.</div>
+      </div>
+    </div>
+
+  </div>
+  <footer class="site-footer">Cagamas Agent-a-thon · 13 May 2026 · Powered by Microsoft Copilot Studio · Organised by Microsoft Malaysia</footer>
+</div>
+
+<script src="../assets/script.js"></script>
+</body>
+</html>

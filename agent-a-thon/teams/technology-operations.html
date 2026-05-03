@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="team-id" content="technology-operations">
+  <title>Technology &amp; Operations | Cagamas Agent-a-thon 13 May 2026</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<div id="wrong-team-msg" style="display:none;position:fixed;inset:0;background:#0d0120;z-index:9999;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px;">
+  <div style="font-size:3rem;margin-bottom:16px;">🚫</div>
+  <h2>Wrong Team Pack</h2>
+  <p>You've already unlocked a different team's pack in this session.<br>Please use the device assigned to your team.</p>
+  <a href="../index.html">← Back to Build Packs</a>
+</div>
+
+<header class="site-header">
+  <div class="logo-badge">CG</div>
+  <div class="header-title">
+    <h1>Cagamas Berhad</h1>
+    <p>Agent-a-thon · 13 May 2026</p>
+  </div>
+  <span class="header-badge">🤖 BUILD PACK</span>
+</header>
+
+<div id="lock-gate" class="lock-gate">
+  <div class="lock-box">
+    <span class="lock-icon">💻</span>
+    <h2>Technology &amp; Operations</h2>
+    <p>Enter your team code to unlock the Agent Build Pack.</p>
+    <form id="team-lock-form" autocomplete="off">
+      <input id="team-code-input" class="lock-input" type="password" placeholder="Team code" required>
+      <button type="submit" class="btn btn-primary" style="margin-top:12px;">🔓 Unlock My Pack →</button>
+      <div class="error-msg" id="lock-error"></div>
+    </form>
+    <div style="margin-top:20px;"><a href="../index.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;text-decoration:none;">← Back to Team Select</a></div>
+  </div>
+</div>
+
+<div id="team-content" style="display:none;">
+
+  <div class="team-hero" style="background:linear-gradient(135deg,#0891B2 0%,#0E7490 100%);">
+    <div class="team-label">Team 5 · Technology &amp; Operations</div>
+    <h1>Technology &amp; Operations Build Pack</h1>
+    <div class="challenge-name">🤖 Agent: "HHFC IT Connect"</div>
+  </div>
+
+  <div style="max-width:860px;margin:0 auto;padding:32px 20px;">
+
+    <div class="content-section">
+      <h3>🏢 About Your Division</h3>
+      <p>HHFC's Technology &amp; Operations division manages core systems, change management, and operational IT. The change request queue has 23 items averaging 6–8 weeks to process. Many staff bypass the formal process, submitting changes informally. An IT helpdesk agent that also guides staff through the formal BRD process could both reduce IT noise and improve BRD quality.</p>
+    </div>
+
+    <div class="content-section">
+      <h3>🤖 Agent Brief: HHFC IT Connect</h3>
+      <p><strong>Purpose:</strong> Handle routine IT support queries and guide staff through the change request submission process — reducing informal IT requests that bypass the formal queue and improving BRD quality by coaching submitters through the required sections.</p>
+      <p><strong>Primary Users:</strong> All HHFC staff for IT support; business analysts and department heads for change request guidance.</p>
+      <p><strong>Core Problem it Solves:</strong> IT receives many informal change requests and support queries that consume team time. An agent that handles first-level support and coaches staff through formal BRD submission would reduce noise and improve queue quality simultaneously.</p>
+    </div>
+
+    <div class="content-section">
+      <h3>💬 Sample Conversations</h3>
+
+      <div class="chat-window">
+        <span class="chat-scenario-label">Scenario 1 — Teams Troubleshooting</span>
+        <div class="chat-bubble user">My Microsoft Teams keeps crashing when I join a meeting. What should I try first?</div>
+        <div class="chat-bubble agent">
+          <span class="agent-label">🤖 HHFC IT Connect</span>
+          Let's work through this step by step:<br><br>
+          <strong>Step 1:</strong> Clear the Teams cache — close Teams, navigate to %AppData%\Microsoft\Teams and delete the Cache, blob_storage, and databases folders, then restart Teams.<br>
+          <strong>Step 2:</strong> If still crashing, sign out and sign back in from the Teams app.<br>
+          <strong>Step 3:</strong> Check your network — Teams requires at least 1.5Mbps for video calls. Try the IT bandwidth test tool at intranet.hhfc/bandwidth.<br>
+          <strong>Step 4:</strong> If none of the above works, try uninstalling and reinstalling Teams from the HHFC software portal.<br><br>
+          Does the issue persist after Step 1?
+        </div>
+      </div>
+
+      <div class="chat-window">
+        <span class="chat-scenario-label">Scenario 2 — Change Request Guidance</span>
+        <div class="chat-bubble user">I want to submit a change request for a new report in our system. How do I start?</div>
+        <div class="chat-bubble agent">
+          <span class="agent-label">🤖 HHFC IT Connect</span>
+          I can walk you through this. A change request requires a Business Requirements Document (BRD) with 5 sections. Let's go through them one at a time:<br><br>
+          <strong>Section 1 — Background:</strong> What is the business context? What problem or opportunity is driving this request? (2–3 sentences is fine)<br><br>
+          Tell me your background and I'll help you draft it in the right format before we move to Section 2.
+        </div>
+      </div>
+
+      <div class="chat-window">
+        <span class="chat-scenario-label">Scenario 3 — Change Request Timeline</span>
+        <div class="chat-bubble user">How long does it typically take to process a change request?</div>
+        <div class="chat-bubble agent">
+          <span class="agent-label">🤖 HHFC IT Connect</span>
+          The current HHFC change request cycle runs <strong>6–8 weeks</strong> from submission to deployment, across these stages: (1) BRD review by IT Business Analysis — 1–2 weeks; (2) Change Advisory Board approval — 1 week; (3) Development — 2–3 weeks; (4) UAT preparation and execution — 1–2 weeks; (5) Deployment and sign-off — 1 week. Critical requests (like reconciliation automation) can be expedited with CTO approval. The best way to speed up your request is to submit a complete, high-quality BRD first time. Would you like help drafting yours?
+        </div>
+      </div>
+
+      <div class="chat-window">
+        <span class="chat-scenario-label">Scenario 4 — CR Status Query</span>
+        <div class="chat-bubble user">What's the status of CR-001 — the daily reconciliation automation?</div>
+        <div class="chat-bubble agent">
+          <span class="agent-label">🤖 HHFC IT Connect</span>
+          I don't have live access to the change request management system to pull real-time status. For CR-001 status, you have two options: (1) Check the IT Service Portal at intranet.hhfc/cr-tracker using your staff ID, or (2) I can escalate to the IT Project Management Office who will respond within 4 business hours. CR-001 (Daily Reconciliation Automation) is marked Critical priority — if you need an urgent update, I'd recommend contacting the ITHQ PM directly. Shall I generate an escalation message?
+        </div>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h3>🔧 Build Tasks</h3>
+      <ol class="challenge-steps">
+        <li><strong>Set up the IT Connect agent with a helpdesk persona</strong> — patient, structured, and always offering a next step. Define its escalation path: first-level troubleshooting → IT helpdesk ticket → IT team escalation. The agent should never leave a user without a next action.</li>
+        <li><strong>Build topics for:</strong> (a) IT Troubleshooting (Teams, Outlook, VPN, printers), (b) Change Request BRD Guide (walk through all 5 BRD sections), (c) Change Request Status FAQ, (d) System Access Requests. Write triggers and responses.</li>
+        <li><strong>Test all 4 conversations.</strong> For the BRD guidance topic, demonstrate that the agent asks the right questions to help a non-technical submitter complete each section properly.</li>
+      </ol>
+    </div>
+
+    <div class="content-section">
+      <h3>📝 Your Working File</h3>
+      <p>Your working folder contains <strong>2 files</strong> for your team:</p>
+      <ul style="font-size:0.9rem;line-height:1.8;">
+        <li>📊 <strong>BLANK – Agent-a-thon Team Pack</strong>: your main working file.</li>
+        <li>⚖️ <strong>Peer Judging Sheet</strong>: used during presentations.</li>
+      </ul>
+      <p style="margin-top:12px;background:#FFF7EC;border:1px solid #FDDCCA;border-left:4px solid var(--cag-gold);border-radius:8px;padding:14px;font-size:0.87rem;">
+        🕵️ <strong>Important:</strong> Open the working file in an <strong>Incognito</strong> (Chrome) or <strong>InPrivate</strong> (Edge) window to ensure you are signed in with the correct shared account.
+      </p>
+      <a href="PLACEHOLDER_ATC" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:16px;background:var(--cag-accent);color:white;padding:12px 24px;border-radius:8px;font-weight:700;font-size:0.9rem;text-decoration:none;">📂 Open Working File →</a>
+    </div>
+
+    <div id="powerup-gate">
+      <div class="powerup-locked-icons">⚡🔒⚡</div>
+      <h3>Power Ups: Locked</h3>
+      <p>Power Ups unlock advanced agent capabilities. Get your core agent working first, then reveal your Power Up.</p>
+      <button id="reveal-powerups-btn" class="btn btn-orange" style="max-width:280px;margin:0 auto;">⚡ Reveal Power Ups</button>
+    </div>
+    <div id="revealed-banner" style="display:none;" class="revealed-banner">✅ Power Ups Unlocked! Add this capability to your agent before presenting.</div>
+    <div id="powerups-section">
+      <div class="powerup-card">
+        <div class="pu-header"><div class="pu-num">⚡</div><div class="pu-title">Power Up: BRD Quality Check Topic</div></div>
+        <div class="pu-prompt">Add a "BRD Quality Check" topic where a user pastes their draft BRD executive summary and the agent: (1) scores it against the 5 required sections (Background, Business Requirement, Current State, Proposed Solution, Impact Assessment) — marking each as Complete, Partial, or Missing; (2) flags any sections where the content is too vague or technical for a CAB reviewer; and (3) suggests specific improvements for the weakest 2 sections. The agent should end with an overall readiness score out of 10 and an estimated probability of first-pass CAB approval.</div>
+        <div class="pu-how">💡 This Power Up makes the agent a quality gate before submissions reach IT — reducing the rework cycle and improving the signal-to-noise ratio in the change queue.</div>
+      </div>
+    </div>
+
+  </div>
+  <footer class="site-footer">Cagamas Agent-a-thon · 13 May 2026 · Powered by Microsoft Copilot Studio · Organised by Microsoft Malaysia</footer>
+</div>
+
+<script src="../assets/script.js"></script>
+</body>
+</html>

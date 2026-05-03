@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cagamas Agent-a-thon · 13 May 2026</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    #main-site { display: none; }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════
+     MAIN LOCK GATE
+══════════════════════════════════════════════ -->
+<div id="main-lock" class="lock-gate">
+  <div class="lock-box">
+    <span class="lock-icon">🤖</span>
+    <h2>Cagamas Agent-a-thon 13 May</h2>
+    <p>Enter the event password to access the challenge.</p>
+    <form id="main-lock-form" autocomplete="off">
+      <input id="main-pw-input" class="lock-input" type="password" placeholder="Event password" required>
+      <button type="button" class="show-pw-btn" id="show-pw-btn">👁 Show password</button>
+      <button type="submit" class="btn btn-primary" style="margin-top:14px;">🔓 Unlock Event →</button>
+      <div class="error-msg" id="main-error">❌ Incorrect password. Please try again.</div>
+    </form>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     MAIN SITE (shown after unlock)
+══════════════════════════════════════════════ -->
+<div id="main-site">
+
+  <header class="site-header">
+    <div class="logo-badge">CG</div>
+    <div class="header-title">
+      <h1>Cagamas Berhad</h1>
+      <p>Agent-a-thon · 13 May 2026</p>
+    </div>
+    <span class="header-badge">🤖 BUILD MODE</span>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-tag">🤖 Cagamas Agent-a-thon · 13 May 2026</div>
+    <h2>Welcome to the
+Harmoni Agent Builder Challenge</h2>
+    <p>Your team has been given a real business problem inside Harmoni Housing Finance Corporation. Build a <strong>Microsoft Copilot Studio agent</strong> to solve it. Design the agent, define its capabilities, test it, and present your working solution to compete for the title of <strong>Agent Architects</strong>.</p>
+    <a href="#teams" class="hero-cta">🔧 Find Your Build Pack ↓</a>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section" style="background:white;">
+    <div class="container">
+      <h2 class="section-title">🔧 How It Works</h2>
+      <p class="section-sub">Four steps to building your HHFC AI agent.</p>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <h4>Unlock Your Pack 🔐</h4>
+          <p>Enter your team code to access your department's agent build brief.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <h4>Read the Brief 📋</h4>
+          <p>Understand the business problem your agent is designed to solve inside HHFC.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <h4>Build with Copilot Studio 🤖</h4>
+          <p>Design your agent's topics, knowledge, and actions. Test it against sample conversations.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">4</div>
+          <h4>Unlock Power Ups ⚡</h4>
+          <p>Once your agent is working, reveal Power Ups to add advanced capabilities before you present.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Company Brief Alert -->
+  <section class="section" style="background:var(--cag-light);">
+    <div class="container" style="max-width:700px;">
+      <div class="alert-box">
+        🏢 <strong>New to HHFC?</strong> Read the Company Background first — it sets the context for all build challenges.
+      </div>
+      <a href="company.html" class="btn btn-primary" style="display:inline-block;width:auto;padding:13px 28px;text-decoration:none;">🏢 Read HHFC Company Brief →</a>
+    </div>
+  </section>
+
+  <!-- Teams -->
+  <section class="section" id="teams">
+    <div class="container">
+      <h2 class="section-title">🤖 Your Agent Build Packs</h2>
+      <p class="section-sub">Select your department to access your agent build brief. Each pack is locked — your facilitator will provide your team code.</p>
+      <div class="cards-grid">
+
+        <div class="card">
+          <div class="card-icon">🏘️</div>
+          <h3>Business &amp; Client Coverage</h3>
+          <p>Build the <strong>Lender Onboarding &amp; Query Agent</strong> — HHFC Lender Connect.</p>
+          <a href="teams/business-client.html" class="card-link" style="background:#006B3F;">🔐 Enter Pack →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">☪️</div>
+          <h3>Islamic Finance</h3>
+          <p>Build the <strong>Shariah Compliance Assistant Agent</strong> — HHFC Shariah Guide.</p>
+          <a href="teams/islamic-business.html" class="card-link" style="background:#0891B2;">🔐 Enter Pack →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">💰</div>
+          <h3>Treasury &amp; Capital Markets</h3>
+          <p>Build the <strong>Investor Relations &amp; Market Intelligence Agent</strong> — HHFC Market Desk.</p>
+          <a href="teams/treasury-dcm.html" class="card-link" style="background:#B45309;">🔐 Enter Pack →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">📊</div>
+          <h3>Finance &amp; Reporting</h3>
+          <p>Build the <strong>Management Reporting Assistant Agent</strong> — HHFC Finance Desk.</p>
+          <a href="teams/finance-reporting.html" class="card-link" style="background:#7C3AED;">🔐 Enter Pack →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">💻</div>
+          <h3>Technology &amp; Operations</h3>
+          <p>Build the <strong>IT Support &amp; Change Request Agent</strong> — HHFC IT Connect.</p>
+          <a href="teams/technology-operations.html" class="card-link" style="background:#0891B2;">🔐 Enter Pack →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">👥</div>
+          <h3>Human Capital</h3>
+          <p>Build the <strong>HR Policy &amp; Career Development Agent</strong> — HHFC People Connect.</p>
+          <a href="teams/human-capital.html" class="card-link" style="background:#16A34A;">🔐 Enter Pack →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🛡️</div>
+          <h3>Risk &amp; Compliance</h3>
+          <p>Build the <strong>Regulatory Monitoring &amp; Compliance Agent</strong> — HHFC Compliance Radar.</p>
+          <a href="teams/risk-compliance.html" class="card-link" style="background:#DC2626;">🔐 Enter Pack →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🔭</div>
+          <h3>Strategy &amp; Research</h3>
+          <p>Build the <strong>Market Intelligence &amp; Strategy Synthesis Agent</strong> — HHFC Strategy Pulse.</p>
+          <a href="teams/strategy-research.html" class="card-link" style="background:#0F766E;">🔐 Enter Pack →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    Cagamas Agent-a-thon · 13 May 2026 · Powered by Microsoft Copilot Studio · Organised by Microsoft Malaysia
+  </footer>
+
+</div><!-- /main-site -->
+
+<script>
+(async () => {
+  const HASH_13MAY = '60bf3f96975bcc344b20eb44370ee96a67854c7d294aa892891cb52b810884eb';
+  const KEY        = 'cag_unlocked_13may';
+
+  async function sha256(msg) {
+    const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(msg));
+    return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
+  }
+
+  function unlock() {
+    document.getElementById('main-lock').style.display  = 'none';
+    document.getElementById('main-site').style.display  = 'block';
+    localStorage.setItem(KEY, '1');
+  }
+
+  if (new URLSearchParams(location.search).has('facilitator')) { unlock(); return; }
+  if (localStorage.getItem(KEY) === '1') { unlock(); return; }
+
+  const team = sessionStorage.getItem('cag_agt_team');
+  if (team) { unlock(); return; }
+
+  const pwInput = document.getElementById('main-pw-input');
+  document.getElementById('show-pw-btn').addEventListener('click', () => {
+    pwInput.type = pwInput.type === 'password' ? 'text' : 'password';
+  });
+
+  document.getElementById('main-lock-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const h = await sha256(pwInput.value.trim());
+    if (h === HASH_13MAY) {
+      unlock();
+    } else {
+      document.getElementById('main-error').style.display = 'block';
+      pwInput.value = '';
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

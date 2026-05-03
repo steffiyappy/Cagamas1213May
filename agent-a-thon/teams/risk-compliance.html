@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="team-id" content="risk-compliance">
+  <title>Risk &amp; Compliance | Cagamas Agent-a-thon 13 May 2026</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<div id="wrong-team-msg" style="display:none;position:fixed;inset:0;background:#0d0120;z-index:9999;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px;">
+  <div style="font-size:3rem;margin-bottom:16px;">🚫</div>
+  <h2>Wrong Team Pack</h2>
+  <p>You've already unlocked a different team's pack in this session.<br>Please use the device assigned to your team.</p>
+  <a href="../index.html">← Back to Build Packs</a>
+</div>
+
+<header class="site-header">
+  <div class="logo-badge">CG</div>
+  <div class="header-title">
+    <h1>Cagamas Berhad</h1>
+    <p>Agent-a-thon · 13 May 2026</p>
+  </div>
+  <span class="header-badge">🤖 BUILD PACK</span>
+</header>
+
+<div id="lock-gate" class="lock-gate">
+  <div class="lock-box">
+    <span class="lock-icon">🛡️</span>
+    <h2>Risk &amp; Compliance</h2>
+    <p>Enter your team code to unlock the Agent Build Pack.</p>
+    <form id="team-lock-form" autocomplete="off">
+      <input id="team-code-input" class="lock-input" type="password" placeholder="Team code" required>
+      <button type="submit" class="btn btn-primary" style="margin-top:12px;">🔓 Unlock My Pack →</button>
+      <div class="error-msg" id="lock-error"></div>
+    </form>
+    <div style="margin-top:20px;"><a href="../index.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;text-decoration:none;">← Back to Team Select</a></div>
+  </div>
+</div>
+
+<div id="team-content" style="display:none;">
+
+  <div class="team-hero" style="background:linear-gradient(135deg,#DC2626 0%,#B91C1C 100%);">
+    <div class="team-label">Team 7 · Risk &amp; Compliance</div>
+    <h1>Risk &amp; Compliance Build Pack</h1>
+    <div class="challenge-name">🤖 Agent: "HHFC Compliance Radar"</div>
+  </div>
+
+  <div style="max-width:860px;margin:0 auto;padding:32px 20px;">
+
+    <div class="content-section">
+      <h3>🏢 About Your Division</h3>
+      <p>HHFC's Risk &amp; Compliance division monitors ~8 regulatory circulars per month from BNM, SC, and AAOIFI. The team spends 14 hours per week on manual monitoring and tracking. Two compliance breaches were only caught at quarterly review. With a BNM examiner visit approaching, the team needs to move from reactive to proactive compliance monitoring.</p>
+    </div>
+
+    <div class="content-section">
+      <h3>🤖 Agent Brief: HHFC Compliance Radar</h3>
+      <p><strong>Purpose:</strong> Help the Risk &amp; Compliance team and business unit managers quickly understand new regulatory circulars, assess preliminary impact on HHFC's operations, and stay on top of open compliance items — reducing the 14 hours per week spent on manual monitoring.</p>
+      <p><strong>Primary Users:</strong> Compliance officers, Risk team members, and business unit heads who receive regulatory circulars and need rapid preliminary assessments.</p>
+      <p><strong>Core Problem it Solves:</strong> The gap between receiving a circular and producing a structured impact assessment is currently weeks. An agent that can generate a structured preliminary assessment in minutes changes the team's capacity for real-time monitoring.</p>
+    </div>
+
+    <div class="content-section">
+      <h3>💬 Sample Conversations</h3>
+
+      <div class="chat-window">
+        <span class="chat-scenario-label">Scenario 1 — New Circular Summary</span>
+        <div class="chat-bubble user">BNM just issued a new circular on outsourcing risk management. What does HHFC need to check?</div>
+        <div class="chat-bubble agent">
+          <span class="agent-label">🤖 HHFC Compliance Radar</span>
+          BNM's Outsourcing Risk Management guidelines typically require financial institutions to assess five operational areas. For HHFC specifically, I recommend checking:<br><br>
+          1. <strong>Third-party vendor contracts</strong> — Do all material outsourcing arrangements have BNM-compliant terms (right of audit, data protection, exit provisions)?<br>
+          2. <strong>Core system dependencies</strong> — Is the mortgage processing system hosted externally? If so, review against the guidelines' materiality threshold.<br>
+          3. <strong>Cloud service agreements</strong> — Microsoft 365 and any Azure services should be reviewed against the data residency requirements.<br>
+          4. <strong>Business continuity provisions</strong> — Do outsourced functions have tested BCPs acceptable under the new guidance?<br>
+          5. <strong>Board oversight evidence</strong> — Does the Board receive an outsourcing risk report as required?<br><br>
+          ⚠️ This is a preliminary assessment. Please review the full circular and confirm with your qualified compliance officer.
+        </div>
+      </div>
+
+      <div class="chat-window">
+        <span class="chat-scenario-label">Scenario 2 — Open Item Status</span>
+        <div class="chat-bubble user">What is our current compliance status on the Green Bond Disclosure Requirements from SC?</div>
+        <div class="chat-bubble agent">
+          <span class="agent-label">🤖 HHFC Compliance Radar</span>
+          Based on the regulatory monitoring log, <strong>SC-2025-012 (Green Bond Disclosure Requirements)</strong> is currently marked: Relevant: Yes | Impact Assessment: Partial | Remediation Required: Yes | Status: Pending.<br><br>
+          This circular has been in the log since March 2025. The partial impact assessment indicates that some review has been done but remediation actions have not been formally assigned. Given that HHFC issued a Green Bond in May 2025 (ISS-003), this circular is likely directly applicable to your existing disclosure documents. I recommend: (1) completing the full impact assessment, (2) reviewing the May 2025 green bond prospectus disclosure against the new requirements, (3) assigning a named remediation owner with a deadline. Would you like me to draft a preliminary impact assessment for this circular?
+        </div>
+      </div>
+
+      <div class="chat-window">
+        <span class="chat-scenario-label">Scenario 3 — AAOIFI Standard Query</span>
+        <div class="chat-bubble user">What is AAOIFI Shariah Standard 59 and does it affect our sukuk issuances?</div>
+        <div class="chat-bubble agent">
+          <span class="agent-label">🤖 HHFC Compliance Radar</span>
+          AAOIFI Shariah Standard 59 governs the Shariah requirements for Sale and Leaseback transactions, which are commonly used as the underlying structure in certain sukuk. Key requirements include: (1) the sale must be genuine and not merely a financing device; (2) the leaseback rental must reflect market rates; (3) buy-back options must be structured carefully to avoid creating a guaranteed return.<br><br>
+          For HHFC's sukuk programme, Standard 59 is relevant if any of your sukuk structures use sale-leaseback or Ijarah elements. I recommend the Islamic Finance team review current issuance structures against Standard 59's updated requirements. This should be on the SAC's agenda for the next quarterly meeting. ⚠️ Confirmed applicability requires review by your Shariah Advisor.
+        </div>
+      </div>
+
+      <div class="chat-window">
+        <span class="chat-scenario-label">Scenario 4 — Impact Assessment Draft</span>
+        <div class="chat-bubble user">Can you draft a preliminary impact assessment for the new BNM cyber risk guidelines?</div>
+        <div class="chat-bubble agent">
+          <span class="agent-label">🤖 HHFC Compliance Radar</span>
+          Here is a preliminary impact assessment for BNM-2025-028 (Cyber Risk Guidelines):<br><br>
+          <strong>1. Summary:</strong> BNM's Cyber Risk Guidelines establish mandatory cyber risk governance standards for all licensed financial institutions, including requirements for Board-level cyber risk oversight, third-party cyber risk management, and incident reporting timelines.<br>
+          <strong>2. Applicability to HHFC:</strong> High. As a BNM-licensed financial institution, HHFC is fully subject to these guidelines.<br>
+          <strong>3. Identified Gaps (Preliminary):</strong> (a) Board-level cyber risk dashboard may need formalising; (b) Third-party vendor cyber assessments may need updating; (c) Incident reporting procedures should be tested against the new 4-hour notification timeline.<br>
+          <strong>4. Required Actions:</strong> Cyber risk policy review, vendor assessment update, Board reporting enhancement.<br>
+          <strong>5. Suggested Timeline:</strong> 90 days for full gap assessment, 180 days for full remediation.<br><br>
+          ⚠️ This is a preliminary assessment for planning purposes only. All assessments must be validated by a qualified compliance professional.
+        </div>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h3>🔧 Build Tasks</h3>
+      <ol class="challenge-steps">
+        <li><strong>Configure Compliance Radar with a precise, authoritative persona.</strong> It must always note that its assessments are preliminary and require review by qualified compliance professionals. This caveat is mandatory on every substantive response.</li>
+        <li><strong>Build topics for:</strong> (a) Regulatory Summary &amp; Explanation, (b) Preliminary Impact Assessment Generator, (c) Open Item Status Check, (d) BNM/SC/AAOIFI FAQ. Write triggers and responses for each.</li>
+        <li><strong>Test all 4 conversations.</strong> For the impact assessment generator, demonstrate that the output is structured (using the 5-section format), specific to HHFC's operations, and clearly marked as preliminary.</li>
+      </ol>
+    </div>
+
+    <div class="content-section">
+      <h3>📝 Your Working File</h3>
+      <p>Your working folder contains <strong>2 files</strong> for your team:</p>
+      <ul style="font-size:0.9rem;line-height:1.8;">
+        <li>📊 <strong>BLANK – Agent-a-thon Team Pack</strong>: your main working file.</li>
+        <li>⚖️ <strong>Peer Judging Sheet</strong>: used during presentations.</li>
+      </ul>
+      <p style="margin-top:12px;background:#FFF7EC;border:1px solid #FDDCCA;border-left:4px solid var(--cag-gold);border-radius:8px;padding:14px;font-size:0.87rem;">
+        🕵️ <strong>Important:</strong> Open the working file in an <strong>Incognito</strong> (Chrome) or <strong>InPrivate</strong> (Edge) window to ensure you are signed in with the correct shared account.
+      </p>
+      <a href="PLACEHOLDER_ARK" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:16px;background:var(--cag-accent);color:white;padding:12px 24px;border-radius:8px;font-weight:700;font-size:0.9rem;text-decoration:none;">📂 Open Working File →</a>
+    </div>
+
+    <div id="powerup-gate">
+      <div class="powerup-locked-icons">⚡🔒⚡</div>
+      <h3>Power Ups: Locked</h3>
+      <p>Power Ups unlock advanced agent capabilities. Get your core agent working first, then reveal your Power Up.</p>
+      <button id="reveal-powerups-btn" class="btn btn-orange" style="max-width:280px;margin:0 auto;">⚡ Reveal Power Ups</button>
+    </div>
+    <div id="revealed-banner" style="display:none;" class="revealed-banner">✅ Power Ups Unlocked! Add this capability to your agent before presenting.</div>
+    <div id="powerups-section">
+      <div class="powerup-card">
+        <div class="pu-header"><div class="pu-num">⚡</div><div class="pu-title">Power Up: Regulator Prep Mode</div></div>
+        <div class="pu-prompt">Add a "Regulator Prep Mode" topic where the user states an upcoming regulatory examination (e.g., "BNM examination Q3 2025") and the agent generates: (1) a pre-examination readiness checklist covering all open compliance items in HHFC's monitoring log; (2) a documentation checklist of what the examiner will typically request to see; (3) the top 5 questions the examiner is most likely to ask based on the outstanding items; and (4) a suggested 30-day preparation timeline with named action owners. The agent should treat this like a compliance consultant preparing a client for a regulator visit.</div>
+        <div class="pu-how">💡 This Power Up turns the agent into a genuine exam preparation tool — the kind that a compliance consultant would charge significant fees to produce. It's the most direct demonstration of AI value in a compliance context.</div>
+      </div>
+    </div>
+
+  </div>
+  <footer class="site-footer">Cagamas Agent-a-thon · 13 May 2026 · Powered by Microsoft Copilot Studio · Organised by Microsoft Malaysia</footer>
+</div>
+
+<script src="../assets/script.js"></script>
+</body>
+</html>

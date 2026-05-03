@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="team-id" content="business-client">
+  <title>Business &amp; Client Coverage | Cagamas Agent-a-thon 13 May 2026</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<div id="wrong-team-msg" style="display:none;position:fixed;inset:0;background:#0d0120;z-index:9999;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px;">
+  <div style="font-size:3rem;margin-bottom:16px;">🚫</div>
+  <h2>Wrong Team Pack</h2>
+  <p>You've already unlocked a different team's pack in this session.<br>Please use the device assigned to your team.</p>
+  <a href="../index.html">← Back to Build Packs</a>
+</div>
+
+<header class="site-header">
+  <div class="logo-badge">CG</div>
+  <div class="header-title">
+    <h1>Cagamas Berhad</h1>
+    <p>Agent-a-thon · 13 May 2026</p>
+  </div>
+  <span class="header-badge">🤖 BUILD PACK</span>
+</header>
+
+<div id="lock-gate" class="lock-gate">
+  <div class="lock-box">
+    <span class="lock-icon">🏘️</span>
+    <h2>Business &amp; Client Coverage</h2>
+    <p>Enter your team code to unlock the Agent Build Pack.</p>
+    <form id="team-lock-form" autocomplete="off">
+      <input id="team-code-input" class="lock-input" type="password" placeholder="Team code" required>
+      <button type="submit" class="btn btn-primary" style="margin-top:12px;">🔓 Unlock My Pack →</button>
+      <div class="error-msg" id="lock-error"></div>
+    </form>
+    <div style="margin-top:20px;"><a href="../index.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;text-decoration:none;">← Back to Team Select</a></div>
+  </div>
+</div>
+
+<div id="team-content" style="display:none;">
+
+  <div class="team-hero" style="background:linear-gradient(135deg,#006B3F 0%,#004D2C 100%);">
+    <div class="team-label">Team 1 · Business &amp; Client Coverage</div>
+    <h1>Business &amp; Client Coverage Build Pack</h1>
+    <div class="challenge-name">🤖 Agent: "HHFC Lender Connect"</div>
+  </div>
+
+  <div style="max-width:860px;margin:0 auto;padding:32px 20px;">
+
+    <div class="content-section">
+      <h3>🏢 About Your Division</h3>
+      <p>HHFC's Business &amp; Client Coverage division manages relationships with 60+ financial institution partners. The team handles lender onboarding, portfolio purchase processing, and ongoing client servicing. Relationship managers spend significant time answering routine lender queries that could be handled by a well-designed AI agent.</p>
+    </div>
+
+    <div class="content-section">
+      <h3>🤖 Agent Brief: HHFC Lender Connect</h3>
+      <p><strong>Purpose:</strong> Help HHFC's external lender partners get quick answers about onboarding requirements, submission status, and HHFC products — reducing the volume of routine queries hitting relationship managers.</p>
+      <p><strong>Primary Users:</strong> Lender representatives at financial institutions (banks, DFIs, cooperatives) who regularly interact with HHFC.</p>
+      <p><strong>Core Problem it Solves:</strong> Currently, routine queries consume 2–6 hours per interaction per relationship manager. An agent that can handle the most common 70% of queries would free up RMs to focus on high-value relationship work and complex negotiations.</p>
+    </div>
+
+    <div class="content-section">
+      <h3>💬 Sample Conversations</h3>
+
+      <div class="chat-window">
+        <span class="chat-scenario-label">Scenario 1 — Onboarding Requirements</span>
+        <div class="chat-bubble user">What documents do I need to submit a new mortgage portfolio to HHFC?</div>
+        <div class="chat-bubble agent">
+          <span class="agent-label">🤖 HHFC Lender Connect</span>
+          To submit a conventional mortgage portfolio to HHFC, you will need: (1) Completed Portfolio Submission Form (PSF-01), (2) Loan schedule in HHFC standard template, (3) Current valuation reports for all properties, (4) Copy of executed facility agreements, (5) Originator declaration and representations. For Islamic portfolios (PWR-i / PWOR-i), you will also need the Shariah compliance declaration. Shall I connect you with your assigned Relationship Manager for a submission checklist walkthrough?
+        </div>
+      </div>
+
+      <div class="chat-window">
+        <span class="chat-scenario-label">Scenario 2 — Product Information</span>
+        <div class="chat-bubble user">What is the difference between PWR and PWOR?</div>
+        <div class="chat-bubble agent">
+          <span class="agent-label">🤖 HHFC Lender Connect</span>
+          Great question. Both are HHFC's conventional mortgage purchase products:<br><br>
+          <strong>PWR (Purchase with Recourse):</strong> HHFC purchases the mortgage assets but retains recourse to the originating institution if loans default. Lower risk transfer for the lender.<br><br>
+          <strong>PWOR (Purchase Without Recourse):</strong> HHFC purchases the assets and bears the credit risk. Higher upfront pricing but full risk transfer to HHFC.<br><br>
+          Islamic equivalents are PWR-i and PWOR-i. Would you like me to explain the Mortgage Guarantee Programme (MGP) as well?
+        </div>
+      </div>
+
+      <div class="chat-window">
+        <span class="chat-scenario-label">Scenario 3 — Submission Status</span>
+        <div class="chat-bubble user">We submitted a portfolio last Tuesday. What's the status?</div>
+        <div class="chat-bubble agent">
+          <span class="agent-label">🤖 HHFC Lender Connect</span>
+          I'd be happy to help you check on that. Could you provide your <strong>submission reference number</strong> (format: SUB-YYYY-XXXXX) and your institution's name? I don't have live access to the processing system, but I can escalate to your assigned Relationship Manager immediately who will respond within 2 business hours. Alternatively, I can send a status request on your behalf right now.
+        </div>
+      </div>
+
+      <div class="chat-window">
+        <span class="chat-scenario-label">Scenario 4 — Pricing Query</span>
+        <div class="chat-bubble user">What is HHFC's current purchase price for a standard 30-year home loan?</div>
+        <div class="chat-bubble agent">
+          <span class="agent-label">🤖 HHFC Lender Connect</span>
+          HHFC's purchase pricing is indicative and set based on prevailing market rates, loan characteristics, and portfolio composition at the time of submission. I'm not able to provide binding pricing commitments through this channel. For the latest indicative term sheet and pricing guidance, I'll connect you to your assigned Relationship Manager. Would you like me to do that now?
+        </div>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h3>🔧 Build Tasks</h3>
+      <ol class="challenge-steps">
+        <li><strong>Define your agent's scope, persona, and name.</strong> Configure its system prompt so it understands it is HHFC's Lender Relationship Assistant and knows the boundaries of what it can and cannot answer (e.g., it cannot give pricing commitments or access live submission data).</li>
+        <li><strong>Build at least 3 topics:</strong> (a) Onboarding Requirements, (b) Product Information (PWR vs PWOR vs MGP), (c) Submission Status &amp; Escalation. For each topic, write the trigger phrases and response content.</li>
+        <li><strong>Test your agent against all 4 sample conversations above.</strong> Identify at least one gap in your agent's knowledge and show how you fixed it before the presentation.</li>
+      </ol>
+    </div>
+
+    <div class="content-section">
+      <h3>📝 Your Working File</h3>
+      <p>Your working folder contains <strong>2 files</strong> for your team:</p>
+      <ul style="font-size:0.9rem;line-height:1.8;">
+        <li>📊 <strong>BLANK – Agent-a-thon Team Pack</strong>: your main working file.</li>
+        <li>⚖️ <strong>Peer Judging Sheet</strong>: used during presentations.</li>
+      </ul>
+      <p style="margin-top:12px;background:#FFF7EC;border:1px solid #FDDCCA;border-left:4px solid var(--cag-gold);border-radius:8px;padding:14px;font-size:0.87rem;">
+        🕵️ <strong>Important:</strong> Open the working file in an <strong>Incognito</strong> (Chrome) or <strong>InPrivate</strong> (Edge) window to ensure you are signed in with the correct shared account.
+      </p>
+      <a href="PLACEHOLDER_ABC" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:16px;background:var(--cag-accent);color:white;padding:12px 24px;border-radius:8px;font-weight:700;font-size:0.9rem;text-decoration:none;">📂 Open Working File →</a>
+    </div>
+
+    <div id="powerup-gate">
+      <div class="powerup-locked-icons">⚡🔒⚡</div>
+      <h3>Power Ups: Locked</h3>
+      <p>Power Ups unlock advanced agent capabilities. Get your core agent working first, then reveal your Power Up to take it further.</p>
+      <button id="reveal-powerups-btn" class="btn btn-orange" style="max-width:280px;margin:0 auto;">⚡ Reveal Power Ups</button>
+    </div>
+    <div id="revealed-banner" style="display:none;" class="revealed-banner">✅ Power Ups Unlocked! Add this capability to your agent before presenting.</div>
+    <div id="powerups-section">
+      <div class="powerup-card">
+        <div class="pu-header"><div class="pu-num">⚡</div><div class="pu-title">Power Up: Smart Escalation Topic</div></div>
+        <div class="pu-prompt">Add a "Smart Escalation" topic that detects when a lender's query involves a complaint, pricing negotiation, or urgent submission — and automatically triggers a proactive message to the assigned Relationship Manager via Teams, including the lender's name, query summary, and contact details. Configure the agent to inform the lender that their RM has been notified and will respond within 2 business hours.</div>
+        <div class="pu-how">💡 This Power Up transforms your agent from a basic FAQ bot into a proactive relationship management tool — the difference between automating answers and automating outcomes.</div>
+      </div>
+    </div>
+
+  </div>
+  <footer class="site-footer">Cagamas Agent-a-thon · 13 May 2026 · Powered by Microsoft Copilot Studio · Organised by Microsoft Malaysia</footer>
+</div>
+
+<script src="../assets/script.js"></script>
+</body>
+</html>
