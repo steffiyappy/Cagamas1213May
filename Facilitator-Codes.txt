@@ -1,23 +1,28 @@
 CAGAMAS EVENT FACILITATOR REFERENCE
 =====================================
 
-== 12 MAY 2026 — PROMPT-A-THON ==
+== 12 MAY 2026 — PROMPT-A-THON (HALF-DAY) ==
 Main Event Password:   Cagamas12May
-Facilitator URL Param: ?facilitator  (appends to index.html URL)
+Facilitator URL Param: ?facilitator  (add to index.html URL to bypass all locks)
+Number of Teams:       6  (suited for 25–30 participants, ~4–5 per team)
 
 Team Code Reference:
   Team 1 — Business & Client Coverage:   BCTEAM
   Team 2 — Islamic Finance:              ISLTEAM
   Team 3 — Treasury & Capital Markets:   TRSTEAM
   Team 4 — Finance & Reporting:          FINTEAM
-  Team 5 — Technology & Operations:      TECTEAM
-  Team 6 — Human Capital:               HCMTEAM
-  Team 7 — Risk & Compliance:            RSKTEAM
-  Team 8 — Strategy & Research:          STRTEAM
+  Team 5 — Human Capital:               HCMTEAM
+  Team 6 — Risk & Compliance:            RSKTEAM
+
+Suggested Half-Day Schedule:
+  ~15 min  — Welcome, intro, and brief reading
+  ~90 min  — Hack time (3 tasks × ~25 min each)
+  ~15 min  — Power Up reveal and output polish
+  ~30 min  — Team presentations + peer judging
 
 == 13 MAY 2026 — AGENT-A-THON ==
 Main Event Password:   Cagamas13May
-Facilitator URL Param: ?facilitator  (appends to index.html URL)
+Facilitator URL Param: ?facilitator
 
 Team Code Reference:
   Team 1 — Business & Client Coverage:   ABCTEAM
@@ -31,5 +36,5 @@ Team Code Reference:
 
 NOTES:
 - Team codes are case-insensitive (converted to uppercase before hashing)
-- The ?facilitator URL parameter bypasses all lock gates for facilitator access
-- Working file links marked PLACEHOLDER_XX need to be updated with actual OneDrive URLs
+- Working file links marked PLACEHOLDER_XX need updating with actual OneDrive URLs
+- Prompt-a-thon tasks are intentionally scoped for ~25 min each — achievable in half a day

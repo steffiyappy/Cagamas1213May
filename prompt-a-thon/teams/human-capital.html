@@ -9,13 +9,15 @@
 </head>
 <body>
 
+<!-- Wrong Team Block -->
 <div id="wrong-team-msg" style="display:none;position:fixed;inset:0;background:#0a1628;z-index:9999;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px;">
   <div style="font-size:3rem;margin-bottom:16px;">🚫</div>
-  <h2>Wrong Team Pack</h2>
-  <p>You've already unlocked a different team's pack in this session.<br>Please use the device assigned to your team.</p>
-  <a href="../index.html">← Back to Team Packs</a>
+  <h2 style="color:white;font-size:1.3rem;font-weight:800;margin-bottom:12px;">Wrong Team Pack</h2>
+  <p style="color:#94A3B8;font-size:0.93rem;max-width:400px;line-height:1.7;">You've already unlocked a different team's pack in this session. Please use the device assigned to your team.</p>
+  <a href="../index.html" style="margin-top:24px;background:#006B3F;color:white;padding:12px 28px;border-radius:8px;font-weight:700;font-size:0.93rem;text-decoration:none;">← Back to Team Packs</a>
 </div>
 
+<!-- Header -->
 <header class="site-header">
   <div class="logo-badge">CG</div>
   <div class="header-title">
@@ -25,120 +27,176 @@
   <span class="header-badge">🔐 TEAM PACK</span>
 </header>
 
+<!-- Lock Gate -->
 <div id="lock-gate" class="lock-gate">
   <div class="lock-box">
     <span class="lock-icon">👥</span>
     <h2>Human Capital</h2>
-    <p>Enter your team code to unlock the Human Capital pack.</p>
+    <p>Enter your team code to unlock this pack.</p>
     <form id="team-lock-form" autocomplete="off">
       <input id="team-code-input" class="lock-input" type="password" placeholder="Team code" required>
       <button type="submit" class="btn btn-primary" style="margin-top:12px;">🔓 Unlock My Pack →</button>
       <div class="error-msg" id="lock-error"></div>
     </form>
-    <div style="margin-top:20px;"><a href="../index.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;text-decoration:none;">← Back to Team Select</a></div>
+    <div style="margin-top:20px;">
+      <a href="../index.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;text-decoration:none;">← Back to Team Select</a>
+    </div>
   </div>
 </div>
 
+<!-- Team Content -->
 <div id="team-content" style="display:none;">
 
+  <!-- Half-Day Sprint Banner -->
+  <div style="background:#003366;color:white;padding:16px 24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+    <div style="font-size:1.4rem;">⏱️</div>
+    <div>
+      <div style="font-weight:800;font-size:0.95rem;">Half-Day Sprint — You have ~90 minutes to hack</div>
+      <div style="font-size:0.82rem;opacity:0.8;margin-top:2px;">Budget: ~15 min reading the brief &nbsp;·&nbsp; ~25 min per task &nbsp;·&nbsp; ~15 min Power Up &amp; polish &nbsp;·&nbsp; Save time to prep your presentation!</div>
+    </div>
+  </div>
+
+  <!-- Hero -->
   <div class="team-hero" style="background:linear-gradient(135deg,#16A34A 0%,#15803D 100%);">
-    <div class="team-label">Team 6 · Human Capital</div>
+    <div class="team-label">Team 5 · Human Capital</div>
     <h1>Human Capital Pack</h1>
-    <div class="challenge-name">⚡ Challenge: "The Talent Readiness Gap"</div>
+    <div class="challenge-name">⚡ Challenge: "The People Readiness Sprint"</div>
   </div>
 
   <div style="max-width:860px;margin:0 auto;padding:32px 20px;">
 
+    <!-- About -->
     <div class="content-section">
       <h3>🏢 About Your Division</h3>
-      <p>HHFC's Human Capital division manages talent acquisition, learning &amp; development, HR policy, performance management, and employee relations for the corporation's 350 staff. Harmoni Vision 2027 has placed unprecedented demands on the workforce — requiring new digital literacy, AI skills, and cross-functional capabilities that the current workforce was not originally hired for.</p>
+      <p>HHFC's Human Capital division manages talent, learning &amp; development, and HR policy for 350 staff. Harmoni Vision 2027 demands new digital and AI skills across all functions — but the current upskilling programme is significantly behind target.</p>
     </div>
 
+    <!-- Pain Point -->
     <div class="content-section">
       <h3>⚠️ The Business Pain Point</h3>
       <div class="pain-box">
-        <strong>Core Problem:</strong> Harmoni Vision 2027 requires all 350 staff to complete a structured digital and AI upskilling programme by end of 2025. With 6 months remaining, training completion sits at just <strong>41%</strong>. Three high-potential employees rated "Ready Now" for promotion left in H1, citing "lack of clear career path" in exit interviews.
-      </div>
-      <p>Training records are maintained in a shared Excel workbook last updated 3 weeks ago. HR receives an average of 23 policy queries per week, many from managers who cannot locate answers in existing documents. The team spends approximately 8 hours per week answering repeat questions that a well-designed self-service resource could handle.</p>
+        <strong>Core Problem:</strong> All 350 staff were supposed to complete an AI upskilling programme by end of 2025. With 6 months remaining, completion sits at 41%. Training records are managed in an Excel file that hasn't been updated in 3 weeks. Three high-potential employees ("Ready Now" for promotion) left in H1, citing unclear career paths. HR also receives 23 policy queries per week — the Policy Manual was last updated 14 months ago.</div>
+      <p>The CHRO needs a focused recovery plan that improves completion momentum, shows care for staff development, and frees the HR team from repetitive policy questions.</p>
       <div class="stat-grid">
-        <div class="stat-item"><span class="stat-num">41%</span><span class="stat-lbl">Training completion rate (target 100%)</span></div>
-        <div class="stat-item"><span class="stat-num">3</span><span class="stat-lbl">High-potentials lost H1</span></div>
-        <div class="stat-item"><span class="stat-num">23</span><span class="stat-lbl">Policy queries per week</span></div>
-        <div class="stat-item"><span class="stat-num">8 hrs</span><span class="stat-lbl">Weekly time on repeat queries</span></div>
+        <div class="stat-item"><span class="stat-num">41%</span><span class="stat-lbl">Training completion vs 100% target by end-2025</span></div>
+        <div class="stat-item"><span class="stat-num">3</span><span class="stat-lbl">"Ready Now" high-potentials resigned in H1</span></div>
+        <div class="stat-item"><span class="stat-num">23</span><span class="stat-lbl">HR policy queries per week</span></div>
+        <div class="stat-item"><span class="stat-num">14 months</span><span class="stat-lbl">Policy Manual out of date</span></div>
       </div>
     </div>
 
+    <!-- Data Table -->
     <div class="content-section">
       <h3>📋 Training Completion Log</h3>
       <div class="table-wrapper">
         <table class="data-table">
           <thead>
-            <tr><th>Programme</th><th>Department</th><th>Enrolled</th><th>Completed</th><th>Completion Rate</th><th>Last Updated</th><th>Facilitator</th><th>Deadline</th></tr>
+            <tr>
+              <th>Programme</th><th>Department</th><th>Enrolled</th><th>Completed</th><th>Completion Rate</th><th>Deadline</th>
+            </tr>
           </thead>
           <tbody>
-            <tr><td>AI Literacy Fundamentals</td><td>All Departments</td><td>350</td><td>143</td><td>41%</td><td>3 weeks ago</td><td>L&amp;D Team</td><td>Dec 2025</td></tr>
-            <tr><td>Microsoft 365 Copilot Basics</td><td>Operations</td><td>45</td><td>22</td><td>49%</td><td>2 weeks ago</td><td>External</td><td>Nov 2025</td></tr>
-            <tr><td>Data Analysis with Excel</td><td>Finance</td><td>30</td><td>19</td><td>63%</td><td>1 week ago</td><td>Internal</td><td>Oct 2025</td></tr>
-            <tr><td>ESG Reporting Essentials</td><td>Strategy &amp; Risk</td><td>20</td><td>8</td><td>40%</td><td>4 weeks ago</td><td>External</td><td>Nov 2025</td></tr>
-            <tr><td>Leadership Development Programme</td><td>Senior Management</td><td>28</td><td>21</td><td>75%</td><td>1 week ago</td><td>External</td><td>Sep 2025</td></tr>
-            <tr><td>Regulatory Compliance Update</td><td>Risk &amp; Compliance</td><td>25</td><td>11</td><td>44%</td><td>2 weeks ago</td><td>Internal</td><td>Oct 2025</td></tr>
-            <tr><td>Islamic Finance Certification</td><td>Islamic Finance</td><td>15</td><td>7</td><td>47%</td><td>3 weeks ago</td><td>External</td><td>Dec 2025</td></tr>
+            <tr><td>AI Literacy Fundamentals</td><td>All Departments</td><td>350</td><td>143</td><td>41%</td><td>Dec 2025</td></tr>
+            <tr><td>Microsoft 365 Copilot Basics</td><td>Operations</td><td>45</td><td>22</td><td>49%</td><td>Nov 2025</td></tr>
+            <tr><td>Data Analysis with Excel</td><td>Finance</td><td>30</td><td>19</td><td>63%</td><td>Oct 2025</td></tr>
+            <tr><td>ESG Reporting Essentials</td><td>Strategy &amp; Risk</td><td>20</td><td>8</td><td>40%</td><td>Nov 2025</td></tr>
+            <tr><td>Leadership Development Programme</td><td>Senior Management</td><td>28</td><td>21</td><td>75%</td><td>Sep 2025</td></tr>
+            <tr><td>Regulatory Compliance Update</td><td>Risk &amp; Compliance</td><td>25</td><td>11</td><td>44%</td><td>Oct 2025</td></tr>
+            <tr><td>Islamic Finance Certification</td><td>Islamic Finance</td><td>15</td><td>7</td><td>47%</td><td>Dec 2025</td></tr>
           </tbody>
         </table>
       </div>
     </div>
 
+    <!-- Email -->
     <div class="content-section">
-      <h3>📧 CHRO Email</h3>
+      <h3>📧 Email Thread</h3>
       <div class="email-thread">From: Amirah Zulkifli (CHRO)
 To: Head of Learning &amp; Development; HR Business Partners
 Subject: Talent Crisis — We Need to Act Now
 
-Three "Ready Now" promotions walked out the door in H1. The exit interview data is consistent: unclear career paths, inadequate development support, and the feeling that HHFC is not investing in its people. We also have a training completion crisis. 41% is not a number we can present to the Board with confidence.
-
-I need a credible action plan by end of month. Not a list of good intentions. I need data-driven insights on where we are losing people, a redesigned L&amp;D tracking approach that gives us real visibility, and a proposal for how we self-service our policy queries so the team can focus on strategic talent work.</div>
+Three "Ready Now" promotions walked out the door in H1. The exit interview data is consistent: unclear career paths, inadequate development support, and the feeling that HHFC is not investing in its people. We also have a training completion crisis. 41% is not a number we can present to the Board with confidence. I need a credible action plan — data-driven insights, a redesigned L&amp;D approach, and a proposal for self-service policy queries.</div>
     </div>
 
+    <!-- Tasks -->
     <div class="content-section">
       <h3>🎯 Your Tasks</h3>
+      <p style="font-size:0.88rem;color:#6B7280;margin-bottom:20px;">Three focused Copilot tasks. Each one produces a real output you'll present at the end. Aim for ~25 minutes per task.</p>
       <ol class="challenge-steps">
-        <li><strong>Analyse the training completion data</strong> and identify which departments and programmes are most at risk of missing their deadlines. What does the data tell you about where the L&amp;D strategy is failing?</li>
-        <li><strong>Design a smarter approach to tracking and improving training completion</strong> — describe how Copilot tools could give L&amp;D real-time visibility and help personalise learning nudges for staff who are falling behind.</li>
-        <li><strong>Draft a "Talent Retention Action Plan"</strong> for the CHRO to present to the Board Staff Compensation &amp; Organisation Committee — addressing both the completion crisis and the high-potential attrition pattern.</li>
+        <li>
+          <span style="display:inline-block;background:#F0F7F4;color:#006B3F;font-size:0.72rem;font-weight:700;padding:2px 8px;border-radius:4px;margin-bottom:6px;border:1px solid #C8D8CC;">⏱️ ~25 min · Task 1</span><br>
+          <strong>Spot Who's Falling Behind</strong><br>
+          <span style="font-size:0.9rem;color:#374151;line-height:1.7;">Open Copilot Chat. Paste the training completion table and ask: "Analyse this training completion log. Which programmes and departments are most at risk of missing their deadlines? Rank the top 3 most urgent situations and explain in one sentence why each one is a problem." → Copy into your working file.</span>
+        </li>
+        <li>
+          <span style="display:inline-block;background:#F0F7F4;color:#006B3F;font-size:0.72rem;font-weight:700;padding:2px 8px;border-radius:4px;margin-bottom:6px;border:1px solid #C8D8CC;">⏱️ ~25 min · Task 2</span><br>
+          <strong>Draft the Nudge Email</strong><br>
+          <span style="font-size:0.9rem;color:#374151;line-height:1.7;">Use Copilot to write a motivating (not threatening) email from the CHRO to staff in the departments with the lowest completion rates. The email should acknowledge that training on top of daily work is hard, remind them why Harmoni Vision 2027 matters for their career, and give a clear call to action — complete one module this week. Keep it under 150 words. Warm, personal, and energising. → Copy into your working file.</span>
+        </li>
+        <li>
+          <span style="display:inline-block;background:#F0F7F4;color:#006B3F;font-size:0.72rem;font-weight:700;padding:2px 8px;border-radius:4px;margin-bottom:6px;border:1px solid #C8D8CC;">⏱️ ~25 min · Task 3</span><br>
+          <strong>Write the Retention Action Summary</strong><br>
+          <span style="font-size:0.9rem;color:#374151;line-height:1.7;">Use Copilot to write a 3-point Talent Retention Action Summary for the CHRO to present at the next Board HR Committee meeting. Each point should address one of: (1) training completion recovery, (2) career path clarity for high-potentials, (3) self-service policy access to free up HR time. Each point = problem + proposed action + expected outcome. Keep each point to 3 sentences. → Paste into your working file and prepare to present these 3 points to the room.</span>
+        </li>
       </ol>
     </div>
 
+    <!-- Copilot Tips -->
+    <div class="content-section" style="background:#F0F7F4;border:1px solid #C8D8CC;">
+      <h3>💡 Copilot Tips for Today</h3>
+      <ul style="font-size:0.88rem;line-height:1.8;color:#374151;">
+        <li><strong>Copilot Chat</strong> (Teams or Microsoft365.com) — best for analysing data and drafting documents quickly</li>
+        <li><strong>Copilot in Word</strong> — use "Draft with Copilot" to generate longer documents, then edit</li>
+        <li><strong>Copilot in Outlook</strong> — use "Draft with Copilot" to write professional emails fast</li>
+        <li><strong>Paste your data</strong> directly into the chat — Copilot can read tables and lists you copy in</li>
+        <li><strong>Be specific in your prompts</strong> — the more context you give, the better the output</li>
+      </ul>
+    </div>
+
+    <!-- Working File -->
     <div class="content-section">
       <h3>📝 Your Working File</h3>
       <p>Your working folder contains <strong>2 files</strong> for your team:</p>
       <ul style="font-size:0.9rem;line-height:1.8;">
-        <li>📊 <strong>BLANK – Prompt-a-thon Team Pack</strong>: your main working file.</li>
-        <li>⚖️ <strong>Peer Judging Sheet</strong>: used during presentations.</li>
+        <li>📊 <strong>BLANK – Prompt-a-thon Team Pack</strong>: paste all your Copilot outputs here as you go.</li>
+        <li>⚖️ <strong>Peer Judging Sheet</strong>: used during the presentation segment to score other teams.</li>
       </ul>
-      <p style="margin-top:12px;background:#FFF7EC;border:1px solid #FDDCCA;border-left:4px solid var(--cag-gold);border-radius:8px;padding:14px;font-size:0.87rem;">
+      <p style="margin-top:12px;background:#FFF7EC;border:1px solid #FDDCCA;border-left:4px solid #C8A84B;border-radius:8px;padding:14px;font-size:0.87rem;">
         🕵️ <strong>Important:</strong> Open the working file in an <strong>Incognito</strong> (Chrome) or <strong>InPrivate</strong> (Edge) window to ensure you are signed in with the correct shared account.
       </p>
-      <a href="PLACEHOLDER_HC" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:16px;background:var(--cag-green);color:white;padding:12px 24px;border-radius:8px;font-weight:700;font-size:0.9rem;text-decoration:none;">📂 Open Working File →</a>
+      <a href="PLACEHOLDER_HC" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:16px;background:#006B3F;color:white;padding:12px 24px;border-radius:8px;font-weight:700;font-size:0.9rem;text-decoration:none;">📂 Open Working File →</a>
     </div>
 
-    <div id="powerup-gate">
-      <div class="powerup-locked-icons">⚡🔒⚡</div>
-      <h3>Power Ups: Locked</h3>
-      <p>Power Ups are special Copilot prompts that can supercharge your output. Complete your challenge tasks first, then unlock them here.</p>
-      <button id="reveal-powerups-btn" class="btn btn-orange" style="max-width:280px;margin:0 auto;">⚡ Reveal Power Ups</button>
+    <!-- Power Up Gate -->
+    <div id="powerup-gate" style="background:linear-gradient(135deg,#1A0533 0%,#2D0A5C 100%);border-radius:16px;padding:40px 32px;text-align:center;margin-bottom:24px;border:1px solid #4A1E8A;">
+      <div style="font-size:2.5rem;letter-spacing:8px;margin-bottom:16px;">⚡🔒⚡</div>
+      <h3 style="color:white;font-size:1.2rem;font-weight:800;margin-bottom:10px;">Power Up: Locked</h3>
+      <p style="color:rgba(255,255,255,0.75);font-size:0.9rem;margin-bottom:24px;">Complete all 3 tasks first. Then unlock your Power Up to supercharge your final output before presenting.</p>
+      <button id="reveal-powerups-btn" class="btn" style="background:#7C3AED;color:white;max-width:280px;margin:0 auto;">⚡ Reveal My Power Up</button>
     </div>
-    <div id="revealed-banner" style="display:none;" class="revealed-banner">✅ Power Ups Unlocked! Use them to supercharge your final output.</div>
-    <div id="powerups-section">
+
+    <div id="revealed-banner" style="display:none;background:linear-gradient(135deg,#14532D,#166534);border:1px solid #22C55E;border-radius:12px;padding:16px 20px;margin-bottom:24px;color:white;font-size:0.9rem;font-weight:600;">
+      ✅ Power Up Unlocked! Use this prompt to elevate your output before you present.
+    </div>
+
+    <div id="powerups-section" style="display:none;">
       <div class="powerup-card">
-        <div class="pu-header"><div class="pu-num">⚡</div><div class="pu-title">Power Up: People Strategy Emergency Brief</div></div>
-        <div class="pu-prompt">"You are the CHRO of Harmoni Housing Finance Corporation. Based on the training data, exit interview themes, and the policy query volume, write a 'People Strategy Emergency Brief' for the Board Staff Compensation &amp; Organisation Committee. Include: (1) a frank assessment of HHFC's talent readiness for Harmoni Vision 2027, (2) the top 3 root causes of attrition risk, and (3) a 90-day action plan to stabilise the talent base and accelerate training completion. Write in a tone that is honest about the severity of the situation but confident in the proposed solution."</div>
-        <div class="pu-how">💡 Use this to demonstrate how Copilot can help HR leaders communicate difficult truths with clarity and credibility.</div>
+        <div class="pu-header">
+          <div class="pu-num">⚡</div>
+          <div class="pu-title">Your Power Up Prompt</div>
+        </div>
+        <div class="pu-prompt">"You are HHFC's CHRO preparing for the Board Staff Compensation &amp; Organisation Committee meeting. Using the at-risk training analysis, the nudge email, and the 3-point retention plan your team just produced, write a 1-page "People Readiness Brief" for the Board. Include: (1) a 2-sentence situation summary, (2) the top 3 at-risk training situations as a simple traffic-light table (Programme | Completion | Risk Level | Immediate Action), (3) the 3 retention action points. Close with one sentence on what "success looks like" in 90 days. Write in an honest, confident tone."</div>
+        <div class="pu-how">💡 Use this to show the Board that HR has full visibility and a credible plan.</div>
       </div>
     </div>
 
-  </div>
-  <footer class="site-footer">Cagamas Prompt-a-thon · 12 May 2026 · Powered by Microsoft 365 Copilot · Organised by Microsoft Malaysia</footer>
-</div>
+  </div><!-- /content wrapper -->
+
+  <footer class="site-footer">
+    Cagamas Prompt-a-thon · 12 May 2026 · Powered by Microsoft 365 Copilot · Organised by Microsoft Malaysia
+  </footer>
+
+</div><!-- /team-content -->
 
 <script src="../assets/script.js"></script>
 </body>

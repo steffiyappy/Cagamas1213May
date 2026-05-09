@@ -9,13 +9,15 @@
 </head>
 <body>
 
+<!-- Wrong Team Block -->
 <div id="wrong-team-msg" style="display:none;position:fixed;inset:0;background:#0a1628;z-index:9999;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px;">
   <div style="font-size:3rem;margin-bottom:16px;">🚫</div>
-  <h2>Wrong Team Pack</h2>
-  <p>You've already unlocked a different team's pack in this session.<br>Please use the device assigned to your team.</p>
-  <a href="../index.html">← Back to Team Packs</a>
+  <h2 style="color:white;font-size:1.3rem;font-weight:800;margin-bottom:12px;">Wrong Team Pack</h2>
+  <p style="color:#94A3B8;font-size:0.93rem;max-width:400px;line-height:1.7;">You've already unlocked a different team's pack in this session. Please use the device assigned to your team.</p>
+  <a href="../index.html" style="margin-top:24px;background:#006B3F;color:white;padding:12px 28px;border-radius:8px;font-weight:700;font-size:0.93rem;text-decoration:none;">← Back to Team Packs</a>
 </div>
 
+<!-- Header -->
 <header class="site-header">
   <div class="logo-badge">CG</div>
   <div class="header-title">
@@ -25,55 +27,73 @@
   <span class="header-badge">🔐 TEAM PACK</span>
 </header>
 
+<!-- Lock Gate -->
 <div id="lock-gate" class="lock-gate">
   <div class="lock-box">
     <span class="lock-icon">🛡️</span>
     <h2>Risk &amp; Compliance</h2>
-    <p>Enter your team code to unlock the Risk &amp; Compliance pack.</p>
+    <p>Enter your team code to unlock this pack.</p>
     <form id="team-lock-form" autocomplete="off">
       <input id="team-code-input" class="lock-input" type="password" placeholder="Team code" required>
       <button type="submit" class="btn btn-primary" style="margin-top:12px;">🔓 Unlock My Pack →</button>
       <div class="error-msg" id="lock-error"></div>
     </form>
-    <div style="margin-top:20px;"><a href="../index.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;text-decoration:none;">← Back to Team Select</a></div>
+    <div style="margin-top:20px;">
+      <a href="../index.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;text-decoration:none;">← Back to Team Select</a>
+    </div>
   </div>
 </div>
 
+<!-- Team Content -->
 <div id="team-content" style="display:none;">
 
+  <!-- Half-Day Sprint Banner -->
+  <div style="background:#003366;color:white;padding:16px 24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+    <div style="font-size:1.4rem;">⏱️</div>
+    <div>
+      <div style="font-weight:800;font-size:0.95rem;">Half-Day Sprint — You have ~90 minutes to hack</div>
+      <div style="font-size:0.82rem;opacity:0.8;margin-top:2px;">Budget: ~15 min reading the brief &nbsp;·&nbsp; ~25 min per task &nbsp;·&nbsp; ~15 min Power Up &amp; polish &nbsp;·&nbsp; Save time to prep your presentation!</div>
+    </div>
+  </div>
+
+  <!-- Hero -->
   <div class="team-hero" style="background:linear-gradient(135deg,#DC2626 0%,#B91C1C 100%);">
-    <div class="team-label">Team 7 · Risk &amp; Compliance</div>
+    <div class="team-label">Team 6 · Risk &amp; Compliance</div>
     <h1>Risk &amp; Compliance Pack</h1>
-    <div class="challenge-name">⚡ Challenge: "The Regulatory Radar Problem"</div>
+    <div class="challenge-name">⚡ Challenge: "The Compliance Catch-Up"</div>
   </div>
 
   <div style="max-width:860px;margin:0 auto;padding:32px 20px;">
 
+    <!-- About -->
     <div class="content-section">
       <h3>🏢 About Your Division</h3>
-      <p>HHFC's Risk &amp; Compliance division manages the corporation's regulatory compliance obligations, risk frameworks, and internal controls. The team monitors updates from Bank Negara Malaysia (BNM), the Securities Commission (SC), and international Islamic finance bodies including AAOIFI. The division produces quarterly compliance reports for the Board Risk Committee and manages HHFC's Risk Register.</p>
+      <p>HHFC's Risk &amp; Compliance division monitors regulatory updates from BNM, the Securities Commission (SC), and AAOIFI, and manages HHFC's compliance obligations. The team tracks ~8 new regulatory circulars per month. Currently, they're doing this in Excel — and it's not keeping pace.</p>
     </div>
 
+    <!-- Pain Point -->
     <div class="content-section">
       <h3>⚠️ The Business Pain Point</h3>
       <div class="pain-box">
-        <strong>Core Problem:</strong> BNM, SC, and AAOIFI collectively issue ~8 regulatory circulars per month. The team spends <strong>14 hours per week</strong> manually tracking these in Excel. Two minor compliance breaches in the past year were only identified during quarterly review — meaning HHFC was technically non-compliant for up to 3 months. HHFC received verbal guidance from BNM examiners on strengthening its monitoring process.
-      </div>
-      <p>Impact assessments are shallow: the team logs whether a regulation is "relevant" or "not relevant" without structured analysis of what operational changes may be required. "Partial" and "Not Started" entries sit in the log for months. The BNM examiner's Q3 visit is approaching.</p>
+        <strong>Core Problem:</strong> The team spends 14 hours per week manually reading, categorising, and logging regulatory material. Impact assessments are shallow — many items are logged as "Partial" or "Not Started." Two compliance breaches in the past year were only found during the quarterly review, meaning HHFC was non-compliant for up to 3 months. The BNM examiner is visiting in Q3.</div>
+      <p>The immediate priority is to rank the open items, deepen one assessment, and show leadership there is now a clear control process before the examiner arrives.</p>
       <div class="stat-grid">
-        <div class="stat-item"><span class="stat-num">8/mo</span><span class="stat-lbl">Regulatory circulars received</span></div>
-        <div class="stat-item"><span class="stat-num">14 hrs</span><span class="stat-lbl">Weekly manual monitoring time</span></div>
-        <div class="stat-item"><span class="stat-num">2</span><span class="stat-lbl">Breaches missed until quarterly review</span></div>
-        <div class="stat-item"><span class="stat-num">3 mo</span><span class="stat-lbl">Max time non-compliant before detection</span></div>
+        <div class="stat-item"><span class="stat-num">8</span><span class="stat-lbl">Regulatory circulars received per month</span></div>
+        <div class="stat-item"><span class="stat-num">14 hours</span><span class="stat-lbl">Per week on manual monitoring</span></div>
+        <div class="stat-item"><span class="stat-num">2</span><span class="stat-lbl">Compliance breaches identified late</span></div>
+        <div class="stat-item"><span class="stat-num">3 months</span><span class="stat-lbl">Potential non-compliance before detection</span></div>
       </div>
     </div>
 
+    <!-- Data Table -->
     <div class="content-section">
       <h3>📋 Regulatory Monitoring Log</h3>
       <div class="table-wrapper">
         <table class="data-table">
           <thead>
-            <tr><th>Circular ID</th><th>Issuer</th><th>Title</th><th>Date Received</th><th>Relevant?</th><th>Impact Assessment</th><th>Remediation?</th><th>Status</th></tr>
+            <tr>
+              <th>Circular ID</th><th>Issuer</th><th>Title</th><th>Date Received</th><th>Relevant?</th><th>Impact Assessment</th><th>Remediation Required?</th><th>Status</th>
+            </tr>
           </thead>
           <tbody>
             <tr><td>BNM-2025-001</td><td>BNM</td><td>Capital Adequacy Framework Update</td><td>Jan 2025</td><td>Yes</td><td>Partial</td><td>Yes</td><td>In Progress</td></tr>
@@ -83,7 +103,6 @@
             <tr><td>BNM-2025-014</td><td>BNM</td><td>Consumer Protection Framework</td><td>Apr 2025</td><td>Partial</td><td>Partial</td><td>Unknown</td><td>Pending</td></tr>
             <tr><td>SC-2025-018</td><td>SC</td><td>Sukuk Prospectus Requirements</td><td>Apr 2025</td><td>Yes</td><td>Not Started</td><td>Unknown</td><td>Pending</td></tr>
             <tr><td>BNM-2025-021</td><td>BNM</td><td>Outsourcing Risk Management</td><td>May 2025</td><td>Yes</td><td>Not Started</td><td>Unknown</td><td>Pending</td></tr>
-            <tr><td>AAOIFI-2025-007</td><td>AAOIFI</td><td>Governance Standard Update</td><td>May 2025</td><td>Partial</td><td>Not Started</td><td>Unknown</td><td>Pending</td></tr>
             <tr><td>BNM-2025-028</td><td>BNM</td><td>Cyber Risk Guidelines</td><td>Jun 2025</td><td>Yes</td><td>Not Started</td><td>Unknown</td><td>Pending</td></tr>
             <tr><td>SC-2025-025</td><td>SC</td><td>ESG Reporting Mandate</td><td>Jun 2025</td><td>Yes</td><td>Not Started</td><td>Unknown</td><td>Pending</td></tr>
           </tbody>
@@ -91,57 +110,95 @@
       </div>
     </div>
 
+    <!-- Email -->
     <div class="content-section">
-      <h3>📧 CRO Email</h3>
+      <h3>📧 Email Thread</h3>
       <div class="email-thread">From: Robert Tan Swee Hin (Chief Risk Officer)
 To: Head of Compliance; Risk Team
 Subject: BNM Examiner Visit — Q3 Readiness
 
-The examiner will be on-site in Q3. I have reviewed our compliance monitoring log and I am not satisfied with the depth of our impact assessments. "Partial" and "Not Started" entries for regulations that have been in our log for 3 months are not acceptable. We received verbal guidance last year about this. I do not want a repeat.
-
-I need a full impact assessment completed for every open item before the end of this month. I also want a proposal for how we redesign the monitoring process to prevent this from happening again. We need real-time awareness, not quarterly catch-up.</div>
+The examiner will be on-site in Q3. I have reviewed our compliance monitoring log and I am not satisfied with the depth of our impact assessments. "Partial" and "Not Started" entries for regulations received 3 months ago are not acceptable. I need a full prioritisation of open items and a proposal for how we redesign this process before the examiner arrives.</div>
     </div>
 
+    <!-- Tasks -->
     <div class="content-section">
       <h3>🎯 Your Tasks</h3>
+      <p style="font-size:0.88rem;color:#6B7280;margin-bottom:20px;">Three focused Copilot tasks. Each one produces a real output you'll present at the end. Aim for ~25 minutes per task.</p>
       <ol class="challenge-steps">
-        <li><strong>Review the regulatory monitoring log</strong> and produce a risk prioritisation assessment — which open items pose the greatest risk to HHFC and why? What does the pattern of "Not Started" and "Partial" assessments tell you about the process?</li>
-        <li><strong>Redesign HHFC's regulatory monitoring process</strong> to move from reactive quarterly assessment to proactive real-time awareness — describe specifically how Copilot tools can support the team in reading, summarising, and assessing new circulars at speed.</li>
-        <li><strong>Draft a complete impact assessment</strong> for one of the "Not Started" items in the log (choose the one you assess as highest risk), demonstrating the depth of analysis that the Chief Risk Officer expects.</li>
+        <li>
+          <span style="display:inline-block;background:#F0F7F4;color:#006B3F;font-size:0.72rem;font-weight:700;padding:2px 8px;border-radius:4px;margin-bottom:6px;border:1px solid #C8D8CC;">⏱️ ~25 min · Task 1</span><br>
+          <strong>Prioritise the Risks</strong><br>
+          <span style="font-size:0.9rem;color:#374151;line-height:1.7;">Open Copilot Chat. Paste the regulatory monitoring log and ask: "Based on this regulatory monitoring log, rank the top 3 open items by risk to HHFC. For each one, write 2 sentences: why it is high priority, and what HHFC needs to do about it immediately. Consider that HHFC is a mortgage corporation regulated by BNM, and a BNM examiner is visiting in Q3." → Copy the prioritisation into your working file.</span>
+        </li>
+        <li>
+          <span style="display:inline-block;background:#F0F7F4;color:#006B3F;font-size:0.72rem;font-weight:700;padding:2px 8px;border-radius:4px;margin-bottom:6px;border:1px solid #C8D8CC;">⏱️ ~25 min · Task 2</span><br>
+          <strong>Draft an Impact Assessment</strong><br>
+          <span style="font-size:0.9rem;color:#374151;line-height:1.7;">Choose the highest-risk open item from Task 1. Use Copilot to draft a brief impact assessment for it. Prompt: "Write a preliminary compliance impact assessment for [item name] issued by [BNM/SC/AAOIFI]. HHFC is Malaysia's national mortgage corporation. The assessment should cover: (1) What the regulation requires, (2) How it likely applies to HHFC's operations, (3) What gaps HHFC may have, (4) Recommended next steps. Keep it to 5–6 bullet points. Note it is a preliminary assessment pending legal review." → Paste into your working file.</span>
+        </li>
+        <li>
+          <span style="display:inline-block;background:#F0F7F4;color:#006B3F;font-size:0.72rem;font-weight:700;padding:2px 8px;border-radius:4px;margin-bottom:6px;border:1px solid #C8D8CC;">⏱️ ~25 min · Task 3</span><br>
+          <strong>Write the CRO Update</strong><br>
+          <span style="font-size:0.9rem;color:#374151;line-height:1.7;">Use Copilot to draft a brief email update from the Head of Compliance to the CRO. The email should summarise the top 3 open risk items in priority order, confirm what actions have been taken this week, and propose one process change to prevent "Not Started" items accumulating in future (for example, a weekly 30-min triage meeting). Keep it under 200 words — clear and action-oriented. → Copy into your working file.</span>
+        </li>
       </ol>
     </div>
 
+    <!-- Copilot Tips -->
+    <div class="content-section" style="background:#F0F7F4;border:1px solid #C8D8CC;">
+      <h3>💡 Copilot Tips for Today</h3>
+      <ul style="font-size:0.88rem;line-height:1.8;color:#374151;">
+        <li><strong>Copilot Chat</strong> (Teams or Microsoft365.com) — best for analysing data and drafting documents quickly</li>
+        <li><strong>Copilot in Word</strong> — use "Draft with Copilot" to generate longer documents, then edit</li>
+        <li><strong>Copilot in Outlook</strong> — use "Draft with Copilot" to write professional emails fast</li>
+        <li><strong>Paste your data</strong> directly into the chat — Copilot can read tables and lists you copy in</li>
+        <li><strong>Be specific in your prompts</strong> — the more context you give, the better the output</li>
+      </ul>
+    </div>
+
+    <!-- Working File -->
     <div class="content-section">
       <h3>📝 Your Working File</h3>
       <p>Your working folder contains <strong>2 files</strong> for your team:</p>
       <ul style="font-size:0.9rem;line-height:1.8;">
-        <li>📊 <strong>BLANK – Prompt-a-thon Team Pack</strong>: your main working file.</li>
-        <li>⚖️ <strong>Peer Judging Sheet</strong>: used during presentations.</li>
+        <li>📊 <strong>BLANK – Prompt-a-thon Team Pack</strong>: paste all your Copilot outputs here as you go.</li>
+        <li>⚖️ <strong>Peer Judging Sheet</strong>: used during the presentation segment to score other teams.</li>
       </ul>
-      <p style="margin-top:12px;background:#FFF7EC;border:1px solid #FDDCCA;border-left:4px solid var(--cag-gold);border-radius:8px;padding:14px;font-size:0.87rem;">
+      <p style="margin-top:12px;background:#FFF7EC;border:1px solid #FDDCCA;border-left:4px solid #C8A84B;border-radius:8px;padding:14px;font-size:0.87rem;">
         🕵️ <strong>Important:</strong> Open the working file in an <strong>Incognito</strong> (Chrome) or <strong>InPrivate</strong> (Edge) window to ensure you are signed in with the correct shared account.
       </p>
-      <a href="PLACEHOLDER_RC" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:16px;background:var(--cag-green);color:white;padding:12px 24px;border-radius:8px;font-weight:700;font-size:0.9rem;text-decoration:none;">📂 Open Working File →</a>
+      <a href="PLACEHOLDER_RC" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:16px;background:#006B3F;color:white;padding:12px 24px;border-radius:8px;font-weight:700;font-size:0.9rem;text-decoration:none;">📂 Open Working File →</a>
     </div>
 
-    <div id="powerup-gate">
-      <div class="powerup-locked-icons">⚡🔒⚡</div>
-      <h3>Power Ups: Locked</h3>
-      <p>Power Ups are special Copilot prompts that can supercharge your output. Complete your challenge tasks first, then unlock them here.</p>
-      <button id="reveal-powerups-btn" class="btn btn-orange" style="max-width:280px;margin:0 auto;">⚡ Reveal Power Ups</button>
+    <!-- Power Up Gate -->
+    <div id="powerup-gate" style="background:linear-gradient(135deg,#1A0533 0%,#2D0A5C 100%);border-radius:16px;padding:40px 32px;text-align:center;margin-bottom:24px;border:1px solid #4A1E8A;">
+      <div style="font-size:2.5rem;letter-spacing:8px;margin-bottom:16px;">⚡🔒⚡</div>
+      <h3 style="color:white;font-size:1.2rem;font-weight:800;margin-bottom:10px;">Power Up: Locked</h3>
+      <p style="color:rgba(255,255,255,0.75);font-size:0.9rem;margin-bottom:24px;">Complete all 3 tasks first. Then unlock your Power Up to supercharge your final output before presenting.</p>
+      <button id="reveal-powerups-btn" class="btn" style="background:#7C3AED;color:white;max-width:280px;margin:0 auto;">⚡ Reveal My Power Up</button>
     </div>
-    <div id="revealed-banner" style="display:none;" class="revealed-banner">✅ Power Ups Unlocked! Use them to supercharge your final output.</div>
-    <div id="powerups-section">
+
+    <div id="revealed-banner" style="display:none;background:linear-gradient(135deg,#14532D,#166534);border:1px solid #22C55E;border-radius:12px;padding:16px 20px;margin-bottom:24px;color:white;font-size:0.9rem;font-weight:600;">
+      ✅ Power Up Unlocked! Use this prompt to elevate your output before you present.
+    </div>
+
+    <div id="powerups-section" style="display:none;">
       <div class="powerup-card">
-        <div class="pu-header"><div class="pu-num">⚡</div><div class="pu-title">Power Up: Executive Compliance Readiness Briefing</div></div>
-        <div class="pu-prompt">"You are the Chief Risk Officer of Harmoni Housing Finance Corporation, preparing for a BNM regulatory examination. Using the monitoring log as your source, produce an 'Executive Compliance Readiness Briefing' for the Board Risk Committee. Include: (1) a traffic-light status summary of all open regulatory items, (2) a frank assessment of HHFC's compliance exposure, and (3) a 60-day remediation roadmap with clear owners and milestones. Write it as a document you would want the Board to see before the examiner arrives — honest, structured, and action-oriented."</div>
-        <div class="pu-how">💡 Use this to demonstrate what genuinely risk-intelligent reporting looks like at Board level.</div>
+        <div class="pu-header">
+          <div class="pu-num">⚡</div>
+          <div class="pu-title">Your Power Up Prompt</div>
+        </div>
+        <div class="pu-prompt">"You are HHFC's Chief Risk Officer preparing for the BNM examiner visit in Q3. Using the risk prioritisation, the impact assessment, and the process improvement email your team just produced, write a 1-page "Compliance Readiness Brief" for the Board Risk Committee. Include: (1) a traffic-light table of all open regulatory items (Circular | Issuer | Risk Level 🔴/🟡/🟢 | Status | Owner), (2) the full impact assessment for the highest-risk item, (3) one proposed process change and when it takes effect. Write in a tone that is transparent about gaps but confident in the remediation plan."</div>
+        <div class="pu-how">💡 Use this to show the Board exactly where HHFC stands — and that leadership has a handle on it.</div>
       </div>
     </div>
 
-  </div>
-  <footer class="site-footer">Cagamas Prompt-a-thon · 12 May 2026 · Powered by Microsoft 365 Copilot · Organised by Microsoft Malaysia</footer>
-</div>
+  </div><!-- /content wrapper -->
+
+  <footer class="site-footer">
+    Cagamas Prompt-a-thon · 12 May 2026 · Powered by Microsoft 365 Copilot · Organised by Microsoft Malaysia
+  </footer>
+
+</div><!-- /team-content -->
 
 <script src="../assets/script.js"></script>
 </body>

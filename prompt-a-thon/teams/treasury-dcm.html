@@ -9,13 +9,15 @@
 </head>
 <body>
 
+<!-- Wrong Team Block -->
 <div id="wrong-team-msg" style="display:none;position:fixed;inset:0;background:#0a1628;z-index:9999;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px;">
   <div style="font-size:3rem;margin-bottom:16px;">🚫</div>
-  <h2>Wrong Team Pack</h2>
-  <p>You've already unlocked a different team's pack in this session.<br>Please use the device assigned to your team.</p>
-  <a href="../index.html">← Back to Team Packs</a>
+  <h2 style="color:white;font-size:1.3rem;font-weight:800;margin-bottom:12px;">Wrong Team Pack</h2>
+  <p style="color:#94A3B8;font-size:0.93rem;max-width:400px;line-height:1.7;">You've already unlocked a different team's pack in this session. Please use the device assigned to your team.</p>
+  <a href="../index.html" style="margin-top:24px;background:#006B3F;color:white;padding:12px 28px;border-radius:8px;font-weight:700;font-size:0.93rem;text-decoration:none;">← Back to Team Packs</a>
 </div>
 
+<!-- Header -->
 <header class="site-header">
   <div class="logo-badge">CG</div>
   <div class="header-title">
@@ -25,119 +27,175 @@
   <span class="header-badge">🔐 TEAM PACK</span>
 </header>
 
+<!-- Lock Gate -->
 <div id="lock-gate" class="lock-gate">
   <div class="lock-box">
     <span class="lock-icon">💰</span>
     <h2>Treasury &amp; Capital Markets</h2>
-    <p>Enter your team code to unlock the Treasury &amp; Capital Markets pack.</p>
+    <p>Enter your team code to unlock this pack.</p>
     <form id="team-lock-form" autocomplete="off">
       <input id="team-code-input" class="lock-input" type="password" placeholder="Team code" required>
       <button type="submit" class="btn btn-primary" style="margin-top:12px;">🔓 Unlock My Pack →</button>
       <div class="error-msg" id="lock-error"></div>
     </form>
-    <div style="margin-top:20px;"><a href="../index.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;text-decoration:none;">← Back to Team Select</a></div>
+    <div style="margin-top:20px;">
+      <a href="../index.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;text-decoration:none;">← Back to Team Select</a>
+    </div>
   </div>
 </div>
 
+<!-- Team Content -->
 <div id="team-content" style="display:none;">
 
+  <!-- Half-Day Sprint Banner -->
+  <div style="background:#003366;color:white;padding:16px 24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+    <div style="font-size:1.4rem;">⏱️</div>
+    <div>
+      <div style="font-weight:800;font-size:0.95rem;">Half-Day Sprint — You have ~90 minutes to hack</div>
+      <div style="font-size:0.82rem;opacity:0.8;margin-top:2px;">Budget: ~15 min reading the brief &nbsp;·&nbsp; ~25 min per task &nbsp;·&nbsp; ~15 min Power Up &amp; polish &nbsp;·&nbsp; Save time to prep your presentation!</div>
+    </div>
+  </div>
+
+  <!-- Hero -->
   <div class="team-hero" style="background:linear-gradient(135deg,#B45309 0%,#92400E 100%);">
     <div class="team-label">Team 3 · Treasury &amp; Capital Markets</div>
     <h1>Treasury &amp; Capital Markets Pack</h1>
-    <div class="challenge-name">⚡ Challenge: "The Funding Narrative Gap"</div>
+    <div class="challenge-name">⚡ Challenge: "The Investor Intelligence Gap"</div>
   </div>
 
   <div style="max-width:860px;margin:0 auto;padding:32px 20px;">
 
+    <!-- About -->
     <div class="content-section">
       <h3>🏢 About Your Division</h3>
-      <p>HHFC's Treasury &amp; Capital Markets division is responsible for the corporation's funding strategy — raising capital through bond issuances, sukuk, and commercial paper. The team manages investor relations, prepares all investor-facing documentation for each issuance, and monitors market conditions to time funding activities optimally. HHFC issues 8–12 instruments per year.</p>
+      <p>HHFC's Treasury &amp; Capital Markets division raises the capital needed to fund mortgage purchases — through conventional bonds, sukuk, and commercial paper issued 8–12 times a year. The team also manages all investor communications around each issuance.</p>
     </div>
 
+    <!-- Pain Point -->
     <div class="content-section">
       <h3>⚠️ The Business Pain Point</h3>
       <div class="pain-box">
-        <strong>Core Problem:</strong> Every issuance requires rebuilding investor documents from scratch — consuming <strong>4 days of team capacity</strong> during which the team cannot monitor markets. On two occasions in the past 12 months, rate movements during the documentation period resulted in issuances priced <strong>8–12bps less favourably</strong> than they could have been.
-      </div>
-      <p>There is no template library and no content repository. Investor feedback from the most recent roadshow was pointed: Q&amp;A responses were described as "generic" and "not responsive to current market questions." One fund manager noted that HHFC's peers were sending pre-issuance market intelligence briefs that HHFC had never produced.</p>
+        <strong>Core Problem:</strong> Every issuance requires a full set of investor documents built from scratch — each cycle consumes 4 days of team capacity. During those 4 days the team can't monitor markets or respond to investors. Two issuances in the past year were priced 8–12bps worse than target because rate movements happened while the team was heads-down producing documents. Investors have also called HHFC's Q&amp;A responses "generic."</div>
+      <p>The team needs a faster way to turn issuance data into sharper investor communications so they can spend less time formatting documents and more time shaping the market narrative.</p>
       <div class="stat-grid">
-        <div class="stat-item"><span class="stat-num">4</span><span class="stat-lbl">Days per documentation cycle</span></div>
+        <div class="stat-item"><span class="stat-num">4</span><span class="stat-lbl">Days per issuance documentation cycle</span></div>
         <div class="stat-item"><span class="stat-num">8–12</span><span class="stat-lbl">Issuances per year</span></div>
-        <div class="stat-item"><span class="stat-num">-12bps</span><span class="stat-lbl">Worst rate outcome vs target</span></div>
-        <div class="stat-item"><span class="stat-num">50%</span><span class="stat-lbl">Avg investor queries answered same day</span></div>
+        <div class="stat-item"><span class="stat-num">-8 to -12bps</span><span class="stat-lbl">Below target on 3 recent issuances</span></div>
+        <div class="stat-item"><span class="stat-num">6–10</span><span class="stat-lbl">Out of 22+ investor queries answered same day</span></div>
       </div>
     </div>
 
+    <!-- Data Table -->
     <div class="content-section">
       <h3>📋 Issuance Documentation Log</h3>
       <div class="table-wrapper">
         <table class="data-table">
           <thead>
-            <tr><th>Issuance ID</th><th>Type</th><th>Date</th><th>Doc Days</th><th>Team Members</th><th>Queries Received</th><th>Same Day Answered</th><th>Rate vs Target</th></tr>
+            <tr>
+              <th>Issuance ID</th><th>Type</th><th>Date</th><th>Documentation Days</th><th>Queries Received</th><th>Answered Same Day</th><th>Rate vs Target</th>
+            </tr>
           </thead>
           <tbody>
-            <tr><td>ISS-001</td><td>Cagamas Notes (Conv.)</td><td>Mar 2025</td><td>4</td><td>3</td><td>14</td><td>6/14</td><td>-8bps</td></tr>
-            <tr><td>ISS-002</td><td>Cagamas Sukuk</td><td>Apr 2025</td><td>5</td><td>2</td><td>22</td><td>10/22</td><td>On target</td></tr>
-            <tr><td>ISS-003</td><td>Green Bond</td><td>May 2025</td><td>4</td><td>3</td><td>19</td><td>8/19</td><td>-12bps</td></tr>
-            <tr><td>ISS-004</td><td>Cagamas Notes (Conv.)</td><td>Jun 2025</td><td>3</td><td>3</td><td>11</td><td>9/11</td><td>On target</td></tr>
-            <tr><td>ISS-005</td><td>Cagamas Sukuk</td><td>Jul 2025</td><td>5</td><td>2</td><td>28</td><td>9/28</td><td>-5bps</td></tr>
-            <tr><td>ISS-006</td><td>Sustainability Sukuk</td><td>Sep 2025</td><td>6</td><td>2</td><td>31</td><td>7/31</td><td>-10bps</td></tr>
+            <tr><td>ISS-001</td><td>Cagamas Notes</td><td>Mar 2025</td><td>4</td><td>14</td><td>6</td><td>-8bps</td></tr>
+            <tr><td>ISS-002</td><td>Cagamas Sukuk</td><td>Apr 2025</td><td>5</td><td>22</td><td>10</td><td>On target</td></tr>
+            <tr><td>ISS-003</td><td>Green Bond</td><td>May 2025</td><td>4</td><td>19</td><td>8</td><td>-12bps</td></tr>
+            <tr><td>ISS-004</td><td>Cagamas Notes</td><td>Jun 2025</td><td>3</td><td>11</td><td>9</td><td>On target</td></tr>
+            <tr><td>ISS-005</td><td>Cagamas Sukuk</td><td>Jul 2025</td><td>5</td><td>28</td><td>9</td><td>-5bps</td></tr>
+            <tr><td>ISS-006</td><td>Sustainability Sukuk</td><td>Sep 2025</td><td>6</td><td>31</td><td>7</td><td>-10bps</td></tr>
           </tbody>
         </table>
       </div>
     </div>
 
+    <!-- Email -->
     <div class="content-section">
-      <h3>📧 Executive Email</h3>
+      <h3>📧 Email Thread</h3>
       <div class="email-thread">From: Jason Liew Boon Tat (Chief Treasury Officer)
 To: Head of Debt Capital Markets; Treasury Team
 Subject: Investor Feedback — We Need to Raise Our Game
 
-The feedback from the Q3 roadshow was direct and I want us to address it head-on. Investors expect us to come to them with intelligence, not just documentation. Our peers are sending market briefs before issuances. Our Q&amp;A documents are being described as generic. We are losing pricing power because we are producing documents rather than insights.
-
-I want a proposal by end of month on how we transform our investor communication approach. We have the underlying data. We need to think differently about how we use it.</div>
+The feedback from the Q3 roadshow was direct. Investors expect intelligence, not just documentation. Our peers send market briefs before issuances. Our Q&amp;A documents are being described as generic. We are losing pricing power because we spend 4 days producing documents instead of insights. I want a proposal by end of month on how we transform our investor communication approach.</div>
     </div>
 
+    <!-- Tasks -->
     <div class="content-section">
       <h3>🎯 Your Tasks</h3>
+      <p style="font-size:0.88rem;color:#6B7280;margin-bottom:20px;">Three focused Copilot tasks. Each one produces a real output you'll present at the end. Aim for ~25 minutes per task.</p>
       <ol class="challenge-steps">
-        <li><strong>Analyse the issuance documentation log</strong> and identify the pattern between documentation cycle length, query response rate, and rate outcome versus target.</li>
-        <li><strong>Redesign HHFC's investor communication approach</strong> for each new issuance — what should HHFC be producing, when, and how can Copilot support the team in doing it faster and better?</li>
-        <li><strong>Draft an investor market intelligence brief</strong> for a hypothetical upcoming Cagamas Notes issuance, using current knowledge of the Malaysian bond market to make it as realistic as possible.</li>
+        <li>
+          <span style="display:inline-block;background:#F0F7F4;color:#006B3F;font-size:0.72rem;font-weight:700;padding:2px 8px;border-radius:4px;margin-bottom:6px;border:1px solid #C8D8CC;">⏱️ ~25 min · Task 1</span><br>
+          <strong>Spot the Pattern</strong><br>
+          <span style="font-size:0.9rem;color:#374151;line-height:1.7;">Open Copilot Chat. Paste the issuance log and ask: "Analyse this issuance log. Is there a pattern between documentation days, queries answered same day, and rate outcome versus target? Write 3 key findings in plain language that a CFO could understand in 30 seconds." → Copy findings into your working file.</span>
+        </li>
+        <li>
+          <span style="display:inline-block;background:#F0F7F4;color:#006B3F;font-size:0.72rem;font-weight:700;padding:2px 8px;border-radius:4px;margin-bottom:6px;border:1px solid #C8D8CC;">⏱️ ~25 min · Task 2</span><br>
+          <strong>Draft an Investor FAQ</strong><br>
+          <span style="font-size:0.9rem;color:#374151;line-height:1.7;">Use Copilot to write a 5-question Investor FAQ for an upcoming Cagamas Notes issuance. Questions should cover: what HHFC does, why it is issuing now, the credit quality, the use of proceeds, and the yield expectation. Prompt to use: "Write a 5-question Investor FAQ for a new Cagamas Notes issuance by Harmoni Housing Finance Corporation. HHFC is Malaysia's national mortgage corporation with an AAA local rating. The notes will fund new mortgage purchases. Write in a professional, investor-friendly tone." → Paste FAQ into your working file.</span>
+        </li>
+        <li>
+          <span style="display:inline-block;background:#F0F7F4;color:#006B3F;font-size:0.72rem;font-weight:700;padding:2px 8px;border-radius:4px;margin-bottom:6px;border:1px solid #C8D8CC;">⏱️ ~25 min · Task 3</span><br>
+          <strong>Write the Market Commentary Paragraph</strong><br>
+          <span style="font-size:0.9rem;color:#374151;line-height:1.7;">Use Copilot to draft a 1-paragraph market commentary for investors — covering the current Malaysian interest rate environment and why now is a good time to invest in HHFC notes. Prompt: "Write a concise 1-paragraph market commentary for bond investors about the Malaysian fixed income market in 2025–2026, and why a highly rated quasi-sovereign issuer like HHFC represents a compelling investment at this time." → Paste into your working file. This will be the opening section of your investor brief.</span>
+        </li>
       </ol>
     </div>
 
+    <!-- Copilot Tips -->
+    <div class="content-section" style="background:#F0F7F4;border:1px solid #C8D8CC;">
+      <h3>💡 Copilot Tips for Today</h3>
+      <ul style="font-size:0.88rem;line-height:1.8;color:#374151;">
+        <li><strong>Copilot Chat</strong> (Teams or Microsoft365.com) — best for analysing data and drafting documents quickly</li>
+        <li><strong>Copilot in Word</strong> — use "Draft with Copilot" to generate longer documents, then edit</li>
+        <li><strong>Copilot in Outlook</strong> — use "Draft with Copilot" to write professional emails fast</li>
+        <li><strong>Paste your data</strong> directly into the chat — Copilot can read tables and lists you copy in</li>
+        <li><strong>Be specific in your prompts</strong> — the more context you give, the better the output</li>
+      </ul>
+    </div>
+
+    <!-- Working File -->
     <div class="content-section">
       <h3>📝 Your Working File</h3>
       <p>Your working folder contains <strong>2 files</strong> for your team:</p>
       <ul style="font-size:0.9rem;line-height:1.8;">
-        <li>📊 <strong>BLANK – Prompt-a-thon Team Pack</strong>: your main working file.</li>
-        <li>⚖️ <strong>Peer Judging Sheet</strong>: used during presentations.</li>
+        <li>📊 <strong>BLANK – Prompt-a-thon Team Pack</strong>: paste all your Copilot outputs here as you go.</li>
+        <li>⚖️ <strong>Peer Judging Sheet</strong>: used during the presentation segment to score other teams.</li>
       </ul>
-      <p style="margin-top:12px;background:#FFF7EC;border:1px solid #FDDCCA;border-left:4px solid var(--cag-gold);border-radius:8px;padding:14px;font-size:0.87rem;">
+      <p style="margin-top:12px;background:#FFF7EC;border:1px solid #FDDCCA;border-left:4px solid #C8A84B;border-radius:8px;padding:14px;font-size:0.87rem;">
         🕵️ <strong>Important:</strong> Open the working file in an <strong>Incognito</strong> (Chrome) or <strong>InPrivate</strong> (Edge) window to ensure you are signed in with the correct shared account.
       </p>
-      <a href="PLACEHOLDER_TR" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:16px;background:var(--cag-green);color:white;padding:12px 24px;border-radius:8px;font-weight:700;font-size:0.9rem;text-decoration:none;">📂 Open Working File →</a>
+      <a href="PLACEHOLDER_TR" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:16px;background:#006B3F;color:white;padding:12px 24px;border-radius:8px;font-weight:700;font-size:0.9rem;text-decoration:none;">📂 Open Working File →</a>
     </div>
 
-    <div id="powerup-gate">
-      <div class="powerup-locked-icons">⚡🔒⚡</div>
-      <h3>Power Ups: Locked</h3>
-      <p>Power Ups are special Copilot prompts that can supercharge your output. Complete your challenge tasks first, then unlock them here.</p>
-      <button id="reveal-powerups-btn" class="btn btn-orange" style="max-width:280px;margin:0 auto;">⚡ Reveal Power Ups</button>
+    <!-- Power Up Gate -->
+    <div id="powerup-gate" style="background:linear-gradient(135deg,#1A0533 0%,#2D0A5C 100%);border-radius:16px;padding:40px 32px;text-align:center;margin-bottom:24px;border:1px solid #4A1E8A;">
+      <div style="font-size:2.5rem;letter-spacing:8px;margin-bottom:16px;">⚡🔒⚡</div>
+      <h3 style="color:white;font-size:1.2rem;font-weight:800;margin-bottom:10px;">Power Up: Locked</h3>
+      <p style="color:rgba(255,255,255,0.75);font-size:0.9rem;margin-bottom:24px;">Complete all 3 tasks first. Then unlock your Power Up to supercharge your final output before presenting.</p>
+      <button id="reveal-powerups-btn" class="btn" style="background:#7C3AED;color:white;max-width:280px;margin:0 auto;">⚡ Reveal My Power Up</button>
     </div>
-    <div id="revealed-banner" style="display:none;" class="revealed-banner">✅ Power Ups Unlocked! Use them to supercharge your final output.</div>
-    <div id="powerups-section">
+
+    <div id="revealed-banner" style="display:none;background:linear-gradient(135deg,#14532D,#166534);border:1px solid #22C55E;border-radius:12px;padding:16px 20px;margin-bottom:24px;color:white;font-size:0.9rem;font-weight:600;">
+      ✅ Power Up Unlocked! Use this prompt to elevate your output before you present.
+    </div>
+
+    <div id="powerups-section" style="display:none;">
       <div class="powerup-card">
-        <div class="pu-header"><div class="pu-num">⚡</div><div class="pu-title">Power Up: Treasury Communication Transformation Plan</div></div>
-        <div class="pu-prompt">"You are the Chief Treasury Officer of Harmoni Housing Finance Corporation. Based on the issuance log data and investor feedback, write a 'Treasury Communication Transformation Plan' for HHFC. Include: (1) a diagnosis of why HHFC is losing pricing power, (2) a new Investor Communication Playbook with 3 standard documents for every issuance, and (3) how Microsoft 365 Copilot would be used to produce each document at speed without sacrificing quality. Format for presentation to the EXCO."</div>
-        <div class="pu-how">💡 Use this to move from problem analysis to a strategic proposal that positions the team as innovators.</div>
+        <div class="pu-header">
+          <div class="pu-num">⚡</div>
+          <div class="pu-title">Your Power Up Prompt</div>
+        </div>
+        <div class="pu-prompt">"You are HHFC's Chief Treasury Officer preparing for your next issuance. Combine the pattern findings, investor FAQ, and market commentary your team just produced into a single "Investor Intelligence Brief" — a 1-page pre-issuance document HHFC will send to investors 3 days before pricing. Include: (1) the market commentary paragraph, (2) a 3-bullet "Why HHFC Now" section drawn from the pattern findings, and (3) the 5-question FAQ. Format it as a professional investor document with section headers."</div>
+        <div class="pu-how">💡 Use this to show what HHFC's investor communications should look like — and demonstrate how Copilot can produce this in minutes instead of days.</div>
       </div>
     </div>
 
-  </div>
-  <footer class="site-footer">Cagamas Prompt-a-thon · 12 May 2026 · Powered by Microsoft 365 Copilot · Organised by Microsoft Malaysia</footer>
-</div>
+  </div><!-- /content wrapper -->
+
+  <footer class="site-footer">
+    Cagamas Prompt-a-thon · 12 May 2026 · Powered by Microsoft 365 Copilot · Organised by Microsoft Malaysia
+  </footer>
+
+</div><!-- /team-content -->
 
 <script src="../assets/script.js"></script>
 </body>

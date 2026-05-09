@@ -12,9 +12,9 @@
 <!-- Wrong Team Block -->
 <div id="wrong-team-msg" style="display:none;position:fixed;inset:0;background:#0a1628;z-index:9999;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px;">
   <div style="font-size:3rem;margin-bottom:16px;">🚫</div>
-  <h2>Wrong Team Pack</h2>
-  <p>You've already unlocked a different team's pack in this session.<br>Please use the device assigned to your team.</p>
-  <a href="../index.html">← Back to Team Packs</a>
+  <h2 style="color:white;font-size:1.3rem;font-weight:800;margin-bottom:12px;">Wrong Team Pack</h2>
+  <p style="color:#94A3B8;font-size:0.93rem;max-width:400px;line-height:1.7;">You've already unlocked a different team's pack in this session. Please use the device assigned to your team.</p>
+  <a href="../index.html" style="margin-top:24px;background:#006B3F;color:white;padding:12px 28px;border-radius:8px;font-weight:700;font-size:0.93rem;text-decoration:none;">← Back to Team Packs</a>
 </div>
 
 <!-- Header -->
@@ -32,7 +32,7 @@
   <div class="lock-box">
     <span class="lock-icon">🏘️</span>
     <h2>Business &amp; Client Coverage</h2>
-    <p>Enter your team code to unlock the Business &amp; Client Coverage pack.</p>
+    <p>Enter your team code to unlock this pack.</p>
     <form id="team-lock-form" autocomplete="off">
       <input id="team-code-input" class="lock-input" type="password" placeholder="Team code" required>
       <button type="submit" class="btn btn-primary" style="margin-top:12px;">🔓 Unlock My Pack →</button>
@@ -47,6 +47,15 @@
 <!-- Team Content -->
 <div id="team-content" style="display:none;">
 
+  <!-- Half-Day Sprint Banner -->
+  <div style="background:#003366;color:white;padding:16px 24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+    <div style="font-size:1.4rem;">⏱️</div>
+    <div>
+      <div style="font-weight:800;font-size:0.95rem;">Half-Day Sprint — You have ~90 minutes to hack</div>
+      <div style="font-size:0.82rem;opacity:0.8;margin-top:2px;">Budget: ~15 min reading the brief &nbsp;·&nbsp; ~25 min per task &nbsp;·&nbsp; ~15 min Power Up &amp; polish &nbsp;·&nbsp; Save time to prep your presentation!</div>
+    </div>
+  </div>
+
   <!-- Hero -->
   <div class="team-hero" style="background:linear-gradient(135deg,#006B3F 0%,#004D2C 100%);">
     <div class="team-label">Team 1 · Business &amp; Client Coverage</div>
@@ -56,13 +65,13 @@
 
   <div style="max-width:860px;margin:0 auto;padding:32px 20px;">
 
-    <!-- About HHFC -->
+    <!-- About -->
     <div class="content-section">
       <h3>🏢 About Your Division</h3>
       <p>HHFC's Business &amp; Client Coverage division manages the corporation's relationships with 60+ financial institution partners (banks, development financial institutions, cooperatives). The team handles lender onboarding, portfolio purchase processing, and ongoing client servicing — the lifeblood of HHFC's mortgage purchase operations.</p>
     </div>
 
-    <!-- Business Pain Point -->
+    <!-- Pain Point -->
     <div class="content-section">
       <h3>⚠️ The Business Pain Point</h3>
       <div class="pain-box">
@@ -103,7 +112,7 @@
       </div>
     </div>
 
-    <!-- Email Thread -->
+    <!-- Email -->
     <div class="content-section">
       <h3>📧 CEO Email</h3>
       <div class="email-thread">From: Khairul Anwar Mohd Zain (President/CEO)
@@ -129,11 +138,36 @@ I've reviewed the H1 numbers. The 23% volume drop from Bank Setia and Bank Harmo
     <!-- Tasks -->
     <div class="content-section">
       <h3>🎯 Your Tasks</h3>
+      <p style="font-size:0.88rem;color:#6B7280;margin-bottom:20px;">Three focused Copilot tasks. Each one produces a real output you'll present at the end. Aim for ~25 minutes per task.</p>
       <ol class="challenge-steps">
-        <li><strong>Analyse the interaction log</strong> to identify where the most time is being lost in the lender servicing process, and assess whether HHFC's current onboarding approach is fit for the volume it is trying to handle.</li>
-        <li><strong>Design an ideal lender onboarding and servicing experience</strong> — one that reduces friction, gives lenders real-time visibility, and ensures HHFC's relationship managers spend their time on value-added activities.</li>
-        <li><strong>Draft a concise action plan</strong> that the Business division head can present to EXCO, outlining the three most impactful changes HHFC should make to recover the lost volume.</li>
+        <li>
+          <span style="display:inline-block;background:#F0F7F4;color:#006B3F;font-size:0.72rem;font-weight:700;padding:2px 8px;border-radius:4px;margin-bottom:6px;border:1px solid #C8D8CC;">⏱️ ~25 min · Task 1</span><br>
+          <strong>Analyse &amp; Summarise the Problem</strong><br>
+          <span style="font-size:0.9rem;color:#374151;line-height:1.7;">Open Microsoft 365 Copilot Chat (or Copilot in Word). Paste the interaction log table and ask Copilot: "Analyse this lender interaction log. Which query types are consuming the most time? Which relationship manager is most stretched? Write a 4-bullet executive summary of the key findings." → Copy the output into your working file.</span>
+        </li>
+        <li>
+          <span style="display:inline-block;background:#F0F7F4;color:#006B3F;font-size:0.72rem;font-weight:700;padding:2px 8px;border-radius:4px;margin-bottom:6px;border:1px solid #C8D8CC;">⏱️ ~25 min · Task 2</span><br>
+          <strong>Draft a Recovery Email</strong><br>
+          <span style="font-size:0.9rem;color:#374151;line-height:1.7;">Use Copilot to write a response email from HHFC's Head of Business to Bank Setia's senior manager. The email should: acknowledge the process frustrations raised, outline 2 specific improvements HHFC will make to the onboarding process, and invite them to a 30-minute catch-up call. Keep it professional, warm, and under 200 words. → Copy the draft into your working file.</span>
+        </li>
+        <li>
+          <span style="display:inline-block;background:#F0F7F4;color:#006B3F;font-size:0.72rem;font-weight:700;padding:2px 8px;border-radius:4px;margin-bottom:6px;border:1px solid #C8D8CC;">⏱️ ~25 min · Task 3</span><br>
+          <strong>Build the EXCO Talking Points</strong><br>
+          <span style="font-size:0.9rem;color:#374151;line-height:1.7;">Use Copilot to create 3 punchy EXCO talking points on how HHFC will recover the lost lender volume. Frame them as: Problem → Root Cause → Proposed Fix. Each point should be 2–3 sentences. Make it leadership-ready — no jargon, clear action. → Paste into your working file and be ready to present these 3 points to the room.</span>
+        </li>
       </ol>
+    </div>
+
+    <!-- Copilot Tips -->
+    <div class="content-section" style="background:#F0F7F4;border:1px solid #C8D8CC;">
+      <h3>💡 Copilot Tips for Today</h3>
+      <ul style="font-size:0.88rem;line-height:1.8;color:#374151;">
+        <li><strong>Copilot Chat</strong> (Teams or Microsoft365.com) — best for analysing data and drafting documents quickly</li>
+        <li><strong>Copilot in Word</strong> — use "Draft with Copilot" to generate longer documents, then edit</li>
+        <li><strong>Copilot in Outlook</strong> — use "Draft with Copilot" to write professional emails fast</li>
+        <li><strong>Paste your data</strong> directly into the chat — Copilot can read tables and lists you copy in</li>
+        <li><strong>Be specific in your prompts</strong> — the more context you give, the better the output</li>
+      </ul>
     </div>
 
     <!-- Working File -->
@@ -141,33 +175,35 @@ I've reviewed the H1 numbers. The 23% volume drop from Bank Setia and Bank Harmo
       <h3>📝 Your Working File</h3>
       <p>Your working folder contains <strong>2 files</strong> for your team:</p>
       <ul style="font-size:0.9rem;line-height:1.8;">
-        <li>📊 <strong>BLANK – Prompt-a-thon Team Pack</strong>: your main working file.</li>
-        <li>⚖️ <strong>Peer Judging Sheet</strong>: used during presentations.</li>
+        <li>📊 <strong>BLANK – Prompt-a-thon Team Pack</strong>: paste all your Copilot outputs here as you go.</li>
+        <li>⚖️ <strong>Peer Judging Sheet</strong>: used during the presentation segment to score other teams.</li>
       </ul>
-      <p style="margin-top:12px;background:#FFF7EC;border:1px solid #FDDCCA;border-left:4px solid var(--cag-gold);border-radius:8px;padding:14px;font-size:0.87rem;">
+      <p style="margin-top:12px;background:#FFF7EC;border:1px solid #FDDCCA;border-left:4px solid #C8A84B;border-radius:8px;padding:14px;font-size:0.87rem;">
         🕵️ <strong>Important:</strong> Open the working file in an <strong>Incognito</strong> (Chrome) or <strong>InPrivate</strong> (Edge) window to ensure you are signed in with the correct shared account.
       </p>
-      <a href="PLACEHOLDER_BC" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:16px;background:var(--cag-green);color:white;padding:12px 24px;border-radius:8px;font-weight:700;font-size:0.9rem;text-decoration:none;">📂 Open Working File →</a>
+      <a href="PLACEHOLDER_BC" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:16px;background:#006B3F;color:white;padding:12px 24px;border-radius:8px;font-weight:700;font-size:0.9rem;text-decoration:none;">📂 Open Working File →</a>
     </div>
 
     <!-- Power Up Gate -->
-    <div id="powerup-gate">
-      <div class="powerup-locked-icons">⚡🔒⚡</div>
-      <h3>Power Ups: Locked</h3>
-      <p>Power Ups are special Copilot prompts that can supercharge your output. Complete your challenge tasks first, then unlock them here.</p>
-      <button id="reveal-powerups-btn" class="btn btn-orange" style="max-width:280px;margin:0 auto;">⚡ Reveal Power Ups</button>
+    <div id="powerup-gate" style="background:linear-gradient(135deg,#1A0533 0%,#2D0A5C 100%);border-radius:16px;padding:40px 32px;text-align:center;margin-bottom:24px;border:1px solid #4A1E8A;">
+      <div style="font-size:2.5rem;letter-spacing:8px;margin-bottom:16px;">⚡🔒⚡</div>
+      <h3 style="color:white;font-size:1.2rem;font-weight:800;margin-bottom:10px;">Power Up: Locked</h3>
+      <p style="color:rgba(255,255,255,0.75);font-size:0.9rem;margin-bottom:24px;">Complete all 3 tasks first. Then unlock your Power Up to supercharge your final output before presenting.</p>
+      <button id="reveal-powerups-btn" class="btn" style="background:#7C3AED;color:white;max-width:280px;margin:0 auto;">⚡ Reveal My Power Up</button>
     </div>
 
-    <div id="revealed-banner" style="display:none;" class="revealed-banner">✅ Power Ups Unlocked! Use them to supercharge your final output.</div>
+    <div id="revealed-banner" style="display:none;background:linear-gradient(135deg,#14532D,#166534);border:1px solid #22C55E;border-radius:12px;padding:16px 20px;margin-bottom:24px;color:white;font-size:0.9rem;font-weight:600;">
+      ✅ Power Up Unlocked! Use this prompt to elevate your output before you present.
+    </div>
 
-    <div id="powerups-section">
+    <div id="powerups-section" style="display:none;">
       <div class="powerup-card">
         <div class="pu-header">
           <div class="pu-num">⚡</div>
-          <div class="pu-title">Power Up: Executive State of Lender Experience Brief</div>
+          <div class="pu-title">Your Power Up Prompt</div>
         </div>
-        <div class="pu-prompt">"You are a strategic advisor to Harmoni Housing Finance Corporation. Using the interaction log and the CEO's email as your context, write an executive-ready 'State of Lender Experience' brief. Include: (1) a one-paragraph situation assessment, (2) the top 3 root causes of volume loss, and (3) three specific actions with expected outcomes. Format it for a 5-minute EXCO briefing."</div>
-        <div class="pu-how">💡 Use this to transform your analysis into an executive-ready document that leadership can act on immediately.</div>
+        <div class="pu-prompt">"You are HHFC's Head of Business &amp; Client Coverage. Using the interaction log findings, the recovery email, and the EXCO talking points your team just created, write a single 1-page "Lender Experience Recovery Brief" for the CEO. It should have: a 2-sentence situation summary, the 3 talking points formatted as a priority action table (Action | Owner | Timeline), and a closing paragraph on the expected outcome if actions are taken in 30 days. Write it in a tone that is direct and confident."</div>
+        <div class="pu-how">💡 Use this to combine everything your team produced into one polished CEO-ready document.</div>
       </div>
     </div>
 

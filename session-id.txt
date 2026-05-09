@@ -1,0 +1,9 @@
+Copilot Session ID: 883796fe-350d-41b7-a305-3c42e987e705
+
+Session Context:
+- Built Cagamas Prompt-a-thon (12 May) + Agent-a-thon (13 May) event site
+- GitHub Repo:  https://github.com/steffiyappy/Cagamas1213May
+- Live Site:    https://steffiyappy.github.io/Cagamas1213May/
+- Date:         2026-05-04
+
+Pending: Replace PLACEHOLDER_XX links with OneDrive working file URLs in team pages.
