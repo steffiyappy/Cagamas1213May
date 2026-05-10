@@ -91,9 +91,9 @@
     <div class="content-section">
       <h3>🔧 Build Tasks</h3>
       <ol class="challenge-steps">
-        <li><strong>Task 1 (~20 min):</strong> Create a new agent in Copilot Studio. Name it <strong>"HHFC Market Desk"</strong>. Instructions: <em>"You are HHFC's Treasury Information Assistant. You help the Treasury team access current bond issuance summaries, market conditions briefings, and investor FAQ answers. You do not provide binding prices or live market data — always direct users to the Bloomberg terminal for live rates."</em></li>
-        <li><strong>Task 2 (~40 min):</strong> Create a topic called <strong>"Bond Issuance Overview"</strong>. Add trigger phrases: <em>"tell me about the latest bond"</em>, <em>"issuance status"</em>, <em>"bond programme"</em>, <em>"sukuk"</em>. Write a response summarising HHFC's bond programme: <em>"HHFC issues conventional bonds and sukuk under its RM50 billion Medium Term Notes programme. Issuances are used to fund mortgage asset purchases. For the latest indicative rates, please check the Bloomberg terminal or contact the Debt Capital Markets team."</em></li>
-        <li><strong>Task 3 (~20 min):</strong> Test your agent with <em>"What bonds has HHFC issued recently?"</em> and <em>"What is the current MGS rate?"</em>. Make sure it gives a useful answer and correctly redirects for live data.</li>
+        <li><strong>Define the Agent Identity (~20 min):</strong> Treasury teams work in precision and speed, so your agent needs a sharp boundary around what it knows and what it redirects. Configure its identity with that reality in mind. <strong>Goal:</strong> Get your agent created with a sharp, focused persona.</li>
+        <li><strong>Build the Core Topic (~40 min):</strong> Treasury keeps getting the same questions, and one of them wastes more time than the rest. Pick that high-friction topic and build a response flow that handles it properly. <strong>Goal:</strong> Get one complete, working topic into your agent.</li>
+        <li><strong>Pressure-Test &amp; Refine (~20 min):</strong> Ask your agent something right at the edge of what it should know. Does it stay useful without pretending certainty? <strong>Goal:</strong> Find one gap and close it before you present.</li>
       </ol>
     </div>
 
@@ -131,7 +131,7 @@
     <div id="powerups-section">
       <div class="powerup-card">
         <div class="pu-header"><div class="pu-num">⚡</div><div class="pu-title">Power Up: Investor FAQ</div></div>
-        <div class="pu-prompt">Add a topic called <strong>"Investor FAQ"</strong> with answers to the 5 most common investor questions: (1) HHFC's credit rating, (2) coupon payment schedule, (3) issuance frequency, (4) how to subscribe, (5) secondary market liquidity. This turns your agent into a self-service investor relations tool.</div>
+        <div class="pu-prompt">Answering questions is useful; connecting people to the right information at the right moment is valuable. What could your agent surface, route, or signpost that would make Treasury faster under pressure? Design one capability that feels more like a desk assistant than an FAQ bot.</div>
         <div class="pu-how">💡 This Power Up makes your agent more useful during issuance periods by covering the repeat investor questions that normally hit the team first.</div>
       </div>
     </div>
