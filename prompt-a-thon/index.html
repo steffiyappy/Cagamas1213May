@@ -10,6 +10,7 @@
   </style>
 </head>
 <body>
+<div class="top-nav"><a href="../index.html">← Cagamas Event Hub</a></div>
 
 <!-- ══════════════════════════════════════════════
      MAIN LOCK GATE
@@ -58,7 +59,7 @@ Harmoni Housing Finance Copilot Challenge</h2>
         <span style="font-size:1.5rem;">⏱️</span>
         <div>
           <div style="color:var(--cag-gold);font-weight:800;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;">Half-Day Sprint</div>
-          <div style="color:white;font-weight:700;font-size:1.1rem;">You have approximately 3 hours — make every minute count.</div>
+          <div style="color:white;font-weight:700;font-size:1.1rem;">You have approximately 3 hours, so make every minute count.</div>
         </div>
       </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;">
@@ -126,7 +127,7 @@ Harmoni Housing Finance Copilot Challenge</h2>
   <section class="section" id="teams">
     <div class="container">
       <h2 class="section-title">🏢 Your Team Packs</h2>
-      <p class="section-sub">Select your department below. Each pack is locked — your facilitator will give you your team code.</p>
+      <p class="section-sub">Select your department below. Each pack is locked, and your facilitator will give you your team code.</p>
       <div class="cards-grid">
   <div class="card">
     <div class="card-icon">🏘️</div>
@@ -196,7 +197,7 @@ Harmoni Housing Finance Copilot Challenge</h2>
   /* Already unlocked */
   if (localStorage.getItem(KEY) === '1') { unlock(); return; }
 
-  /* Already assigned to a team — redirect */
+  /* Already assigned to a team, redirect */
   const team = sessionStorage.getItem('cag_team');
   if (team) { unlock(); return; }
 

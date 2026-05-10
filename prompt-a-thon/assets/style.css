@@ -825,3 +825,24 @@ img { max-width: 100%; }
   .steps-grid { grid-template-columns: 1fr 1fr; }
   .leaders-grid { grid-template-columns: 1fr; }
 }
+
+/* ── Top Navigation Bar ── */
+.top-nav {
+  background: #001a33;
+  padding: 7px 20px;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  z-index: 200;
+}
+.top-nav a {
+  color: #7aaec8;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.15s;
+}
+.top-nav a:hover { color: #ffffff; }
+.top-nav .sep { color: #2a4a5e; margin: 0 6px; }
