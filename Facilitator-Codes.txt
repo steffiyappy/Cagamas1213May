@@ -1,40 +1,105 @@
 CAGAMAS EVENT FACILITATOR REFERENCE
 =====================================
+Prepared for: Cagamas Berhad
+Organised by: Microsoft Malaysia
+Session ID:   883796fe-350d-41b7-a305-3c42e987e705
 
+Live Site:    https://steffiyappy.github.io/Cagamas1213May/
+GitHub Repo:  https://github.com/steffiyappy/Cagamas1213May
+
+FACILITATOR BYPASS
+------------------
+Add ?facilitator to any URL to skip all password gates.
+Examples:
+  https://steffiyappy.github.io/Cagamas1213May/prompt-a-thon/index.html?facilitator
+  https://steffiyappy.github.io/Cagamas1213May/agent-a-thon/index.html?facilitator
+  https://steffiyappy.github.io/Cagamas1213May/prompt-a-thon/teams/business-client.html?facilitator
+
+
+====================================================================
 == 12 MAY 2026 — PROMPT-A-THON (HALF-DAY) ==
+====================================================================
+
 Main Event Password:   Cagamas12May
-Facilitator URL Param: ?facilitator  (add to index.html URL to bypass all locks)
-Number of Teams:       6  (suited for 25–30 participants, ~4–5 per team)
+Number of Teams:       6  (25–30 participants, ~4–5 per team)
 
-Team Code Reference:
-  Team 1 — Business & Client Coverage:   BCTEAM
-  Team 2 — Islamic Finance:              ISLTEAM
-  Team 3 — Treasury & Capital Markets:   TRSTEAM
-  Team 4 — Finance & Reporting:          FINTEAM
-  Team 5 — Human Capital:               HCMTEAM
-  Team 6 — Risk & Compliance:            RSKTEAM
+Team URL:  https://steffiyappy.github.io/Cagamas1213May/prompt-a-thon/
 
-Suggested Half-Day Schedule:
-  ~15 min  — Welcome, intro, and brief reading
-  ~90 min  — Hack time (3 tasks × ~25 min each)
+Half-Day Schedule:
+  ~15 min  — Welcome, context setting, brief reading
+  ~90 min  — Hack time (3 tasks, clue-based — teams craft their own prompts)
   ~15 min  — Power Up reveal and output polish
   ~30 min  — Team presentations + peer judging
 
-== 13 MAY 2026 — AGENT-A-THON ==
+TEAM CODES
+----------
+  Team 1 — Business & Client Coverage    Code: BCTEAM
+           Pack URL: /prompt-a-thon/teams/business-client.html
+
+  Team 2 — Islamic Finance               Code: ISLTEAM
+           Pack URL: /prompt-a-thon/teams/islamic-business.html
+
+  Team 3 — Treasury & Capital Markets    Code: TRSTEAM
+           Pack URL: /prompt-a-thon/teams/treasury-dcm.html
+
+  Team 4 — Finance & Reporting           Code: FINTEAM
+           Pack URL: /prompt-a-thon/teams/finance-reporting.html
+
+  Team 5 — Human Capital                 Code: HCMTEAM
+           Pack URL: /prompt-a-thon/teams/human-capital.html
+
+  Team 6 — Risk & Compliance             Code: RSKTEAM
+           Pack URL: /prompt-a-thon/teams/risk-compliance.html
+
+
+====================================================================
+== 13 MAY 2026 — AGENT-A-THON (HALF-DAY) ==
+====================================================================
+
 Main Event Password:   Cagamas13May
-Facilitator URL Param: ?facilitator
+Number of Teams:       6  (25–30 participants, ~4–5 per team)
 
-Team Code Reference:
-  Team 1 — Business & Client Coverage:   ABCTEAM
-  Team 2 — Islamic Finance:              AISLTEAM
-  Team 3 — Treasury & Capital Markets:   ATRSTEAM
-  Team 4 — Finance & Reporting:          AFINTEAM
-  Team 5 — Technology & Operations:      ATECTEAM
-  Team 6 — Human Capital:               AHCMTEAM
-  Team 7 — Risk & Compliance:            ARSKTEAM
-  Team 8 — Strategy & Research:          ASTRTEAM
+Team URL:  https://steffiyappy.github.io/Cagamas1213May/agent-a-thon/
 
-NOTES:
-- Team codes are case-insensitive (converted to uppercase before hashing)
-- Working file links marked PLACEHOLDER_XX need updating with actual OneDrive URLs
-- Prompt-a-thon tasks are intentionally scoped for ~25 min each — achievable in half a day
+Half-Day Schedule:
+  ~15 min  — Welcome, context setting, agent brief reading
+  ~90 min  — Build time (3 tasks: set up agent, build topic, test & refine)
+  ~15 min  — Power Up reveal and agent enhancement
+  ~30 min  — Live agent demos + peer judging
+
+TEAM CODES
+----------
+  Team 1 — Business & Client Coverage    Code: ABCTEAM
+           Agent: HHFC Lender Connect
+           Pack URL: /agent-a-thon/teams/business-client.html
+
+  Team 2 — Islamic Finance               Code: AISLTEAM
+           Agent: HHFC Shariah Guide
+           Pack URL: /agent-a-thon/teams/islamic-business.html
+
+  Team 3 — Treasury & Capital Markets    Code: ATRSTEAM
+           Agent: HHFC Market Desk
+           Pack URL: /agent-a-thon/teams/treasury-dcm.html
+
+  Team 4 — Finance & Reporting           Code: AFINTEAM
+           Agent: HHFC Finance Desk
+           Pack URL: /agent-a-thon/teams/finance-reporting.html
+
+  Team 5 — Human Capital                 Code: AHCMTEAM
+           Agent: HHFC People Connect
+           Pack URL: /agent-a-thon/teams/human-capital.html
+
+  Team 6 — Risk & Compliance             Code: ARSKTEAM
+           Agent: HHFC Compliance Radar
+           Pack URL: /agent-a-thon/teams/risk-compliance.html
+
+
+====================================================================
+NOTES
+====================================================================
+- Team codes are CASE-INSENSITIVE (system uppercases before checking)
+- All passwords are hashed in the browser — never stored in plaintext
+- Working file links in team packs are marked PLACEHOLDER_XX — update
+  with actual OneDrive URLs before the event
+- Prompt-a-thon tasks are clue-based — no exact prompts given to teams
+- Agent-a-thon tasks are clue-based — teams build agents in Copilot Studio
