@@ -4,14 +4,12 @@
    ============================================================ */
 
 const TEAM_HASHES = {
-  'business-client':       'f3dd3759847b73a98b9d70f5af63f55b83381559f10a3943c4128ca17c2dbe3e',
-  'islamic-business':      '2d89485b597992f67d784956d0ff9f493f8f43991f83d5f31f86a3d1275d756f',
-  'treasury-dcm':          'f9f01825521ff40c974e7404d3632c67570c7b9c58e068ba41e2f345a4e95126',
-  'finance-reporting':     'c9c0d50183f2ebfc1b4f4b85d467ca9862c7052c32fa674d038f696abd25847e',
-  'technology-operations': '6eaf003125f3e5a67f4b3959532d008f40f840979540ce510674a1c242f1e753',
-  'human-capital':         '679765d5387c849dcf949d21e918b1790bc9e73ed9551f6e15c3f1a7040a42b5',
-  'risk-compliance':       '639f00a4ea038772bc3005ce5d83d4af1bd809fc4e1952c2a6d4d511c1f5fd34',
-  'strategy-research':     '5e63d40d3a5b2ea56e12edd4c8e6abf53febe198c3bafeb78e1595d04244552b'
+  'business-client':   'f3dd3759847b73a98b9d70f5af63f55b83381559f10a3943c4128ca17c2dbe3e',
+  'islamic-business':  '2d89485b597992f67d784956d0ff9f493f8f43991f83d5f31f86a3d1275d756f',
+  'treasury-dcm':      'f9f01825521ff40c974e7404d3632c67570c7b9c58e068ba41e2f345a4e95126',
+  'finance-reporting': 'c9c0d50183f2ebfc1b4f4b85d467ca9862c7052c32fa674d038f696abd25847e',
+  'human-capital':     '679765d5387c849dcf949d21e918b1790bc9e73ed9551f6e15c3f1a7040a42b5',
+  'risk-compliance':   '639f00a4ea038772bc3005ce5d83d4af1bd809fc4e1952c2a6d4d511c1f5fd34'
 };
 
 const STORAGE_PREFIX = 'cag_';

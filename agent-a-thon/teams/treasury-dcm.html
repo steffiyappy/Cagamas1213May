@@ -49,59 +49,41 @@
 
   <div style="max-width:860px;margin:0 auto;padding:32px 20px;">
 
+    <div style="background:linear-gradient(135deg,#1e1b4b,#312e81);color:white;border-radius:12px;padding:20px 24px;margin-bottom:24px;text-align:center;">
+      <strong>⏱️ Half-Day Sprint</strong> — You have <strong>90 minutes to build</strong> your agent.<br>
+      <span style="font-size:0.85rem;opacity:0.85;">Focus on getting ONE agent topic working well rather than building everything.</span>
+    </div>
+
     <div class="content-section">
       <h3>🏢 About Your Division</h3>
-      <p>HHFC's Treasury &amp; Capital Markets division raises capital through bond and sukuk issuances and manages investor relations. The team spends 4 days per issuance rebuilding investor documents from scratch, leaving no bandwidth for market monitoring. An investor-facing agent could handle routine queries, freeing the team for higher-value work.</p>
+      <p>HHFC's Treasury &amp; Capital Markets division manages funding, bond issuance, and investor communication. The team regularly responds to repeat questions on bond programmes and market context, so a fast internal assistant can save time during busy issuance periods.</p>
     </div>
 
     <div class="content-section">
       <h3>🤖 Agent Brief: HHFC Market Desk</h3>
-      <p><strong>Purpose:</strong> Support HHFC's Treasury team and external investors by providing quick answers on HHFC's outstanding securities, upcoming issuances, market context, and investor FAQ — reducing the documentation burden on the team during live issuance windows.</p>
-      <p><strong>Primary Users:</strong> Institutional investors, fund managers, and internal Treasury team members seeking quick reference information.</p>
-      <p><strong>Core Problem it Solves:</strong> During each issuance window, the team receives 11–31 investor queries and can answer fewer than 50% on the same day. An agent handling standard queries would dramatically improve investor response times and free the team to monitor markets.</p>
+      <p><strong>What it does:</strong> Helps treasury staff quickly access bond issuance summaries, market briefings, and standard investor answers.</p>
+      <p><strong>Who uses it:</strong> Internal Treasury users first, with content that can also support investor-facing FAQs.</p>
+      <p><strong>Core problem:</strong> Staff need fast answers during issuance windows, but they should not have to rebuild the same overview every time someone asks about programmes or rates.</p>
     </div>
 
     <div class="content-section">
       <h3>💬 Sample Conversations</h3>
 
       <div class="chat-window">
-        <span class="chat-scenario-label">Scenario 1 — Outstanding Securities</span>
-        <div class="chat-bubble user">What bonds does HHFC currently have outstanding?</div>
+        <span class="chat-scenario-label">Scenario 1 — Bond Issuance Status</span>
+        <div class="chat-bubble user">Tell me about HHFC's latest bond programme.</div>
         <div class="chat-bubble agent">
           <span class="agent-label">🤖 HHFC Market Desk</span>
-          HHFC (Harmoni Housing Finance Corporation) currently has the following categories of outstanding securities: Cagamas Notes (conventional), Cagamas Sukuk (Islamic), Green Bonds, and Sustainability Sukuk. For specific current outstanding amounts, maturities, and coupon rates, please refer to the latest investor fact sheet available on the HHFC investor relations portal, or I can connect you with the Treasury team for a current schedule. Is there a specific instrument type you are evaluating?
+          HHFC issues conventional bonds and sukuk under its <strong>RM50 billion Medium Term Notes programme</strong>. These issuances are used to fund mortgage asset purchases. For the latest indicative rates or launch timing, please check the Bloomberg terminal or contact the Debt Capital Markets team.
         </div>
       </div>
 
       <div class="chat-window">
-        <span class="chat-scenario-label">Scenario 2 — Credit Rating</span>
-        <div class="chat-bubble user">What is HHFC's credit rating and what does it mean for investors?</div>
+        <span class="chat-scenario-label">Scenario 2 — Market Rate Query</span>
+        <div class="chat-bubble user">What is the current MGS rate?</div>
         <div class="chat-bubble agent">
           <span class="agent-label">🤖 HHFC Market Desk</span>
-          HHFC carries a <strong>AAA local currency credit rating</strong> — the highest rating available from Malaysian rating agencies. As Malaysia's national housing finance corporation operating under Bank Negara Malaysia's oversight, HHFC carries an implied sovereign backing that underpins this rating. For investors, this means: (1) lowest credit risk in the Malaysian corporate bond market, (2) eligible for LCR Level 2A/2B treatment at most financial institutions, (3) typically priced at a modest spread above Malaysian Government Securities. The AAA rating reflects HHFC's policy mandate, not simply its financial metrics.
-        </div>
-      </div>
-
-      <div class="chat-window">
-        <span class="chat-scenario-label">Scenario 3 — Investment Risks</span>
-        <div class="chat-bubble user">We are considering HHFC's next sukuk. What are the key risks?</div>
-        <div class="chat-bubble agent">
-          <span class="agent-label">🤖 HHFC Market Desk</span>
-          Key risk considerations for HHFC sukuk investors include: (1) <strong>Prepayment Risk</strong> — underlying mortgages may prepay faster than expected, affecting yield duration; (2) <strong>Interest Rate / Profit Rate Risk</strong> — value of fixed-rate securities will vary inversely with OPR movements; (3) <strong>Liquidity Risk</strong> — secondary market for HHFC securities is moderately liquid; (4) <strong>Credit Risk</strong> — minimal given AAA rating, but note HHFC is not explicitly guaranteed by the Malaysian government. Full risk factors are disclosed in the issuance prospectus. Would you like me to help draft a risk question list for your investment committee?
-        </div>
-      </div>
-
-      <div class="chat-window">
-        <span class="chat-scenario-label">Scenario 4 — Investor FAQ Draft</span>
-        <div class="chat-bubble user">Can you draft a brief investor FAQ for our upcoming green bond issuance?</div>
-        <div class="chat-bubble agent">
-          <span class="agent-label">🤖 HHFC Market Desk</span>
-          Here is a draft 5-question investor FAQ for the upcoming HHFC Green Bond issuance:<br><br>
-          <strong>Q1. What is the use of proceeds?</strong> Proceeds will fund the purchase of mortgages secured on green-certified residential properties meeting BCA or GBI standards.<br>
-          <strong>Q2. What is the expected yield range?</strong> Indicative pricing will be announced at launch; historically HHFC green bonds have priced at 15–25bps premium to conventional notes.<br>
-          <strong>Q3. What green certification framework applies?</strong> HHFC's Green Finance Framework is aligned with ICMA Green Bond Principles and externally reviewed.<br>
-          <strong>Q4. What is the expected tenor?</strong> Typically 3–7 years, subject to market conditions.<br>
-          <strong>Q5. What ESG reporting commitments does HHFC make?</strong> Annual green bond impact reports detailing use of proceeds and environmental KPIs.
+          I can help with general market context, but I do not provide binding live market data. Please check the <strong>Bloomberg terminal</strong> for the latest MGS rate, or contact the Treasury desk if you need a current market snapshot.
         </div>
       </div>
     </div>
@@ -109,10 +91,21 @@
     <div class="content-section">
       <h3>🔧 Build Tasks</h3>
       <ol class="challenge-steps">
-        <li><strong>Configure the agent as HHFC's Market Intelligence &amp; Investor Relations assistant.</strong> Define what it knows (product information, general market context, issuance process) and what it must not answer (pricing commitments, non-public information, binding commitments).</li>
-        <li><strong>Build topics for:</strong> (a) Outstanding Securities Reference, (b) Investor FAQ Generator, (c) Green &amp; Sustainability Bond Information, (d) Market Context Q&amp;A. Write triggers and responses for each.</li>
-        <li><strong>Test all 4 conversations and demonstrate</strong> that the agent correctly refuses to provide pricing commitments or non-public information, directing users to the Treasury team instead.</li>
+        <li><strong>Task 1 (~20 min):</strong> Create a new agent in Copilot Studio. Name it <strong>"HHFC Market Desk"</strong>. Instructions: <em>"You are HHFC's Treasury Information Assistant. You help the Treasury team access current bond issuance summaries, market conditions briefings, and investor FAQ answers. You do not provide binding prices or live market data — always direct users to the Bloomberg terminal for live rates."</em></li>
+        <li><strong>Task 2 (~40 min):</strong> Create a topic called <strong>"Bond Issuance Overview"</strong>. Add trigger phrases: <em>"tell me about the latest bond"</em>, <em>"issuance status"</em>, <em>"bond programme"</em>, <em>"sukuk"</em>. Write a response summarising HHFC's bond programme: <em>"HHFC issues conventional bonds and sukuk under its RM50 billion Medium Term Notes programme. Issuances are used to fund mortgage asset purchases. For the latest indicative rates, please check the Bloomberg terminal or contact the Debt Capital Markets team."</em></li>
+        <li><strong>Task 3 (~20 min):</strong> Test your agent with <em>"What bonds has HHFC issued recently?"</em> and <em>"What is the current MGS rate?"</em>. Make sure it gives a useful answer and correctly redirects for live data.</li>
       </ol>
+    </div>
+
+    <div class="content-section" style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;padding:20px 24px;">
+      <h3>💡 Copilot Studio Tips</h3>
+      <ul style="font-size:0.9rem;line-height:1.9;margin:0;padding-left:20px;">
+        <li><strong>Start at:</strong> <a href="https://copilotstudio.microsoft.com" target="_blank">copilotstudio.microsoft.com</a></li>
+        <li>Click <strong>"Create"</strong> → <strong>"New agent"</strong> → give it a name and description</li>
+        <li>Use <strong>"Topics"</strong> to add conversation flows — each topic has trigger phrases + a response</li>
+        <li>Click <strong>"Test your agent"</strong> (right panel) to chat with it and see if it works</li>
+        <li>Keep responses <strong>short and helpful</strong> — bullet points work better than long paragraphs</li>
+      </ul>
     </div>
 
     <div class="content-section">
@@ -137,9 +130,9 @@
     <div id="revealed-banner" style="display:none;" class="revealed-banner">✅ Power Ups Unlocked! Add this capability to your agent before presenting.</div>
     <div id="powerups-section">
       <div class="powerup-card">
-        <div class="pu-header"><div class="pu-num">⚡</div><div class="pu-title">Power Up: Issuance Prep Mode</div></div>
-        <div class="pu-prompt">Add an "Issuance Prep Mode" topic where the user provides a brief description of an upcoming issuance (type, tenor, use of proceeds), and the agent automatically generates: (1) a first-draft 5-question investor FAQ, and (2) a 3-paragraph investor rationale document explaining why HHFC is coming to market and why now is an attractive entry point. The output should be ready for Treasury team review before investor outreach begins.</div>
-        <div class="pu-how">💡 This Power Up transforms the agent from a reference tool into a content production assistant — cutting the 4-day documentation cycle to hours.</div>
+        <div class="pu-header"><div class="pu-num">⚡</div><div class="pu-title">Power Up: Investor FAQ</div></div>
+        <div class="pu-prompt">Add a topic called <strong>"Investor FAQ"</strong> with answers to the 5 most common investor questions: (1) HHFC's credit rating, (2) coupon payment schedule, (3) issuance frequency, (4) how to subscribe, (5) secondary market liquidity. This turns your agent into a self-service investor relations tool.</div>
+        <div class="pu-how">💡 This Power Up makes your agent more useful during issuance periods by covering the repeat investor questions that normally hit the team first.</div>
       </div>
     </div>
 

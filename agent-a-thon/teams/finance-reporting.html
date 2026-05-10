@@ -49,54 +49,41 @@
 
   <div style="max-width:860px;margin:0 auto;padding:32px 20px;">
 
+    <div style="background:linear-gradient(135deg,#1e1b4b,#312e81);color:white;border-radius:12px;padding:20px 24px;margin-bottom:24px;text-align:center;">
+      <strong>⏱️ Half-Day Sprint</strong> — You have <strong>90 minutes to build</strong> your agent.<br>
+      <span style="font-size:0.85rem;opacity:0.85;">Focus on getting ONE agent topic working well rather than building everything.</span>
+    </div>
+
     <div class="content-section">
       <h3>🏢 About Your Division</h3>
-      <p>HHFC's Finance division manages financial planning and Group performance reporting. Monthly Management Accounts Pack production currently takes 6 days and results in rushed commentary. An agent that helps management teams query financial data and draft variance commentary could fundamentally change the Finance team's capacity for value-add analysis.</p>
+      <p>HHFC's Finance &amp; Reporting division manages management accounts, reporting packs, and month-end coordination. Staff frequently answer repeat questions on deadlines and commentary expectations, which makes a simple reporting assistant very practical for a half-day build.</p>
     </div>
 
     <div class="content-section">
       <h3>🤖 Agent Brief: HHFC Finance Desk</h3>
-      <p><strong>Purpose:</strong> Help HHFC staff query financial performance data, understand variances, and get guided assistance on budget vs actual — reducing the volume of ad-hoc finance queries hitting the Finance team and giving management faster access to financial context.</p>
-      <p><strong>Primary Users:</strong> Cost centre heads, senior managers, and the Finance team itself during month-end reporting cycles.</p>
-      <p><strong>Core Problem it Solves:</strong> Cost centre heads frequently contact Finance with basic queries that consume team time. An agent that handles routine lookups and helps draft commentary would free Finance to focus on analysis and the CFO's strategic questions.</p>
+      <p><strong>What it does:</strong> Helps finance staff quickly find reporting templates, deadlines, and standard variance commentary guidance.</p>
+      <p><strong>Who uses it:</strong> Finance team members, cost centre owners, and managers preparing month-end or quarterly submissions.</p>
+      <p><strong>Core problem:</strong> Finance spends too much time repeating timelines and explaining how to write basic variance notes instead of focusing on analysis.</p>
     </div>
 
     <div class="content-section">
       <h3>💬 Sample Conversations</h3>
 
       <div class="chat-window">
-        <span class="chat-scenario-label">Scenario 1 — Performance Summary</span>
-        <div class="chat-bubble user">What was HHFC's total interest income in Q1 2025?</div>
+        <span class="chat-scenario-label">Scenario 1 — Reporting Deadline</span>
+        <div class="chat-bubble user">When is the next board pack due?</div>
         <div class="chat-bubble agent">
           <span class="agent-label">🤖 HHFC Finance Desk</span>
-          Based on the Management Accounts data, HHFC's reported interest income for Q1 2025 was approximately <strong>RM 408.9M</strong> (following an accrual timing adjustment from an initial RM 412.3M). The key driver was coupon income from the conventional mortgage portfolio. For a full breakdown by product line, the Management Pack Q1 section provides the detailed schedule. Would you like me to explain the main variance drivers or help you draft commentary for a specific cost centre?
+          HHFC's standard reporting schedule is: <strong>monthly management accounts by the 5th working day</strong>, <strong>quarterly board pack by the 15th of month-end</strong>, and <strong>annual statutory accounts by 31 March</strong>. If you need an extension, please contact the Finance Controller.
         </div>
       </div>
 
       <div class="chat-window">
         <span class="chat-scenario-label">Scenario 2 — Variance Explanation</span>
-        <div class="chat-bubble user">Why was the Islamic Finance sukuk revenue higher than budget in Q2?</div>
+        <div class="chat-bubble user">Help me explain a budget variance.</div>
         <div class="chat-bubble agent">
           <span class="agent-label">🤖 HHFC Finance Desk</span>
-          The Islamic Finance sukuk revenue variance in Q2 was driven by a <strong>fee income reclassification</strong> — specifically, certain structuring fees that were initially categorised under advisory income were reclassified to sukuk revenue, resulting in an upward revision from RM 188.4M to RM 191.2M. This is a presentation adjustment rather than an underlying performance change. For future reporting clarity, Finance is standardising the fee income classification treatment across all cost centres. Would you like me to draft the variance commentary paragraph for this line item?
-        </div>
-      </div>
-
-      <div class="chat-window">
-        <span class="chat-scenario-label">Scenario 3 — Commentary Drafting</span>
-        <div class="chat-bubble user">I need to write the variance commentary for the Treasury cost centre. Can you help?</div>
-        <div class="chat-bubble agent">
-          <span class="agent-label">🤖 HHFC Finance Desk</span>
-          Of course. To draft accurate commentary, could you confirm: (1) the actual vs budget variance amount, (2) the primary driver (e.g., issuance timing, rate movement, volume), and (3) whether the variance is expected to reverse in H2? Once you provide those details, I'll generate a commentary paragraph in standard Management Accounts style — concise, factual, and ready for Finance review before inclusion in the pack.
-        </div>
-      </div>
-
-      <div class="chat-window">
-        <span class="chat-scenario-label">Scenario 4 — OPEX Status</span>
-        <div class="chat-bubble user">What is our current year-to-date OPEX versus budget?</div>
-        <div class="chat-bubble agent">
-          <span class="agent-label">🤖 HHFC Finance Desk</span>
-          Based on the latest Management Accounts data, HHFC's YTD OPEX shows the IT &amp; Operations cost centre as the most notable over-budget item (RM 9.7M actual vs RM 8.2M budget — a <strong>+18% variance</strong>) driven by licence renewal costs. The Risk &amp; Compliance provision is also above initial estimates. For the most current YTD position, I recommend confirming with the Finance team as figures may have been updated since the last pack. Would you like me to help format this into a brief OPEX summary for your cost centre review?
+          A simple variance commentary template is: <strong>"Revenue was [higher/lower] than budget by RM[X] due to [reason]. This was [partially/fully] offset by [factor]. Management expects [outlook]."</strong> If you give me the amount and driver, I can help you draft it more clearly.
         </div>
       </div>
     </div>
@@ -104,10 +91,21 @@
     <div class="content-section">
       <h3>🔧 Build Tasks</h3>
       <ol class="challenge-steps">
-        <li><strong>Configure the Finance Desk agent with appropriate knowledge boundaries</strong> — it can help interpret and summarise financial data, and assist with commentary drafting, but must direct users to Finance for data validation and final approval of any figures.</li>
-        <li><strong>Build topics for:</strong> (a) Performance Summary Q&amp;A, (b) Variance Commentary Drafting Assistant, (c) Budget vs Actual Query, (d) Board Pack Navigation Help. Write triggers and responses for each.</li>
-        <li><strong>Test all 4 conversations.</strong> For the commentary drafting topic, demonstrate that the agent produces commentary in the correct financial reporting style — concise, structured, and variance-focused.</li>
+        <li><strong>Task 1 (~20 min):</strong> Create a new agent in Copilot Studio. Name it <strong>"HHFC Finance Desk"</strong>. Instructions: <em>"You are HHFC's Finance Reporting Assistant. You help finance team members find reporting templates, check submission deadlines, and understand common variance explanations. You do not access live financial systems — always direct users to the ERP for live figures."</em></li>
+        <li><strong>Task 2 (~40 min):</strong> Create a topic called <strong>"Reporting Deadlines"</strong>. Add trigger phrases: <em>"when is the report due"</em>, <em>"reporting deadline"</em>, <em>"submit financials"</em>, <em>"management accounts due"</em>. Write a response with HHFC's standard reporting schedule: Monthly management accounts due by 5th working day, quarterly board pack by 15th of month-end, annual statutory accounts by March 31. End with <em>"Contact the Finance Controller for extensions."</em></li>
+        <li><strong>Task 3 (~20 min):</strong> Test your agent by asking <em>"When is the next board pack due?"</em> and <em>"What's the deadline for quarterly accounts?"</em>. Refine the wording until the response is accurate and easy to follow.</li>
       </ol>
+    </div>
+
+    <div class="content-section" style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;padding:20px 24px;">
+      <h3>💡 Copilot Studio Tips</h3>
+      <ul style="font-size:0.9rem;line-height:1.9;margin:0;padding-left:20px;">
+        <li><strong>Start at:</strong> <a href="https://copilotstudio.microsoft.com" target="_blank">copilotstudio.microsoft.com</a></li>
+        <li>Click <strong>"Create"</strong> → <strong>"New agent"</strong> → give it a name and description</li>
+        <li>Use <strong>"Topics"</strong> to add conversation flows — each topic has trigger phrases + a response</li>
+        <li>Click <strong>"Test your agent"</strong> (right panel) to chat with it and see if it works</li>
+        <li>Keep responses <strong>short and helpful</strong> — bullet points work better than long paragraphs</li>
+      </ul>
     </div>
 
     <div class="content-section">
@@ -132,9 +130,9 @@
     <div id="revealed-banner" style="display:none;" class="revealed-banner">✅ Power Ups Unlocked! Add this capability to your agent before presenting.</div>
     <div id="powerups-section">
       <div class="powerup-card">
-        <div class="pu-header"><div class="pu-num">⚡</div><div class="pu-title">Power Up: Month-End Data Submission Assistant</div></div>
-        <div class="pu-prompt">Add a "Month-End Assistant" topic that guides a cost centre head through the data submission process step by step: asking for each required field in the HHFC standard template, checking their input against expected ranges, flagging any figures that look unusual (e.g., more than 15% variance from prior month), and generating a submission-ready summary that they can paste into the Finance data collection form. The agent should make the cost centre head feel supported, not interrogated.</div>
-        <div class="pu-how">💡 This Power Up solves the upstream problem — if cost centres submit better data first time, the reconciliation burden on Finance collapses. It's the highest-leverage point in the whole process.</div>
+        <div class="pu-header"><div class="pu-num">⚡</div><div class="pu-title">Power Up: Variance Explainer</div></div>
+        <div class="pu-prompt">Add a topic called <strong>"Variance Explainer"</strong> that guides users through how to write a budget variance commentary. Trigger phrases: <em>"help me explain a variance"</em>, <em>"how to write variance commentary"</em>. Response should give a template: <em>"Revenue was [higher/lower] than budget by RM[X] due to [reason]. This was [partially/fully] offset by [factor]. Management expects [outlook]."</em></div>
+        <div class="pu-how">💡 This Power Up gives your agent one more practical use case that Finance teams can try immediately after the event.</div>
       </div>
     </div>
 
