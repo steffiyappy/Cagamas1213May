@@ -17,19 +17,41 @@ Examples:
 
 
 ====================================================================
-== 12 MAY 2026 — PROMPT-A-THON (HALF-DAY) ==
+== 12 MAY 2026 — PROMPT-A-THON (60-MIN HACK) ==
 ====================================================================
 
 Main Event Password:   Cagamas12May
 Number of Teams:       6  (25–30 participants, ~4–5 per team)
 
-Team URL:  https://steffiyappy.github.io/Cagamas1213May/prompt-a-thon/
+Hack Pack URL:  https://steffiyappy.github.io/Cagamas1213May/prompt-a-thon/pack.html
+Day Home URL:   https://steffiyappy.github.io/Cagamas1213May/prompt-a-thon/
 
-Half-Day Schedule:
-  ~15 min  — Welcome, context setting, brief reading
-  ~90 min  — Hack time (3 tasks, clue-based — teams craft their own prompts)
-  ~15 min  — Power Up reveal and output polish
-  ~30 min  — Team presentations + peer judging
+Schedule (60-min hack + 30-min prep + 5-min demos):
+  ~10 min  — Welcome, brief reading, pick your Driver
+  ~45 min  — Hack time (Task 1 must-do; Tasks 2 & 3 bonus if time allows)
+   ~5 min  — Power Up reveal and output polish
+   --- 60-min hack ends ---
+  +30 min  — Presentation prep (build pitch deck)
+  5 min ea — Team presentations (6 teams × 5 min) + peer judging
+
+LICENCE GUIDANCE
+  Assume only 1–2 people per team have a Microsoft 365 Copilot licence.
+  Designate that person as the "Driver" — they run Copilot and screen-share.
+  Everyone else co-designs prompts, evaluates outputs, and documents.
+  Fallback (no one licensed): free Copilot Chat at copilot.microsoft.com
+    — no Office app integration, but prompting craft still applies.
+
+PACK STRUCTURE
+  ONE general Hack Pack for all 6 teams. Inside the pack, teams pick
+  one of 6 HHFC challenge themes (or invent their own). Two teams may
+  pick the same theme — peer judging will compare approaches.
+
+TEAM CODES (LEGACY — no longer used)
+----------
+The 6 dept-specific team pages still exist as legacy URLs in case
+deep links were shared, but the live experience routes everyone to
+pack.html. The dept codes (BCTEAM/ISLTEAM/TRSTEAM/FINTEAM/HCMTEAM/
+RSKTEAM) are no longer needed for the 12 May session.
 
 TEAM CODES
 ----------
@@ -53,19 +75,40 @@ TEAM CODES
 
 
 ====================================================================
-== 13 MAY 2026 — AGENT-A-THON (HALF-DAY) ==
+== 13 MAY 2026 — AGENT-A-THON (60-MIN HACK) ==
 ====================================================================
 
 Main Event Password:   Cagamas13May
 Number of Teams:       6  (25–30 participants, ~4–5 per team)
 
-Team URL:  https://steffiyappy.github.io/Cagamas1213May/agent-a-thon/
+Hack Pack URL:  https://steffiyappy.github.io/Cagamas1213May/agent-a-thon/pack.html
+Day Home URL:   https://steffiyappy.github.io/Cagamas1213May/agent-a-thon/
 
-Half-Day Schedule:
-  ~15 min  — Welcome, context setting, agent brief reading
-  ~90 min  — Build time (3 tasks: set up agent, build topic, test & refine)
-  ~15 min  — Power Up reveal and agent enhancement
-  ~30 min  — Live agent demos + peer judging
+Schedule (60-min hack + 30-min prep + 5-min demos):
+  ~10 min  — Welcome, agent brief reading, pick your Driver
+  ~45 min  — Build time (define identity ~10m → build core topic ~25m → pressure-test ~10m)
+   ~5 min  — Power Up reveal and agent enhancement
+   --- 60-min hack ends ---
+  +30 min  — Demo prep (slides + agent walkthrough script)
+  5 min ea — Live agent demos (6 teams × 5 min) + peer judging
+
+LICENCE GUIDANCE (CRITICAL)
+  Agent Builder REQUIRES a Microsoft 365 Copilot licence.
+  Each team needs ≥1 "Driver" with a licence — they open
+  Copilot > Agents > Create and screen-share.
+  Everyone else co-designs persona, instructions, knowledge, test queries.
+  If a team has no licensed person, facilitator must reassign someone.
+
+PACK STRUCTURE
+  ONE general Hack Pack for all 6 teams. Inside the pack, teams pick
+  one of 6 HHFC agent ideas (or invent their own). Two teams may build
+  the same agent — peer judging will compare approaches.
+
+TEAM CODES (LEGACY — no longer used)
+----------
+The 6 dept-specific agent pages still exist as legacy URLs, but the
+live experience routes everyone to pack.html. The dept codes (ABCTEAM/
+AISLTEAM/ATRSTEAM/AFINTEAM/AHCMTEAM/ARSKTEAM) are no longer needed.
 
 TEAM CODES
 ----------
@@ -102,4 +145,5 @@ NOTES
 - Working file links in team packs are marked PLACEHOLDER_XX — update
   with actual OneDrive URLs before the event
 - Prompt-a-thon tasks are clue-based — no exact prompts given to teams
-- Agent-a-thon tasks are clue-based — teams build agents in Copilot Studio
+- Agent-a-thon tasks are clue-based — teams build agents in M365 Copilot Agent Builder
+
