@@ -134,15 +134,21 @@
           <span class="theme-tag">Risk &amp; Compliance</span>
         </div>
       </div>
+    </div>
 
-      <div class="theme-card" style="background:linear-gradient(135deg,#FFF7E6,#FCEFC5);border-color:#C8A84B;">
-        <div class="theme-icon">✨</div>
-        <div class="theme-body">
-          <div class="theme-title">Invent Your Own</div>
-          <div class="theme-prob">Spotted a different repetitive HHFC task? Build the agent for it. A bold pick + a working agent = a strong score.</div>
-          <span class="theme-tag" style="background:#1e1b4b;color:white;border-color:#1e1b4b;">Wildcard</span>
-        </div>
+    <!-- Wildcard: off-menu option, sits below the grid -->
+    <div style="display:flex;align-items:center;gap:12px;margin:22px 0 14px;">
+      <div style="flex:1;height:1px;background:#E5E7EB;"></div>
+      <div style="font-size:0.78rem;font-weight:700;letter-spacing:1.5px;color:#6B7280;">OR GO OFF-MENU</div>
+      <div style="flex:1;height:1px;background:#E5E7EB;"></div>
+    </div>
+    <div style="background:linear-gradient(135deg,#FFF7E6,#FCEFC5);border:1px solid #C8A84B;border-radius:14px;padding:18px 22px;display:flex;align-items:center;gap:18px;">
+      <div style="font-size:2.2rem;flex-shrink:0;">✨</div>
+      <div style="flex:1;min-width:0;">
+        <div style="font-weight:800;color:#1e1b4b;font-size:1.02rem;margin-bottom:4px;">Invent Your Own</div>
+        <div style="font-size:0.88rem;color:#374151;line-height:1.55;">Spotted a different repetitive HHFC task? Build the agent for it. A bold pick + a working agent = a strong score.</div>
       </div>
+      <span style="background:#1e1b4b;color:white;font-size:0.75rem;font-weight:800;padding:6px 14px;border-radius:20px;letter-spacing:0.5px;flex-shrink:0;">WILDCARD</span>
     </div>
   </div>
 
@@ -220,13 +226,22 @@
         <div class="pu-num">⚡</div>
         <div class="pu-title">Your Power Up — The "Take It Further" Upgrade</div>
       </div>
-      <div class="pu-prompt">Pick <strong>one</strong> of these and add it to your agent right now:
-        <br><br>
-        🧠 <strong>Feed it one more thing.</strong> Add one extra source of knowledge it doesn't have yet — a policy snippet, a glossary, an FAQ, a sample document. Watch how much smarter it gets.
-        <br><br>
-        🛡️ <strong>Give it a "never do this" rule.</strong> Add the one sentence Compliance would insist on (e.g. <em>"Never quote pricing"</em>, <em>"Always recommend escalation for amounts above RM X"</em>, <em>"Never give a Shariah ruling without citing the source"</em>). This is what unlocks real-world use.
-        <br><br>
-        🎯 <strong>Add a "what next?" suggestion.</strong> Update the instructions so after every answer it suggests the next question a real user would ask. Suddenly your agent feels like a teammate, not a search box.
+      <div class="pu-prompt" style="text-align:left;">
+        <div style="margin-bottom:14px;">Pick <strong>one</strong> of these and add it to your agent right now:</div>
+        <div style="display:flex;flex-direction:column;gap:14px;">
+          <div style="display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,0.06);border-radius:10px;padding:12px 14px;">
+            <div style="font-size:1.4rem;line-height:1;flex-shrink:0;">🧠</div>
+            <div><strong>Feed it one more thing.</strong> Add one extra source of knowledge it doesn't have yet — a policy snippet, a glossary, an FAQ, a sample document. Watch how much smarter it gets.</div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,0.06);border-radius:10px;padding:12px 14px;">
+            <div style="font-size:1.4rem;line-height:1;flex-shrink:0;">🛡️</div>
+            <div><strong>Give it a "never do this" rule.</strong> Add the one sentence Compliance would insist on (e.g. <em>"Never quote pricing"</em>, <em>"Always recommend escalation for amounts above RM X"</em>, <em>"Never give a Shariah ruling without citing the source"</em>). This is what unlocks real-world use.</div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,0.06);border-radius:10px;padding:12px 14px;">
+            <div style="font-size:1.4rem;line-height:1;flex-shrink:0;">🎯</div>
+            <div><strong>Add a "what next?" suggestion.</strong> Update the instructions so after every answer it suggests the next question a real user would ask. Suddenly your agent feels like a teammate, not a search box.</div>
+          </div>
+        </div>
       </div>
       <div class="pu-how">💡 Pick the one that would make your first real user say "okay, I'd actually open this tomorrow." That's the difference between a hack and an adopted tool.</div>
     </div>
