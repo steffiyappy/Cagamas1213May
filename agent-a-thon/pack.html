@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hack Pack | Cagamas Agent-a-thon · 13 May 2026</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    #pack-content { display: none; }
+    .theme-card{background:white;border:1px solid #E5E7EB;border-radius:12px;padding:18px;display:flex;gap:14px;align-items:flex-start;transition:all 0.2s;}
+    .theme-card:hover{border-color:#7C3AED;box-shadow:0 4px 12px rgba(0,0,0,0.06);}
+    .theme-icon{font-size:1.7rem;line-height:1;flex-shrink:0;}
+    .theme-body{flex:1;min-width:0;}
+    .theme-title{font-weight:800;color:#1e1b4b;font-size:0.95rem;margin-bottom:4px;}
+    .theme-prob{font-size:0.85rem;color:#374151;line-height:1.55;}
+    .theme-tag{display:inline-block;background:#EEF2FF;color:#3730A3;border:1px solid #C7D2FE;font-size:0.7rem;font-weight:700;padding:2px 8px;border-radius:10px;margin-top:6px;letter-spacing:0.3px;}
+    .step-box{background:white;border:1px solid #E5E7EB;border-radius:12px;padding:18px;margin-bottom:14px;}
+    .step-num-circle{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:#1e1b4b;color:white;font-weight:800;margin-right:10px;font-size:0.95rem;}
+    .step-time{display:inline-block;background:#7C3AED;color:white;font-size:0.78rem;font-weight:800;padding:4px 12px;border-radius:14px;margin-left:8px;}
+  </style>
+</head>
+<body>
+<div class="top-nav"><a href="index.html">← Agent-a-thon Home</a><span class="sep">|</span><a href="../index.html">Cagamas Event Hub</a></div>
+
+<!-- LOCK GATE -->
+<div id="main-lock" class="lock-gate">
+  <div class="lock-box">
+    <span class="lock-icon">🤖</span>
+    <h2>Cagamas Agent-a-thon Hack Pack</h2>
+    <p>Enter the event password to access the pack.</p>
+    <form id="main-lock-form" autocomplete="off">
+      <input id="main-pw-input" class="lock-input" type="password" placeholder="Event password" required>
+      <button type="button" class="show-pw-btn" id="show-pw-btn">👁 Show password</button>
+      <button type="submit" class="btn btn-primary" style="margin-top:14px;">🔓 Unlock Pack →</button>
+      <div class="error-msg" id="main-error">❌ Incorrect password. Please try again.</div>
+    </form>
+  </div>
+</div>
+
+<!-- HACK PACK CONTENT -->
+<div id="pack-content">
+
+<header class="site-header">
+  <div class="logo-badge">CG</div>
+  <div class="header-title">
+    <h1>Cagamas Berhad</h1>
+    <p>Agent-a-thon · 13 May 2026 · The General Hack Pack</p>
+  </div>
+  <span class="header-badge">🤖 HACK PACK</span>
+</header>
+
+<!-- 60-Min Hack Banner -->
+<div style="background:linear-gradient(135deg,#1e1b4b,#312e81);color:white;padding:16px 24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+  <div style="font-size:1.4rem;">⏱️</div>
+  <div>
+    <div style="font-weight:800;font-size:0.95rem;">60-Minute Hack Hour: build ONE great agent</div>
+    <div style="font-size:0.82rem;opacity:0.85;margin-top:2px;">Budget: ~10 min brief &nbsp;·&nbsp; ~45 min build (define · core topic · pressure-test) &nbsp;·&nbsp; ~5 min Power Up &nbsp;·&nbsp; +30 min demo prep &nbsp;·&nbsp; 5-min team demo</div>
+  </div>
+</div>
+
+<!-- Driver Callout -->
+<div style="background:#FFF7E6;border-left:5px solid #C8A84B;padding:14px 20px;margin:0;">
+  <div style="font-weight:800;color:#1B2B4B;font-size:0.92rem;margin-bottom:4px;">🎟️ Pick your Driver before you start</div>
+  <div style="font-size:0.85rem;color:#3A3A3A;line-height:1.5;">Agent Builder requires a Microsoft 365 Copilot licence — but only your <strong>Driver</strong> needs one. They open <em>Copilot &gt; Agents &gt; Create</em> and screen-share; everyone else co-designs the persona, instructions, knowledge, and test queries. The Driver types — the team thinks. No licence on your team? Ask your facilitator.</div>
+</div>
+
+<div style="max-width:900px;margin:0 auto;padding:32px 20px;">
+
+  <!-- Welcome -->
+  <div class="content-section">
+    <h3>👋 Welcome, Builders</h3>
+    <p>You're back at <strong>Harmoni Housing Finance Corporation (HHFC)</strong>. Yesterday you proved Copilot could solve real problems with words. Today you turn one of those problems into a <strong>working agent</strong> that any HHFC colleague could open and use tomorrow.</p>
+    <p>This is your <strong>one general Hack Pack</strong>. Every team is using the same pack — the only difference is the agent <em>your</em> team chooses to build. Pick a real HHFC use case below, or invent your own. <strong>The best agents are narrow and useful</strong> — depth beats breadth, every time.</p>
+    <p style="margin-top:8px;"><a href="company.html" class="btn btn-primary" style="display:inline-block;width:auto;padding:11px 22px;text-decoration:none;font-size:0.9rem;background:#1e1b4b;">🏢 Read the HHFC Company Brief →</a></p>
+  </div>
+
+  <!-- Pick Your Agent -->
+  <div class="content-section">
+    <h3>🤖 Pick Your Agent</h3>
+    <p style="font-size:0.92rem;color:#374151;margin-bottom:18px;">Choose ONE of the six HHFC agent ideas below — or invent your own from anything inside the company brief. Each idea is a real, repetitive task someone at HHFC does every week. <strong>Don't try to build a do-everything agent.</strong> Pick one topic, make it really good, then demo it.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;">
+
+      <div class="theme-card">
+        <div class="theme-icon">🏘️</div>
+        <div class="theme-body">
+          <div class="theme-title">HHFC Lender Connect</div>
+          <div class="theme-prob">A self-service agent for lender partners who keep asking the same onboarding and product questions. Saves Relationship Managers hours every week.</div>
+          <span class="theme-tag">Business &amp; Client Coverage</span>
+        </div>
+      </div>
+
+      <div class="theme-card">
+        <div class="theme-icon">☪️</div>
+        <div class="theme-body">
+          <div class="theme-title">HHFC Shariah Guide</div>
+          <div class="theme-prob">An assistant that answers Shariah-compliance questions on HHFC products and points users to the right ruling, document, or escalation path.</div>
+          <span class="theme-tag">Islamic Finance</span>
+        </div>
+      </div>
+
+      <div class="theme-card">
+        <div class="theme-icon">💰</div>
+        <div class="theme-body">
+          <div class="theme-title">HHFC Market Desk</div>
+          <div class="theme-prob">An investor-facing agent that summarises HHFC's funding programme, latest issuances, and rate environment in plain English.</div>
+          <span class="theme-tag">Treasury &amp; Capital Markets</span>
+        </div>
+      </div>
+
+      <div class="theme-card">
+        <div class="theme-icon">📊</div>
+        <div class="theme-body">
+          <div class="theme-title">HHFC Finance Desk</div>
+          <div class="theme-prob">A reporting-helper agent that turns raw figures into Board-ready commentary using HHFC's report templates and tone of voice.</div>
+          <span class="theme-tag">Finance &amp; Reporting</span>
+        </div>
+      </div>
+
+      <div class="theme-card">
+        <div class="theme-icon">👥</div>
+        <div class="theme-body">
+          <div class="theme-title">HHFC People Connect</div>
+          <div class="theme-prob">An HR self-service agent for leave, benefits, policy, and onboarding questions — so the People team can focus on real coaching.</div>
+          <span class="theme-tag">Human Capital</span>
+        </div>
+      </div>
+
+      <div class="theme-card">
+        <div class="theme-icon">🛡️</div>
+        <div class="theme-body">
+          <div class="theme-title">HHFC Compliance Radar</div>
+          <div class="theme-prob">An agent that translates new BNM circulars into action items, owners, and deadlines — and flags anything that touches HHFC's existing policies.</div>
+          <span class="theme-tag">Risk &amp; Compliance</span>
+        </div>
+      </div>
+
+      <div class="theme-card" style="background:linear-gradient(135deg,#FFF7E6,#FCEFC5);border-color:#C8A84B;">
+        <div class="theme-icon">✨</div>
+        <div class="theme-body">
+          <div class="theme-title">Invent Your Own</div>
+          <div class="theme-prob">Spotted a different repetitive HHFC task? Build the agent for it. A bold pick + a working agent = a strong score.</div>
+          <span class="theme-tag" style="background:#1e1b4b;color:white;border-color:#1e1b4b;">Wildcard</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Build Steps -->
+  <div class="content-section">
+    <h3>🔧 Your Build (Same Shape for Every Agent)</h3>
+    <p style="font-size:0.88rem;color:#6B7280;margin-bottom:20px;">Open <strong>Copilot &gt; Agents &gt; Create agent</strong>. Stay focused on ONE topic working really well — depth beats breadth.</p>
+
+    <div class="step-box">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
+        <div><span class="step-num-circle">1</span><strong style="color:#1e1b4b;font-size:0.98rem;">Define the Agent Identity</strong></div>
+        <span class="step-time">⏱️ ~10 min</span>
+      </div>
+      <p style="font-size:0.9rem;color:#374151;line-height:1.7;margin:0;">Your agent needs an identity before it can do anything. Set its <strong>name</strong>, <strong>persona</strong> (who it serves and how it speaks), and the boundary of <strong>what it should never say</strong>. <strong>Goal:</strong> A real user looks at the welcome screen and instantly knows what this agent is for.</p>
+    </div>
+
+    <div class="step-box">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
+        <div><span class="step-num-circle">2</span><strong style="color:#1e1b4b;font-size:0.98rem;">Build the Core Topic</strong></div>
+        <span class="step-time">⏱️ ~25 min</span>
+      </div>
+      <p style="font-size:0.9rem;color:#374151;line-height:1.7;margin:0;">Pick the ONE question your agent must answer brilliantly. Write the <strong>instructions</strong>, add the <strong>knowledge</strong> source (paste relevant content from the company brief or upload a doc), and design a few <strong>starter prompts</strong> users can click. <strong>Goal:</strong> One complete, useful answer flow that saves real time.</p>
+    </div>
+
+    <div class="step-box">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
+        <div><span class="step-num-circle">3</span><strong style="color:#1e1b4b;font-size:0.98rem;">Pressure-Test &amp; Refine</strong></div>
+        <span class="step-time">⏱️ ~10 min</span>
+      </div>
+      <p style="font-size:0.9rem;color:#374151;line-height:1.7;margin:0;">Now think like a real HHFC colleague and ask hard questions. Does the agent stay on-topic? Does it sound trustworthy? Where does it wobble? <strong>Goal:</strong> Find one weakness and fix it before you demo.</p>
+    </div>
+  </div>
+
+  <!-- Agent Builder Tips -->
+  <div class="content-section" style="background:#EEF2FF;border:1px solid #C7D2FE;">
+    <h3>💡 Agent Builder Tips</h3>
+    <ul style="font-size:0.88rem;line-height:1.8;color:#374151;">
+      <li><strong>Open the right tool:</strong> microsoft365.com/copilot → click <em>Agents</em> (top right) → <em>Create agent</em>. (Not Copilot Studio — that's a different product.)</li>
+      <li><strong>Use the Describe tab</strong> to chat your agent into existence, then switch to Configure to fine-tune.</li>
+      <li><strong>Knowledge:</strong> paste content directly into the Knowledge box, or upload a Word doc. Smaller, focused knowledge usually beats huge dumps.</li>
+      <li><strong>Starter prompts</strong> are the agent's "menu" — write 3–4 clickable example questions a user might ask.</li>
+      <li><strong>Test in the right pane</strong> as you build — don't wait until the end.</li>
+    </ul>
+  </div>
+
+  <!-- Working File -->
+  <div class="content-section">
+    <h3>📝 Your Working File</h3>
+    <p>Your shared working folder contains <strong>2 files</strong> for every team:</p>
+    <ul style="font-size:0.9rem;line-height:1.8;">
+      <li>📊 <strong>BLANK – Agentathon Team Pack</strong>: capture your persona, instructions, knowledge sources, and test queries here as you go.</li>
+      <li>⚖️ <strong>Peer Judging Sheet</strong>: used during the demo segment to score the other 5 teams.</li>
+    </ul>
+    <p style="margin-top:12px;background:#FFF7EC;border:1px solid #FDDCCA;border-left:4px solid #C8A84B;border-radius:8px;padding:14px;font-size:0.87rem;">
+      🕵️ <strong>Important:</strong> Open the working file in an <strong>Incognito</strong> (Chrome) or <strong>InPrivate</strong> (Edge) window to make sure you're signed in with the correct shared account.
+    </p>
+    <a href="PLACEHOLDER_AGENT_GENERAL" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:16px;background:#1e1b4b;color:white;padding:12px 24px;border-radius:8px;font-weight:700;font-size:0.9rem;text-decoration:none;">📂 Open Working Folder →</a>
+  </div>
+
+  <!-- Power Up Gate -->
+  <div id="powerup-gate" style="background:linear-gradient(135deg,#1A0533 0%,#2D0A5C 100%);border-radius:16px;padding:40px 32px;text-align:center;margin-bottom:24px;border:1px solid #4A1E8A;">
+    <div style="font-size:2.5rem;letter-spacing:8px;margin-bottom:16px;">⚡🔒⚡</div>
+    <h3 style="color:white;font-size:1.2rem;font-weight:800;margin-bottom:10px;">Power Up: Locked</h3>
+    <p style="color:rgba(255,255,255,0.75);font-size:0.9rem;margin-bottom:24px;">Get one topic working really well first. Then unlock your Power Up and use the +30 min prep window to make your demo unforgettable.</p>
+    <button id="reveal-powerup-btn" class="btn" style="background:#7C3AED;color:white;max-width:280px;margin:0 auto;">⚡ Reveal My Power Up</button>
+  </div>
+
+  <div id="revealed-banner" style="display:none;background:linear-gradient(135deg,#14532D,#166534);border:1px solid #22C55E;border-radius:12px;padding:16px 20px;margin-bottom:24px;color:white;font-size:0.9rem;font-weight:600;">
+    ✅ Power Up Unlocked! Use this to push your agent from "okay" to "I'd actually use this".
+  </div>
+
+  <div id="powerup-section" style="display:none;">
+    <div class="powerup-card">
+      <div class="pu-header">
+        <div class="pu-num">⚡</div>
+        <div class="pu-title">Your Power Up — Adoption Booster</div>
+      </div>
+      <div class="pu-prompt">Add three things your agent doesn't have yet but every real user expects: (1) a clear <strong>"What I can help with"</strong> sentence at the top of the welcome screen, (2) a <strong>handoff line</strong> for questions outside its scope (e.g. "For complex cases, please contact your Relationship Manager"), and (3) one extra <strong>starter prompt</strong> that anticipates the very first question a real user would ask. Then test all three.</div>
+      <div class="pu-how">💡 These three additions are what take an agent from a demo toy to something a real HHFC team would actually adopt next quarter.</div>
+    </div>
+  </div>
+
+  <!-- Demo Tips -->
+  <div class="content-section" style="background:#FFFAF0;border:1px solid #F2D77B;">
+    <h3>🎤 Your 5-Minute Demo</h3>
+    <ul style="font-size:0.88rem;line-height:1.8;color:#374151;">
+      <li><strong>Slide 1:</strong> Which agent you built (or invented) and who it's for</li>
+      <li><strong>Slide 2:</strong> The persona &amp; instructions in one screenshot</li>
+      <li><strong>Live demo (most of your time):</strong> open the agent and ask 2–3 real questions on screen</li>
+      <li><strong>Slide 3:</strong> Where you'd take it next — what's the v2?</li>
+      <li>Show the agent &gt; describe the agent. The judges want to see it work.</li>
+    </ul>
+  </div>
+
+</div><!-- /container -->
+
+<footer class="site-footer">
+  Cagamas Agent-a-thon · 13 May 2026 · Powered by Microsoft 365 Copilot Agent Builder · Organised by Microsoft Malaysia
+</footer>
+
+</div><!-- /pack-content -->
+
+<script>
+(async () => {
+  const HASH_13MAY = '60bf3f96975bcc344b20eb44370ee96a67854c7d294aa892891cb52b810884eb';
+  const KEY        = 'cag_unlocked_13may';
+  const PU_KEY     = 'cag_powerup_general_13may';
+
+  async function sha256(msg) {
+    const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(msg));
+    return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
+  }
+
+  function unlock() {
+    document.getElementById('main-lock').style.display    = 'none';
+    document.getElementById('pack-content').style.display = 'block';
+    localStorage.setItem(KEY, '1');
+    initPowerUp();
+  }
+
+  function initPowerUp() {
+    const gate     = document.getElementById('powerup-gate');
+    const section  = document.getElementById('powerup-section');
+    const banner   = document.getElementById('revealed-banner');
+    const btn      = document.getElementById('reveal-powerup-btn');
+    if (!gate) return;
+
+    const isFac = new URLSearchParams(location.search).has('facilitator');
+    if (sessionStorage.getItem(PU_KEY) === 'revealed' || isFac) {
+      gate.style.display = 'none';
+      section.style.display = 'block';
+      banner.style.display = 'block';
+      return;
+    }
+    btn.addEventListener('click', () => {
+      sessionStorage.setItem(PU_KEY, 'revealed');
+      gate.style.display = 'none';
+      section.style.display = 'block';
+      banner.style.display = 'block';
+    });
+  }
+
+  if (new URLSearchParams(location.search).has('facilitator')) { unlock(); return; }
+  if (localStorage.getItem(KEY) === '1') { unlock(); return; }
+
+  const pwInput = document.getElementById('main-pw-input');
+  document.getElementById('show-pw-btn').addEventListener('click', () => {
+    pwInput.type = pwInput.type === 'password' ? 'text' : 'password';
+  });
+  document.getElementById('main-lock-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const h = await sha256(pwInput.value.trim());
+    if (h === HASH_13MAY) { unlock(); }
+    else {
+      document.getElementById('main-error').style.display = 'block';
+      pwInput.value = '';
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
