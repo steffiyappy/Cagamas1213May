@@ -200,7 +200,7 @@
     <!-- Build Steps -->
     <div class="content-section">
       <h3>🔧 Your Build (Same Shape for Every Agent)</h3>
-      <p style="font-size:0.88rem;color:#6B7280;margin-bottom:20px;">Open <strong>Copilot &gt; Agents &gt; Create agent</strong>. Get steps 1-3 working in Agent Builder first - depth beats breadth. If you finish early or want to push for the win, level up with steps 4-5 (Copilot Studio + an approval flow).</p>
+      <p style="font-size:0.88rem;color:#6B7280;margin-bottom:20px;">Open <strong>Copilot &gt; Agents &gt; Create agent</strong>. Stay focused on ONE topic working really well - depth beats breadth.</p>
 
       <div class="step-box">
         <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
@@ -224,47 +224,6 @@
           <span class="step-time">⏱️ ~10 min</span>
         </div>
         <p style="font-size:0.9rem;color:#374151;line-height:1.7;margin:0;">Now think like a real HHFC colleague and ask hard questions. Does the agent stay on-topic? Does it sound trustworthy? Where does it wobble? <strong>Goal:</strong> Find one weakness and fix it before you demo.</p>
-      </div>
-    </div>
-
-    <!-- Level Up: Copilot Studio + Approvals -->
-    <div class="content-section" style="background:#F5F3FF;border:1px solid #C7D2FE;">
-      <h3>🚀 Level Up: From Agent Builder to Copilot Studio</h3>
-      <p style="font-size:0.9rem;color:#374151;margin-bottom:18px;">Agent Builder is fast and lives inside M365 Copilot - perfect for getting your idea working today. But the moment you want <strong>multiple topics, real data connections, or an approval workflow</strong>, you graduate to <strong>Copilot Studio</strong>. The good news: you don't start over. You <em>copy</em> what you built.</p>
-
-      <div class="step-box">
-        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
-          <div><span class="step-num-circle" style="background:#7C3AED;">4</span><strong style="color:#1e1b4b;font-size:0.98rem;">Promote Your Agent to Copilot Studio</strong></div>
-          <span class="step-time" style="background:#A855F7;">🚀 OPTIONAL</span>
-        </div>
-        <p style="font-size:0.9rem;color:#374151;line-height:1.7;margin:0 0 10px 0;">Inside Agent Builder, open your agent → click the <strong>"⋯" menu</strong> on the agent card → choose <strong>"Edit in Copilot Studio"</strong>. Your name, persona, instructions, knowledge sources and starter prompts all carry across. From there you unlock:</p>
-        <ul style="font-size:0.88rem;color:#374151;line-height:1.7;margin:0 0 10px 18px;padding:0;">
-          <li><strong>Multiple Topics</strong> - branch the conversation by intent (e.g. "policy lookup" vs "raise a ticket") instead of one big instruction blob</li>
-          <li><strong>Connectors &amp; Knowledge</strong> - SharePoint sites, Dataverse tables, public websites, custom APIs</li>
-          <li><strong>Generative orchestration</strong> - let the agent reason across all your topics and tools</li>
-          <li><strong>Publish channels</strong> - surface the same agent inside Teams, SharePoint, or a custom website</li>
-        </ul>
-        <p style="font-size:0.85rem;color:#6B7280;line-height:1.6;margin:0;"><strong>Goal:</strong> Open Studio, confirm everything from your Agent Builder version is there, and add ONE thing it could not do before (a second topic, a SharePoint connector, or a published Teams channel).</p>
-      </div>
-
-      <div class="step-box">
-        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
-          <div><span class="step-num-circle" style="background:#7C3AED;">5</span><strong style="color:#1e1b4b;font-size:0.98rem;">Wire In a Real Approval Flow</strong></div>
-          <span class="step-time" style="background:#A855F7;">🚀 STRETCH</span>
-        </div>
-        <p style="font-size:0.9rem;color:#374151;line-height:1.7;margin:0 0 10px 0;">A read-only agent answers questions. An <strong>agent with an approval flow</strong> actually <em>does</em> work on someone's behalf - that is the leap from "neat demo" to "deploy on Monday." From inside Copilot Studio:</p>
-        <ul style="font-size:0.88rem;color:#374151;line-height:1.7;margin:0 0 10px 18px;padding:0;">
-          <li>Open your agent → <strong>Topics</strong> → create a new topic like <em>"Submit request for approval"</em></li>
-          <li>Add an <strong>Action</strong> → <strong>"Create a flow"</strong> - this opens Power Automate inside Studio</li>
-          <li>Use the <strong>"Start and wait for an approval"</strong> action - assign it to a manager or shared mailbox, with the request details from the chat as the message body</li>
-          <li>Branch on the outcome: if <em>Approved</em>, post a confirmation back into the agent (and optionally write to SharePoint / Teams / email); if <em>Rejected</em>, ask the user to revise and retry</li>
-          <li>Save and test in the Studio test pane - you should see the approval card land in the approver's Outlook / Teams in real time</li>
-        </ul>
-        <p style="font-size:0.85rem;color:#6B7280;line-height:1.6;margin:0;"><strong>Goal:</strong> A user can ask the agent for something that <em>requires sign-off</em> (leave request, policy exception, expense top-up, vendor onboarding) and the right Cagamas approver gets a one-click approve/reject card without leaving Teams or Outlook.</p>
-      </div>
-
-      <div style="background:white;border:1px dashed #C7D2FE;border-radius:10px;padding:14px 18px;font-size:0.85rem;color:#4338CA;line-height:1.6;margin-top:6px;">
-        💡 <strong>Demo tip:</strong> If you make it to Step 4 or 5, <em>show it</em>. Triggering a real approval card on stage is one of the most memorable things a team can do in 5 minutes.
       </div>
     </div>
 
@@ -344,7 +303,7 @@
 
 <script>
 (async () => {
-  const HASH_13MAY = 'fce2e2f2e483d154f357f5d77030d20a88ed1cc12fc06cca27e2e228b3cb00a7';
+  const HASH_13MAY = '60bf3f96975bcc344b20eb44370ee96a67854c7d294aa892891cb52b810884eb';
   const KEY        = 'cag_unlocked_13may';
   const PU_KEY     = 'cag_powerup_general_13may';
 
