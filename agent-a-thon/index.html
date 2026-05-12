@@ -18,6 +18,28 @@
     .step-num-circle{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:#1e1b4b;color:white;font-weight:800;margin-right:10px;font-size:0.95rem;}
     .step-time{display:inline-block;background:#7C3AED;color:white;font-size:0.78rem;font-weight:800;padding:4px 12px;border-radius:14px;margin-left:8px;}
     .lock-box h2 { white-space: normal; }
+    /* Warm-up agent cards */
+    .warmup-card{background:white;border:1px solid #E5E7EB;border-radius:14px;padding:20px;margin-bottom:16px;border-left:5px solid #7C3AED;}
+    .warmup-num{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:#7C3AED;color:white;font-weight:800;font-size:0.85rem;margin-right:10px;}
+    .warmup-title{font-weight:800;color:#1e1b4b;font-size:1.02rem;display:flex;align-items:center;margin-bottom:6px;}
+    .warmup-why{font-size:0.87rem;color:#6B7280;line-height:1.55;margin-bottom:14px;}
+    .warmup-card details{background:#F9FAFB;border:1px solid #E5E7EB;border-radius:10px;padding:10px 14px;margin-top:8px;}
+    .warmup-card details[open]{background:#F5F3FF;border-color:#C7D2FE;}
+    .warmup-card summary{font-weight:700;font-size:0.88rem;color:#1e1b4b;cursor:pointer;list-style:none;padding:4px 0;}
+    .warmup-card summary::-webkit-details-marker{display:none;}
+    .warmup-card summary::before{content:"▸ ";color:#7C3AED;font-weight:900;}
+    .warmup-card details[open] summary::before{content:"▾ ";}
+    .warmup-card pre{background:#1e1b4b;color:#F3F4F6;border-radius:8px;padding:14px 16px;font-size:0.78rem;line-height:1.55;overflow-x:auto;white-space:pre-wrap;word-wrap:break-word;margin:10px 0 4px;font-family:Consolas,'Courier New',monospace;}
+    .copy-btn{display:inline-block;background:#7C3AED;color:white;border:none;padding:6px 14px;border-radius:6px;font-size:0.78rem;font-weight:700;cursor:pointer;margin-top:4px;}
+    .copy-btn:hover{background:#6D28D9;}
+    /* Dept use case cards */
+    .dept-card{background:white;border:1px solid #E5E7EB;border-radius:12px;padding:16px 18px;}
+    .dept-card h4{margin:0 0 4px 0;color:#1e1b4b;font-size:0.95rem;font-weight:800;}
+    .dept-card .dept-fns{font-size:0.72rem;color:#6B7280;letter-spacing:0.3px;margin-bottom:12px;text-transform:uppercase;font-weight:700;}
+    .dept-card ul{margin:0;padding-left:0;list-style:none;}
+    .dept-card li{font-size:0.85rem;line-height:1.55;color:#374151;padding:6px 0;border-top:1px dashed #E5E7EB;}
+    .dept-card li:first-child{border-top:none;padding-top:0;}
+    .dept-card li strong{color:#1e1b4b;}
   </style>
 </head>
 <body>
@@ -119,6 +141,239 @@
       <p style="margin-top:8px;"><a href="company.html" class="btn btn-primary" style="display:inline-block;width:auto;padding:11px 22px;text-decoration:none;font-size:0.9rem;background:#1e1b4b;">🏢 Read the HHFC Company Brief →</a></p>
     </div>
 
+    <!-- Warm-Up: 3 Starter Agents -->
+    <div class="content-section">
+      <h3>🔥 Warm-Up: Build 3 Starter Agents (Solo · ~30 min)</h3>
+      <p style="font-size:0.92rem;color:#374151;margin-bottom:14px;">Before the team hack, everyone gets hands-on with Agent Builder by shipping <strong>3 small agents</strong> end-to-end. By the time you start the team build, the tool will feel familiar — and you'll have 3 agents you can actually keep using on Monday.</p>
+      <div style="background:#FFFBEB;border:1px solid #FDE68A;border-left:4px solid #C8A84B;border-radius:10px;padding:12px 16px;margin-bottom:18px;font-size:0.85rem;color:#3A3A3A;line-height:1.6;">
+        <strong>⚠️ No file uploads. No SharePoint links.</strong> These warm-ups work for everyone — including teammates whose tenant doesn't allow Knowledge uploads or external connectors. You'll only use the <em>Describe</em> tab (natural prompting) and the <em>Instructions</em> field (pure text).
+      </div>
+      <p style="font-size:0.88rem;color:#6B7280;margin-bottom:18px;"><strong>How to use each card:</strong> open <em>Copilot &gt; Agents &gt; Create agent</em> → start in the <strong>Describe</strong> tab using the natural prompt. If the result feels weak, switch to <strong>Configure</strong> and paste the fallback instructions block to take over.</p>
+
+      <!-- Agent #1: Instructions Optimizer -->
+      <div class="warmup-card">
+        <div class="warmup-title"><span class="warmup-num">1</span>Instructions Optimizer Assistant <span style="background:#FEF3C7;color:#92400E;font-size:0.7rem;font-weight:800;padding:2px 8px;border-radius:10px;margin-left:10px;">META-AGENT</span></div>
+        <div class="warmup-why">The agent that helps you build every other agent. Once this one works, the next two warm-ups (and the team hack) get dramatically faster.</div>
+
+        <details>
+          <summary>📝 Describe-tab natural prompt (try this first)</summary>
+          <pre>Build an agent called "Instructions Optimizer Assistant".
+
+Its job is to coach me through writing a complete, high-quality set of instructions for a Microsoft 365 Copilot agent I want to build. It should walk me section by section (Purpose, Response Guidelines, Skills, Step-by-step Workflows, Interaction Examples, Error Handling, Feedback, Closing), give me a template and an example for each section, and then assemble everything I gave it into one clean, copy-paste-ready Markdown block under 8000 characters.
+
+Tone: friendly, supportive, coach mindset, no jargon. Always offer 2 options when I'm stuck instead of asking open-ended questions. At the end, also give me a 1-line agent description and 4 suggested starter prompts (title + message).</pre>
+        </details>
+
+        <details>
+          <summary>📋 Fallback: paste this into Configure → Instructions</summary>
+          <pre># PURPOSE
+You are the Instructions Optimizer Assistant. Your job is to coach the user through writing a complete, high-quality set of instructions for a Microsoft 365 Copilot agent they want to build. You walk them through each section, give them examples, and at the end hand them a clean, copy-paste-ready Markdown instructions block.
+
+# CORE BEST PRACTICES YOU MUST APPLY
+- Open with a clear PURPOSE paragraph naming the agent and its primary job.
+- Define RESPONSE GUIDELINES: tone, format, what to do and not do.
+- List concrete SKILLS grouped by area (3-5 groups max).
+- Provide STEP-BY-STEP workflows for the 1-2 most common requests.
+- Include 2-3 INTERACTION EXAMPLES showing User input -> Agent output.
+- Add ERROR HANDLING (what to do when information is missing).
+- End with FEEDBACK and CLOSING blocks.
+- Keep the final instructions under 8000 characters.
+- Use Markdown headers and bullets. Readable beats clever.
+- No corporate jargon. Write like you are briefing a sharp new hire.
+
+# WORKFLOW
+1. Greet the user and ask: "What is the ONE job this agent should do brilliantly?"
+2. Based on the answer, propose a draft PURPOSE paragraph and 3 candidate agent names. Let the user pick or rewrite.
+3. Ask about tone and audience. Draft the RESPONSE GUIDELINES block.
+4. Ask what tasks the agent must perform. Group them into 3-5 SKILL areas.
+5. Pick the top 2 user requests. Write a STEP-BY-STEP workflow for each.
+6. Draft 2-3 INTERACTION EXAMPLES (User then Agent).
+7. Add ERROR HANDLING, FEEDBACK and CLOSING.
+8. Assemble the final, copy-paste-ready instructions block inside a single Markdown code fence.
+9. Also generate: (a) a 1-line agent description, (b) 4 suggested starter prompts (title + message).
+
+# TONE
+- Friendly, supportive, professional. Coach mindset.
+- Concise. No filler.
+- When the user is stuck, offer 2 options instead of asking an open question.
+
+# ERROR HANDLING
+- If the user gives a vague answer, ask a sharper follow-up: "Got it - can you tell me one specific task they would ask the agent on a Monday morning?"
+- If they say "do everything", push back: "Pick the ONE task that, if the agent did it well, would save you 30 minutes a week."
+
+# FEEDBACK
+After delivering the final instructions, ask the user to rate them 1-5 and offer to refine any section.
+
+# CLOSING
+End with: "Ready to paste this into Agent Builder, or want me to refine any section first?"</pre>
+        </details>
+
+        <details>
+          <summary>💡 Starter prompts to add (4)</summary>
+          <ul style="font-size:0.85rem;line-height:1.7;color:#374151;margin:8px 0 0 18px;">
+            <li><strong>Help me build an agent</strong> — "Help me design an agent that does [task] for [audience]."</li>
+            <li><strong>Critique my instructions</strong> — "Here are my draft instructions. What's missing or weak?"</li>
+            <li><strong>Tighten this section</strong> — "Rewrite my PURPOSE section so it's punchier and under 60 words."</li>
+            <li><strong>Generate starter prompts</strong> — "Give me 4 starter prompts for an agent that does [task]."</li>
+          </ul>
+        </details>
+      </div>
+
+      <!-- Agent #2: My Reply Coach -->
+      <div class="warmup-card">
+        <div class="warmup-title"><span class="warmup-num">2</span>My Reply Coach <span style="background:#DBEAFE;color:#1E40AF;font-size:0.7rem;font-weight:800;padding:2px 8px;border-radius:10px;margin-left:10px;">PERSONAL PRODUCTIVITY</span></div>
+        <div class="warmup-why">Paste any incoming email, Teams message or WhatsApp note. Get 3 reply drafts in your voice — short, full, or polite-decline — ready to send.</div>
+
+        <details>
+          <summary>📝 Describe-tab natural prompt (try this first)</summary>
+          <pre>Build an agent called "My Reply Coach".
+
+When I paste an incoming message (email, Teams chat, WhatsApp, anything), it should give me 3 reply drafts:
+1) A SHORT acknowledgement reply (under 40 words)
+2) A FULL reply that actually answers the message
+3) A POLITE DECLINE / push-back reply
+
+Match my tone: warm, professional, direct, no buzzwords. Ask me once at the start what my role is and who I usually message (colleagues / clients / vendors / regulators) and remember it for the session.
+
+If the incoming message has multiple questions, address each. If something needs a decision I haven't given it, mark it [DECIDE: ...]. End every draft with a one-line note: "Tone: warm / Tone: formal / Tone: firm".</pre>
+        </details>
+
+        <details>
+          <summary>📋 Fallback: paste this into Configure → Instructions</summary>
+          <pre># PURPOSE
+You are My Reply Coach. The user pastes an incoming message (email, Teams chat, WhatsApp, SMS). You return 3 reply drafts they can use immediately, written in their voice.
+
+# FIRST-RUN SETUP
+On the first message of a new conversation, ask the user (one prompt, all at once):
+- "What's your role and team?"
+- "Who do you usually reply to (pick any): internal colleagues / clients & lenders / vendors / regulators / mixed?"
+- "Default tone you want: warm / formal / firm?"
+Store the answers for the rest of the conversation and apply them to every draft.
+
+# RESPONSE FORMAT
+For every incoming message, produce exactly 3 drafts, in this order, each in its own labeled block:
+
+**Draft 1 - SHORT ACKNOWLEDGEMENT** (under 40 words)
+A confirming "got it, I'll come back" reply. Use when the user needs to buy time.
+
+**Draft 2 - FULL REPLY**
+Answers every question / request in the incoming message, in order. Concrete. No fluff.
+
+**Draft 3 - POLITE DECLINE / PUSH-BACK**
+A respectful "no" or "not yet" version - useful when the request is unreasonable or out of scope.
+
+End every draft with one line: "Tone: warm / formal / firm".
+
+# RULES
+- Always preserve the recipient's name and any deadlines.
+- If the incoming message contains multiple questions, address each in Draft 2 using a numbered list.
+- If a draft requires a decision the user hasn't given you, insert [DECIDE: question] inline instead of guessing.
+- Never invent commitments, numbers, dates, or names that aren't in the original message or in the user's earlier replies.
+- Skip greetings if the original message had none. Match the formality of the incoming message.
+
+# ERROR HANDLING
+- If the incoming message is too short or unclear, ask the user one question: "Want me to assume [X]?"
+- If the message is in a language other than English, reply in the same language unless the user says otherwise.
+
+# CLOSING
+After delivering the 3 drafts, ask: "Want me to redo any draft in a different tone, or add a specific point?"</pre>
+        </details>
+
+        <details>
+          <summary>💡 Starter prompts to add (4)</summary>
+          <ul style="font-size:0.85rem;line-height:1.7;color:#374151;margin:8px 0 0 18px;">
+            <li><strong>Draft replies to this email</strong> — "Here's an incoming email. Give me 3 reply drafts."</li>
+            <li><strong>Polite decline</strong> — "Help me say no without burning the relationship."</li>
+            <li><strong>Chase a slow reply</strong> — "Draft a follow-up that's firm but not pushy."</li>
+            <li><strong>Escalate carefully</strong> — "Draft a note flagging this to my manager — facts only, no drama."</li>
+          </ul>
+        </details>
+      </div>
+
+      <!-- Agent #3: My Presentation Outline Buddy -->
+      <div class="warmup-card">
+        <div class="warmup-title"><span class="warmup-num">3</span>My Presentation Outline Buddy <span style="background:#DBEAFE;color:#1E40AF;font-size:0.7rem;font-weight:800;padding:2px 8px;border-radius:10px;margin-left:10px;">PERSONAL PRODUCTIVITY</span></div>
+        <div class="warmup-why">Give it a topic, audience, and time slot. Get back a clean slide-by-slide outline, speaker notes per slide, and 3 options for the opening hook.</div>
+
+        <details>
+          <summary>📝 Describe-tab natural prompt (try this first)</summary>
+          <pre>Build an agent called "My Presentation Outline Buddy".
+
+When I tell it (a) what I'm presenting on, (b) who's in the room, and (c) how long I have, it should produce:
+- A slide-by-slide outline (title + 2-3 bullets per slide, no fluff)
+- 60-90 word speaker notes for each slide, in a friendly-professional tone
+- 3 different OPENING HOOK options (one personal story angle, one data-point angle, one provocation)
+- A 1-line closing call-to-action
+
+Ask me first whether the audience is technical or non-technical, and adjust depth accordingly. Cap the deck at 1 slide per 2 minutes of speaking time. Never invent statistics - if I haven't given a number, write [STAT NEEDED: ...] in the bullet. Use Markdown formatting.</pre>
+        </details>
+
+        <details>
+          <summary>📋 Fallback: paste this into Configure → Instructions</summary>
+          <pre># PURPOSE
+You are My Presentation Outline Buddy. You help the user plan and structure presentations quickly. You produce slide outlines, speaker notes, opening hooks, and pacing - all from a short brief.
+
+# FIRST-RUN SETUP
+At the start of every new presentation request, confirm 3 things in one prompt:
+1) "What's the topic in one sentence?"
+2) "Who's the audience - technical, non-technical, or mixed?"
+3) "How long is the slot in minutes?"
+Cap the deck at roughly 1 slide per 2 minutes of speaking time.
+
+# RESPONSE FORMAT
+Return the output in this exact structure, all in Markdown:
+
+**1. OPENING HOOK - 3 options**
+- Option A (Personal story angle): ...
+- Option B (Surprising data angle): ...
+- Option C (Provocation angle): ...
+
+**2. SLIDE-BY-SLIDE OUTLINE**
+For each slide:
+### Slide N: [Title]
+- 2-3 bullet content points
+**Speaker notes (60-90 words):** ...
+
+**3. CLOSING CALL-TO-ACTION**
+One sentence the audience should take away and act on.
+
+# RULES
+- Match depth to the audience. Technical -> include mechanism, trade-offs, edge cases. Non-technical -> use analogies and outcomes.
+- Never invent statistics, names, or quotes. If a number is needed and the user has not provided one, write [STAT NEEDED: what to look up] in the bullet.
+- Keep slide titles short (under 8 words). No double-headers.
+- Speaker notes are conversational, not a script - they should sound like a confident human talking.
+- If the topic is sensitive (financial advice, legal, medical, ESG claims), add a 1-line caveat the user should keep in their notes.
+
+# SKILLS
+- Build narrative arcs (problem -> insight -> action).
+- Generate analogies and metaphors on request.
+- Produce a 5-minute version, 15-minute version, or 30-minute version of any deck.
+- Rewrite any slide to be tighter, punchier, or more visual.
+
+# ERROR HANDLING
+- If the user has not given enough information, ask ONE focused question.
+- If the user asks for a topic where you would have to invent facts, ask: "Do you have a source / your own notes I should base this on?"
+
+# CLOSING
+After delivering the outline, ask: "Want me to tighten any slide, swap the opening hook, or produce a shorter/longer version?"</pre>
+        </details>
+
+        <details>
+          <summary>💡 Starter prompts to add (4)</summary>
+          <ul style="font-size:0.85rem;line-height:1.7;color:#374151;margin:8px 0 0 18px;">
+            <li><strong>Outline a presentation</strong> — "I'm presenting on [topic] to [audience] for [N] minutes. Outline it."</li>
+            <li><strong>3 opening hook options</strong> — "Give me 3 different ways to open a talk on [topic]."</li>
+            <li><strong>Tighten a slide</strong> — "Here's my slide. Rewrite it tighter and more visual."</li>
+            <li><strong>Stretch or shrink</strong> — "Turn this 30-minute deck into a 10-minute version."</li>
+          </ul>
+        </details>
+      </div>
+
+      <div style="background:#F5F3FF;border:1px dashed #C7D2FE;border-radius:10px;padding:14px 18px;margin-top:8px;font-size:0.87rem;color:#4338CA;line-height:1.6;">
+        ✅ <strong>Warm-up done?</strong> You now know exactly where each field lives in Agent Builder. Time to pick what your team builds for the demo.
+      </div>
+    </div>
+
     <!-- Pick Your Agent -->
     <div class="content-section">
       <h3>🤖 Pick Your Agent</h3>
@@ -194,6 +449,95 @@
           <div style="font-size:0.88rem;color:#374151;line-height:1.55;">Spotted a different repetitive HHFC task? Build the agent for it. A bold pick + a working agent = a strong score.</div>
         </div>
         <span style="background:#1e1b4b;color:white;font-size:0.75rem;font-weight:800;padding:6px 14px;border-radius:20px;letter-spacing:0.5px;flex-shrink:0;">WILDCARD</span>
+      </div>
+    </div>
+
+    <!-- Solo Use Cases — Pick 1 per person -->
+    <div class="content-section">
+      <h3>🎯 Solo Use Cases — Every Person Ships 1 Agent</h3>
+      <p style="font-size:0.92rem;color:#374151;margin-bottom:14px;">Beyond the team theme above, <strong>every individual builds at least one extra agent of their own</strong> — picked from the list below, mapped to the departments in the room. At the end of the hack, your team reviews everyone's solo agents and picks <strong>1-2 finalists</strong> to polish for the demo and the "take-to-production" shortlist.</p>
+      <div style="background:#EEF2FF;border:1px solid #C7D2FE;border-left:4px solid #7C3AED;border-radius:10px;padding:12px 16px;margin-bottom:20px;font-size:0.85rem;color:#3730A3;line-height:1.6;">
+        💡 <strong>How to use this list:</strong> find your function, pick ONE keyword that makes you go "yes - I do that every week", then describe it to Agent Builder in your own words. Each idea is sized to be buildable in 20-30 minutes with prompting alone (no Knowledge upload required).
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px;">
+
+        <div class="dept-card">
+          <h4>💰 Treasury, Markets &amp; ALM</h4>
+          <div class="dept-fns">Treasury · Markets · DCM · ALM · Pricing · Settlement Ops</div>
+          <ul>
+            <li><strong>Daily Market Pulse</strong> — paste in overnight yields + BNM news, get a 5-bullet morning briefing in your desk's tone.</li>
+            <li><strong>Spread Mover Explainer</strong> — "Why did MGS spreads widen?" → desk-friendly talking points for the morning huddle.</li>
+            <li><strong>Issuance Calendar Buddy</strong> — keeps a running view of upcoming bond issuances with a 3-line "what to watch" per deal.</li>
+            <li><strong>Settlement Exception Triage</strong> — classifies a settlement break (counterparty, severity, who to escalate, suggested first step).</li>
+            <li><strong>Funding-Cost Quick-Calc</strong> — explains the drivers behind a funding-cost move in plain English for a manager update.</li>
+          </ul>
+        </div>
+
+        <div class="dept-card">
+          <h4>🏘️ Client Coverage, SRP, Product &amp; Credit</h4>
+          <div class="dept-fns">Client Coverage · Cagamas SRP · Product Dev · Credit</div>
+          <ul>
+            <li><strong>Lender Pre-Meeting Brief</strong> — paste lender name + last note → a 1-pager of facts, history, asks, suggested SRP fit.</li>
+            <li><strong>SRP Eligibility Helper</strong> — borrower-friendly Q&amp;A explainer for SRP eligibility (income bands, property types, financing limits).</li>
+            <li><strong>Coverage Call-Report Drafter</strong> — turns rough meeting notes into a clean call-report email ready for the compliance file.</li>
+            <li><strong>Credit Memo Skeleton Writer</strong> — produces the structured outline of a credit memo from a deal one-pager.</li>
+            <li><strong>Product Pitch Reframer</strong> — rewrites a product feature list into customer-language benefits, by lender segment.</li>
+          </ul>
+        </div>
+
+        <div class="dept-card">
+          <h4>🛡️ Compliance, Legal, Risk &amp; Audit</h4>
+          <div class="dept-fns">Compliance · Legal · Risk · Internal Audit</div>
+          <ul>
+            <li><strong>BNM Circular Translator</strong> — paste a circular, get owner-level action items + deadlines + impacted teams.</li>
+            <li><strong>Policy Gap Spotter</strong> — paste two policies, agent highlights overlaps, conflicts and silent areas.</li>
+            <li><strong>Audit Finding Drafter</strong> — turns rough observations into properly-worded findings (criteria · condition · cause · effect · recommendation).</li>
+            <li><strong>Risk Register Tidy-Up</strong> — cleans up a risk description and proposes a 1-line residual-risk statement.</li>
+            <li><strong>Whistleblower Intake Acknowledger</strong> — drafts a properly-toned acknowledgment &amp; next-step note (legally safe wording).</li>
+          </ul>
+        </div>
+
+        <div class="dept-card">
+          <h4>📊 Finance, Reporting &amp; Planning</h4>
+          <div class="dept-fns">Reporting &amp; Tax · Planning &amp; Analysis</div>
+          <ul>
+            <li><strong>Variance Commentary Drafter</strong> — feed the numbers + a few one-liners, get a clean MD&amp;A-style narrative paragraph.</li>
+            <li><strong>Month-End Checklist Coach</strong> — walks through the close steps and flags what looks missing based on what you've told it.</li>
+            <li><strong>Tax Treatment Q&amp;A</strong> — explains MFRS / tax positions in plain language for non-finance colleagues (framing only, no advice).</li>
+            <li><strong>KPI Definer</strong> — formalises a vague metric request into a clean KPI (formula · owner · frequency · source).</li>
+            <li><strong>Budget Assumption Auditor</strong> — challenges a draft assumption with 3 sanity-check questions before you lock numbers.</li>
+          </ul>
+        </div>
+
+        <div class="dept-card">
+          <h4>🌱 Strategy, ESG, Comms &amp; Corp Sec</h4>
+          <div class="dept-fns">CEO's Office · Strategic Comms · ESG · Corp Sec · Research</div>
+          <ul>
+            <li><strong>Board-Pack Cover-Note Drafter</strong> — short, sharp summary of a paper in board-pack voice (issue · ask · risks).</li>
+            <li><strong>ESG Story Reframer</strong> — turns dry ESG metrics into a 3-bullet narrative for press release or annual report.</li>
+            <li><strong>Speech Opener Generator</strong> — 3 different speech openings for a CEO talk on a topic (story · stat · provocation).</li>
+            <li><strong>Peer Benchmark Snapshotter</strong> — paste 3 peers + a theme, agent structures a side-by-side comparison table.</li>
+            <li><strong>Corp Sec Resolution Drafter</strong> — formal wording for routine board resolutions with bracketed placeholders.</li>
+          </ul>
+        </div>
+
+        <div class="dept-card">
+          <h4>⚙️ Operations, IT, HR &amp; Procurement</h4>
+          <div class="dept-fns">Operations · IT · BPR · HR · Procurement · Admin</div>
+          <ul>
+            <li><strong>IT Ticket Triage Buddy</strong> — classifies a user-submitted ticket (category · severity · suggested first step · template reply).</li>
+            <li><strong>HR Policy FAQ Agent</strong> — answers leave, claims and benefits FAQs in HR voice (rules embedded in instructions, no upload needed).</li>
+            <li><strong>Vendor Onboarding Checker</strong> — walks a requester through what they need to submit and flags gaps before forms get bounced.</li>
+            <li><strong>BPR Process Mapper</strong> — converts a "how we do X today" paragraph into a numbered SOP draft with owners and exits.</li>
+            <li><strong>Admin Request Router</strong> — reads an internal request and tells you which form / who to email / what SLA to expect.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div style="background:linear-gradient(135deg,#FFF7E6,#FCEFC5);border:1px solid #C8A84B;border-radius:12px;padding:14px 18px;margin-top:18px;font-size:0.88rem;color:#3A3A3A;line-height:1.6;">
+        🏆 <strong>Team finalist round:</strong> after everyone's solo agent works end-to-end (even roughly), your team huddles for 5 minutes and picks the <strong>1-2 finalists</strong> with the highest "would-I-actually-use-this-on-Monday" score. Those become your demo and your production shortlist.
       </div>
     </div>
 
